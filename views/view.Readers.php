@@ -5,11 +5,10 @@
  * Part of BlueSpice MediaWiki
  *
  * @author     Stephan Muggli <muggli@hallowelt.com>
- * @version    $Id: view.Readers.php 9950 2013-06-26 14:58:43Z smuggli $
  * @package    BlueSpice_Extensions
  * @subpackage Authors
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v2 or later
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v3
  * @filesource
  */
 
