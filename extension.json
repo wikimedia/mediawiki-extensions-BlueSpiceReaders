@@ -9,10 +9,17 @@
 	],
 	"descriptionmsg": "bs-readers-desc",
 	"type": "bluespice",
-	"bsgExtensions": {
-		"BlueSpiceReaders": {
-			"className": "Readers",
-			"extPath": "/BlueSpiceReaders"
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceReaders": {
+					"className": "Readers",
+					"extPath": "/BlueSpiceReaders",
+					"configDefinition": {
+						"ReadersNumOfReaders": "\\BlueSpice\\Readers\\ConfigDefinition\\ReadersNumOfReaders::getInstance"
+					}
+				}
+			}
 		}
 	},
 	"SpecialPages": {
@@ -29,6 +36,14 @@
 	},
 	"ExtensionMessagesFiles": {
 		"ReadersAlias": "languages/SpecialReaders.alias.php"
+	},
+	"config-prefix": "bsg",
+	"config": {
+		"ReadersNumOfReaders": {
+			"value": 10,
+			"descriptionmsg": "bs-readers-pref-numofreaders",
+			"public": true
+		}
 	},
 	"AutoloadClasses": {
 		"Readers": "Readers.class.php",

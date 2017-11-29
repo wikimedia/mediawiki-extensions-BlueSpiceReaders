@@ -42,9 +42,6 @@ class Readers extends BsExtensionMW {
 
 		$this->mCore->registerPermission( 'viewreaders', array(), array( 'type' => 'global' ) );
 
-		BsConfig::registerVar( 'MW::Readers::Active', true, BsConfig::LEVEL_PUBLIC|BsConfig::TYPE_BOOL, 'bs-readers-pref-active', 'toggle' );
-		BsConfig::registerVar( 'MW::Readers::NumOfReaders', 10, BsConfig::TYPE_INT|BsConfig::LEVEL_PUBLIC, 'bs-readers-pref-numofreaders', 'int' );
-
 		wfProfileOut( 'BS::'.__METHOD__ );
 	}
 
@@ -189,6 +186,7 @@ class Readers extends BsExtensionMW {
 	private function getReadersViewForAfterContent( $oTitle ) {
 		$oViewReaders = null;
 		$oDbr = wfGetDB( DB_REPLICA );
+		$config = \MediaWiki\MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
 		$res = $oDbr->select(
 				array( 'bs_readers' ),
 				array( 'readers_user_id', 'MAX(readers_ts) as readers_ts' ),
@@ -197,7 +195,7 @@ class Readers extends BsExtensionMW {
 				array(
 					'GROUP BY' => 'readers_user_id',
 					'ORDER BY' => 'MAX(readers_ts) DESC',
-					'LIMIT' => BsConfig::get( 'MW::Readers::NumOfReaders' )
+					'LIMIT' => $config->get( 'ReadersNumOfReaders' )
 				)
 		);
 
@@ -224,8 +222,6 @@ class Readers extends BsExtensionMW {
 		$oUser = $this->getUser();
 
 		if ( wfReadOnly() ) return false;
-
-		if ( BsConfig::get( 'MW::Readers::Active' ) == false ) return false;
 
 		if ( is_null( $oTitle ) ) return false;
 
