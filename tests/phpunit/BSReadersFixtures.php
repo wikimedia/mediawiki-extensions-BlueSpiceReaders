@@ -4,7 +4,7 @@ class BSReadersFixtures {
 
 	/**
 	 *
-	 * @param DatabaseBase $db
+	 * @param \Wikimedia\Rdbms\IDatabase $db
 	 */
 	public function __construct( $db ) {
 		$oFixtures = FormatJson::decode(
