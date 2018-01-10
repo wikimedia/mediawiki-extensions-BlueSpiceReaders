@@ -37,7 +37,7 @@
 	"ExtensionMessagesFiles": {
 		"ReadersAlias": "languages/SpecialReaders.alias.php"
 	},
-	"config-prefix": "bsg",
+	"config_prefix": "bsg",
 	"config": {
 		"ReadersNumOfReaders": {
 			"value": 10,
