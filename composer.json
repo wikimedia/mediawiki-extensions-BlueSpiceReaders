@@ -2,7 +2,7 @@
 	"name": "mediawiki/blue-spice-readers",
 	"type": "mediawiki-extension",
 	"description": "Creates a list of the people who read a page",
-	"license": "GPL-3.0",
+	"license": "GPL-3.0-only",
 	"require": {
 		"composer/installers": "~1.0"
 	},
