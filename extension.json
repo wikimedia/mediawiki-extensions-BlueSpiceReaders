@@ -67,7 +67,6 @@
 			"dependencies": [
 				"ext.bluespice.extjs"
 			],
-			"position": "bottom",
 			"messages": [
 				"bs-readers-header-username",
 				"bs-readers-header-readerspath",
@@ -81,7 +80,6 @@
 			"dependencies": [
 				"ext.bluespice.extjs"
 			],
-			"position": "bottom",
 			"messages": [
 				"bs-readers-header-readerspath",
 				"bs-readers-header-ts",
