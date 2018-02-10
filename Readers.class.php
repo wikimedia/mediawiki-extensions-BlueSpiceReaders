@@ -34,15 +34,11 @@ class Readers extends BsExtensionMW {
 	 * Initialization of ExtensionTemplate extension
 	 */
 	public function  initExt() {
-		wfProfileIn( 'BS::'.__METHOD__ );
-
 		$this->setHook( 'BeforePageDisplay' );
 		$this->setHook( 'SkinTemplateOutputPageBeforeExec' );
 		$this->setHook( 'SkinTemplateNavigation' );
 
 		$this->mCore->registerPermission( 'viewreaders', array(), array( 'type' => 'global' ) );
-
-		wfProfileOut( 'BS::'.__METHOD__ );
 	}
 
 	/**
