@@ -49,12 +49,12 @@ class Readers extends BsExtensionMW {
 	public static function getSchemaUpdates( $updater ) {
 		$updater->addExtensionTable(
 			'bs_readers',
-			__DIR__.DS.'db'.DS.'readers.sql'
+			__DIR__ . '/db/readers.sql'
 		);
 		$updater->addExtensionField(
 			'bs_readers',
 			'readers_ts',
-			__DIR__.DS.'db/mysql/readers.patch.readers_ts.sql'
+			__DIR__ . '/db/mysql/readers.patch.readers_ts.sql'
 		);
 
 		return true;
