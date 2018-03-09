@@ -37,14 +37,13 @@ class ViewReaders extends ViewBaseElement {
 
 		$sReadersList = '';
 		$iReaders = count( $this->_mItems );
-		$aOptions = array();
-		foreach ( $this->_mItems as $oMiniProfile ) {
-			$aOptions = $oMiniProfile->getOptions();
-			$oMiniProfile->setOption( 'classes', array( 'bs-readers-profile' ) );
-			$sReadersList .= $oMiniProfile->execute();
+
+		foreach ( $this->_mItems as $renderer ) {
+			$renderer instanceof \BlueSpice\Renderer\UserImage;
+			$sReadersList .= $renderer->render();
 		}
 
-		$sUsername = $aOptions['user']->getName();
+		$sUsername = $this->_mItems[0]->getUser()->getName();
 		$aOut = array();
 		$aOut[] = '<div class="bs-readers">';
 		$aOut[] = '  <fieldset>';
@@ -58,4 +57,16 @@ class ViewReaders extends ViewBaseElement {
 		return implode( "\n", $aOut );
 	}
 
+	public function addItem( $item, $key = false ) {
+		if ( !$item ) {
+			return false;
+		}
+		if ( $key && ( is_numeric( $key ) || is_string( $key ) ) ) {
+			$this->_mItems[$key] = $item;
+		}
+		else {
+			$this->_mItems[] = $item;
+		}
+		return $item;
+	}
 }

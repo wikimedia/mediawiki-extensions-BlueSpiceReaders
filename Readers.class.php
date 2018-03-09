@@ -25,6 +25,9 @@
  * @filesource
  */
 
+use BlueSpice\Renderer\Params;
+use BlueSpice\Renderer\UserImage;
+
 /**
  * Readers extension
  * @package BlueSpiceReaders
@@ -197,14 +200,20 @@ class Readers extends BsExtensionMW {
 
 		if ( $oDbr->numRows( $res ) > 0 ) {
 			$oViewReaders = new ViewReaders();
+			$factory = \BlueSpice\Services::getInstance()
+				->getBSRendererFactory();
 			while ( $row = $oDbr->fetchObject( $res ) ) {
-				$oUser = User::newFromId( (int)$row->readers_user_id );
+				if( !$user = User::newFromId( (int)$row->readers_user_id ) ) {
+					continue;
+				}
 
-				$oUserMiniProfile = $this->mCore->getUserMiniProfile( $oUser );
-				$oViewReaders->addItem( $oUserMiniProfile );
+				$renderer = $factory->get( 'userimage', new Params( [
+					UserImage::PARAM_USER => $user,
+					UserImage::PARAM_CLASS => 'bs-readers-profile',
+				]));
+				$oViewReaders->addItem( $renderer );
 			}
 		}
-		$oDbr->freeResult( $res );
 
 		return $oViewReaders;
 	}
