@@ -15,7 +15,7 @@
 				"BlueSpiceReaders": {
 					"className": "Readers",
 					"extPath": "/BlueSpiceReaders",
-					"configDefinition": {
+					"configDefinitions": {
 						"ReadersNumOfReaders": "\\BlueSpice\\Readers\\ConfigDefinition\\ReadersNumOfReaders::getInstance"
 					}
 				}
