@@ -70,7 +70,7 @@ class BSAPIReadersUsersStoreTest extends BSApiExtJSStoreTestBase {
 	public function provideSingleFilterData() {
 		return [
 			'Filter by user name equals' => [ 'string', 'eq', 'user_name', 'UTSysop', 1 ],
-			'Filter by user name starts with' => [ 'string', 'sw', 'user_name', 'Apitest', 2 ]
+			'Filter by user name starts with' => [ 'string', 'sw', 'user_name', 'UTS', 1 ]
 		];
 	}
 
@@ -82,13 +82,13 @@ class BSAPIReadersUsersStoreTest extends BSApiExtJSStoreTestBase {
 						'type' => 'date',
 						'comparison' => 'eq',
 						'field' => 'user_ts',
-						'value' => '20170102000000'
+						'value' => '20170101000000'
 					],
 					[
 						'type' => 'string',
 						'comparison' => 'sw',
 						'field' => 'user_name',
-						'value' => 'Apitest'
+						'value' => 'UTS'
 					]
 				],
 				1
