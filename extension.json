@@ -19,9 +19,31 @@
 						"ReadersNumOfReaders": "\\BlueSpice\\Readers\\ConfigDefinition\\ReadersNumOfReaders::getInstance"
 					}
 				}
+			},
+			"PermissionRegistry": {
+				"viewreaders": {
+					"type": "global",
+					"roles": [
+						"admin"
+					]
+				}
 			}
 		}
 	},
+	"GroupPermissions": {
+		"*": {
+			"viewreaders": false
+		},
+		"user": {
+			"viewreaders": false
+		},
+		"sysop": {
+			"viewreaders": true
+		}
+	},
+	"AvailableRights": [
+		"viewreaders"
+	],
 	"SpecialPages": {
 		"Readers": "SpecialReaders"
 	},

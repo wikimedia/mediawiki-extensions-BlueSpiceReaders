@@ -40,8 +40,6 @@ class Readers extends BsExtensionMW {
 		$this->setHook( 'BeforePageDisplay' );
 		$this->setHook( 'SkinTemplateOutputPageBeforeExec' );
 		$this->setHook( 'SkinTemplateNavigation' );
-
-		$this->mCore->registerPermission( 'viewreaders', array(), array( 'type' => 'global' ) );
 	}
 
 	/**
