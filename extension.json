@@ -114,8 +114,7 @@
 		"remoteExtPath": "BlueSpiceReaders/resources"
 	},
 	"Hooks": {
-		"LoadExtensionSchemaUpdates": "Readers::getSchemaUpdates",
-		"UnitTestsList": "Readers::onUnitTestsList"
+		"LoadExtensionSchemaUpdates": "Readers::getSchemaUpdates"
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
