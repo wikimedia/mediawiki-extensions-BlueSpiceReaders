@@ -1,5 +1,5 @@
 {
-	"name": "mediawiki/blue-spice-readers",
+	"name": "bluespice/readers",
 	"type": "mediawiki-extension",
 	"description": "Creates a list of the people who read a page",
 	"license": "GPL-3.0-only",
@@ -22,5 +22,8 @@
 			"parallel-lint . --exclude vendor --exclude node_modules",
 			"minus-x check ."
 		]
+	},
+	"extra": {
+		"installer-name": "BlueSpiceReaders"
 	}
 }
