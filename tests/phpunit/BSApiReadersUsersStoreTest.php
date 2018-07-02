@@ -8,7 +8,7 @@
  * @group BlueSpiceExtensions
  * @group BlueSpiceReaders
  */
-class BSAPIReadersUsersStoreTest extends BSApiExtJSStoreTestBase {
+class BSAPIReadersUsersStoreTest extends \BlueSpice\Tests\BSApiExtJSStoreTestBase {
 	protected $iFixtureTotal = 3;
 	protected $sQuery = "Test"; // ID = 2; ID = 1 has default "UTPage"; See BSPageFixturesProvider / pages.json
 
@@ -50,7 +50,7 @@ class BSAPIReadersUsersStoreTest extends BSApiExtJSStoreTestBase {
 	}
 
 	protected function createStoreFixtureData() {
-		$oPageFixtures = new BSPageFixturesProvider();
+		$oPageFixtures = new \BlueSpice\Tests\BSPageFixturesProvider();
 		$aFixtures = $oPageFixtures->getFixtureData();
 		foreach( $aFixtures as $aFixture ) {
 			$this->insertPage( $aFixture[0], $aFixture[1] );

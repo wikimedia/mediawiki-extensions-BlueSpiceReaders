@@ -8,7 +8,7 @@
  * @group BlueSpiceExtensions
  * @group BlueSpiceReaders
  */
-class BSApiReadersDataStoreTest extends BSApiExtJSStoreTestBase {
+class BSApiReadersDataStoreTest extends \BlueSpice\Tests\BSApiExtJSStoreTestBase {
 	protected $iFixtureTotal = 4;
 	protected $sQuery = 1; // Thats the ID of UTSysop
 
@@ -44,7 +44,7 @@ class BSApiReadersDataStoreTest extends BSApiExtJSStoreTestBase {
 		 * This need to be done here and for each and every test, because
 		 * tables defined in $tablesUsed are being reset after a test.
 		 */
-		$oPageFixtures = new BSPageFixturesProvider();
+		$oPageFixtures = new \BlueSpice\Tests\BSPageFixturesProvider();
 		$aFixtures = $oPageFixtures->getFixtureData();
 		foreach( $aFixtures as $aFixture ) {
 			$this->insertPage( $aFixture[0], $aFixture[1] );

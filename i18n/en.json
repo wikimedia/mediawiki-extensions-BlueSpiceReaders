@@ -21,5 +21,7 @@
 	"apihelp-bs-readers-data-store-description": "Get reader info of specific page.",
 	"apihelp-bs-readers-data-store-summary": "Get reader info of specific page.",
 	"apihelp-bs-readers-users-store-description": "Get all readers info of specific page.",
-	"apihelp-bs-readers-users-store-summary": "Get all readers info of specific page."
+	"apihelp-bs-readers-users-store-summary": "Get all readers info of specific page.",
+	"apihelp-bs-readers-page-readers-store-summary": "Gets all readers of all pages",
+	"bs-readers-flyout-title": "Readers of this page"
 }

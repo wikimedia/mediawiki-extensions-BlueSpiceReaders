@@ -72,6 +72,9 @@ class Readers extends BsExtensionMW {
 		$oOutputPage->addModuleStyles( 'ext.bluespice.readers.styles' );
 		$this->insertTrace();
 
+		$config = \MediaWiki\MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
+		$oOutputPage->addJsConfigVars( 'bsgReadersNumOfReaders',  $config->get( 'ReadersNumOfReaders' ) );
+
 		return true;
 	}
 
@@ -243,6 +246,19 @@ class Readers extends BsExtensionMW {
 			return false;
 		}
 
+		return true;
+	}
+
+	/**
+	 * Checks if the Readers segment should be added to the flyout
+	 *
+	 * @param IContextSource $context
+	 * @return bool
+	 */
+	public static function flyoutCheckPermissions( \IContextSource $context ) {
+		if( $context->getTitle()->userCan( 'viewreaders' ) == false ) {
+			return false;
+		}
 		return true;
 	}
 
