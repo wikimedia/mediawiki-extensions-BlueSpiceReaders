@@ -21,5 +21,7 @@
 	"apihelp-bs-readers-data-store-description": "קבלת מידע על הקוראים של דף מסוים.",
 	"apihelp-bs-readers-data-store-summary": "קבלת מידע על הקוראים של דף מסוים.",
 	"apihelp-bs-readers-users-store-description": "קבלת מידע מלא על הקוראים של דף מסוים.",
-	"apihelp-bs-readers-users-store-summary": "קבלת מידע מלא על הקוראים של דף מסוים."
+	"apihelp-bs-readers-users-store-summary": "קבלת מידע מלא על הקוראים של דף מסוים.",
+	"apihelp-bs-readers-page-readers-store-summary": "קבלת כל הקוראים של כל הדפים",
+	"bs-readers-flyout-title": "קוראי דף זה"
 }

@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"ديفيد"
+			"ديفيد",
+			"محمد أحمد عبد الفتاح"
 		]
 	},
 	"bs-readers-desc": "ينشئ قائمة بالأشخاص الذين يقرؤون صفحة",
@@ -21,5 +22,6 @@
 	"apihelp-bs-readers-data-store-description": "احصل على معلومات القارئ لصفحة محددة.",
 	"apihelp-bs-readers-data-store-summary": "احصل على معلومات القارئ لصفحة محددة.",
 	"apihelp-bs-readers-users-store-description": "الحصول على جميع معلومات القراء لصفحة محددة.",
-	"apihelp-bs-readers-users-store-summary": "الحصول على جميع معلومات القراء لصفحة محددة."
+	"apihelp-bs-readers-users-store-summary": "الحصول على جميع معلومات القراء لصفحة محددة.",
+	"bs-readers-flyout-title": "قراء هذه الصفحة"
 }

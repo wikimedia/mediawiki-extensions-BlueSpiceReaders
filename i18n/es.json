@@ -3,7 +3,8 @@
 		"authors": [
 			"Macofe",
 			"Fitoschido",
-			"AVIADOR"
+			"AVIADOR",
+			"Alberrg"
 		]
 	},
 	"bs-readers-desc": "Crea una lista de las personas que leen una página",
@@ -19,5 +20,6 @@
 	"bs-readers-header-username": "Nombre de usuario",
 	"bs-readers-header-readerspath": "Lector",
 	"bs-readers-header-ts": "Fecha",
-	"bs-readers-header-page": "Página"
+	"bs-readers-header-page": "Página",
+	"bs-readers-flyout-title": "Lectores de esta página"
 }
