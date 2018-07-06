@@ -2,6 +2,7 @@ Ext.define( 'BS.Readers.panel.Readers', {
 	extend: 'Ext.Panel',
 	requires: [ 'BS.store.BSApi' ],
 	cls: 'bs-readers-flyout',
+	minHeight: 180,
 	articleId: mw.config.get( 'wgArticleId' ),
 	readersLimit: mw.config.get( 'bsgReadersNumOfReaders' ),
 	title: mw.message( 'bs-readers-flyout-title' ).plain(),
@@ -25,7 +26,8 @@ Ext.define( 'BS.Readers.panel.Readers', {
 		this.items = [
 			new Ext.DataView( {
 				store: this.store,
-				itemTpl: "{user_image_html}"
+				itemTpl: "{user_image_html}",
+				cls: 'flyout-readers-body'
 			} )
 		];
 
