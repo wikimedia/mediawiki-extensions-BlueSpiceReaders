@@ -22,5 +22,7 @@
 	"apihelp-bs-readers-data-store-description": "获取指定页面的读者信息。",
 	"apihelp-bs-readers-data-store-summary": "获取指定页面的读者信息。",
 	"apihelp-bs-readers-users-store-description": "获取指定页面的所有读者信息。",
-	"apihelp-bs-readers-users-store-summary": "获取指定页面的所有读者信息。"
+	"apihelp-bs-readers-users-store-summary": "获取指定页面的所有读者信息。",
+	"apihelp-bs-readers-page-readers-store-summary": "获取所有页面的所有阅读者",
+	"bs-readers-flyout-title": "此页面的阅读者"
 }
