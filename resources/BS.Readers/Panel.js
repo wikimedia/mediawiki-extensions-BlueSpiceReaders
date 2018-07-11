@@ -14,7 +14,7 @@
 
 Ext.define( 'BS.Readers.Panel', {
 	extend: 'Ext.grid.Panel',
-	requires: [ 'Ext.ux.grid.FiltersFeature', 'BS.store.BSApi' ],
+	requires: [ 'BS.store.BSApi' ],
 	id: 'bs-readers-panel',
 	initComponent: function () {
 		this.store = new BS.store.BSApi( {
@@ -59,10 +59,8 @@ Ext.define( 'BS.Readers.Panel', {
 			displayInfo : true
 		});
 
-		this.features = [
-			new Ext.ux.grid.FiltersFeature({
-				encode: true
-			})
+		this.plugins = [
+			'gridfilters'
 		];
 
 		this.callParent( arguments );
