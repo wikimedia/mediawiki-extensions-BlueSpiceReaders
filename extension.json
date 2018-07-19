@@ -54,7 +54,7 @@
 		"viewreaders"
 	],
 	"SpecialPages": {
-		"Readers": "SpecialReaders"
+		"Readers": "\\BlueSpice\\Readers\\Special\\Readers"
 	},
 	"APIModules": {
 		"bs-readers-data-store": "BSApiReadersDataStore",
@@ -80,7 +80,6 @@
 	"AutoloadClasses": {
 		"Readers": "Readers.class.php",
 		"ViewReaders": "views/view.Readers.php",
-		"SpecialReaders": "includes/specials/SpecialReaders.class.php",
 		"BSApiReadersDataStore": "includes/api/BSApiReadersDataStore.php",
 		"BSApiReadersUsersStore": "includes/api/BSApiReadersUsersStore.php",
 		"BSReadersFixtures": "tests/phpunit/BSReadersFixtures.php"
