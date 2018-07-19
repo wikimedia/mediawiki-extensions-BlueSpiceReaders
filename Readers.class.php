@@ -146,7 +146,8 @@ class Readers extends BsExtensionMW {
 			'class' => false,
 			'text' => wfMessage( 'bs-readers-contentactions-label' )->text(),
 			'href' => $oSpecialPageWithParam->getLocalURL(),
-			'id' => 'ca-readers'
+			'id' => 'ca-readers',
+			'bs-group' => 'hidden'
 		);
 
 		return true;
