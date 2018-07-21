@@ -29,5 +29,6 @@
 	"apihelp-bs-readers-users-store-description": "取得特定頁面的所有讀者訊息。",
 	"apihelp-bs-readers-users-store-summary": "取得特定頁面的所有讀者訊息。",
 	"apihelp-bs-readers-page-readers-store-summary": "取得所有頁面的所有讀者",
+	"action-viewreaders": "檢視頁面讀者",
 	"bs-readers-flyout-title": "此頁面讀者"
 }
