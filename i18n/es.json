@@ -4,7 +4,8 @@
 			"Macofe",
 			"Fitoschido",
 			"AVIADOR",
-			"Alberrg"
+			"Alberrg",
+			"Astroemi"
 		]
 	},
 	"bs-readers-desc": "Crea una lista de las personas que leen una página",
@@ -21,5 +22,6 @@
 	"bs-readers-header-readerspath": "Lector",
 	"bs-readers-header-ts": "Fecha",
 	"bs-readers-header-page": "Página",
+	"action-viewreaders": "ver los lectores de páginas",
 	"bs-readers-flyout-title": "Lectores de esta página"
 }
