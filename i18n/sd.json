@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mehtab ahmed"
+			"Mehtab ahmed",
+			"Tweety"
 		]
 	},
+	"bs-readers-header-username": "واپرائيندڙ-نانءُ",
 	"bs-readers-header-page": "صفحو"
 }
