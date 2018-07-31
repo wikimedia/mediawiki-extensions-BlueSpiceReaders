@@ -27,5 +27,6 @@
 	"apihelp-bs-readers-users-store-summary": "Obtenir toutes les informations des lecteurs d’une page spécifique.",
 	"apihelp-bs-readers-page-readers-store-summary": "Obtenir tous les lecteurs de toutes le pages",
 	"action-viewreaders": "afficher les lecteurs des pages",
-	"bs-readers-flyout-title": "Lecteurs de cette page"
+	"bs-readers-flyout-title": "Lecteurs de cette page",
+	"right-viewreaders": "Autorise de voir les lecteurs d'une page"
 }
