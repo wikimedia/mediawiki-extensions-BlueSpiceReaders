@@ -29,5 +29,5 @@
 	"apihelp-bs-readers-page-readers-store-summary": "{{doc-apihelp-summary|bs-readers-page-readers-store}}",
 	"action-viewreaders": "label for denied special page\n{{doc-action|viewreaders}}",
 	"bs-readers-flyout-title": "Title of the panel showing readers of a page",
-	"right-viewreaders": "Description of viewreaders right"
+	"right-viewreaders": "{{doc-right|viewreaders}}"
 }

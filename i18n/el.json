@@ -16,5 +16,7 @@
 	"bs-readers-header-readerspath": "Αναγνώστης",
 	"bs-readers-header-ts": "Ημερομηνία",
 	"bs-readers-header-page": "Σελίδα",
-	"apihelp-bs-readers-data-store-description": "Λάβετε πληροφορίες αναγνωστών για μια συγκεκριμένη σελίδα."
+	"apihelp-bs-readers-data-store-description": "Λάβετε πληροφορίες αναγνωστών για μια συγκεκριμένη σελίδα.",
+	"action-viewreaders": "προβολή των αναγνωστών των σελίδων",
+	"right-viewreaders": "Επιτρέπει την προβολή των αναγνωστών μιας σελίδας"
 }
