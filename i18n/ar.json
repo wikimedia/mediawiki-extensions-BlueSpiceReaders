@@ -24,5 +24,7 @@
 	"apihelp-bs-readers-users-store-description": "الحصول على جميع معلومات القراء لصفحة محددة.",
 	"apihelp-bs-readers-users-store-summary": "الحصول على جميع معلومات القراء لصفحة محددة.",
 	"apihelp-bs-readers-page-readers-store-summary": "يحصل على جميع قراء جميع الصفحات",
-	"bs-readers-flyout-title": "قراء هذه الصفحة"
+	"action-viewreaders": "عرض قراء الصفحات",
+	"bs-readers-flyout-title": "قراء هذه الصفحة",
+	"right-viewreaders": "يسمح بعرض قراء صفحة"
 }
