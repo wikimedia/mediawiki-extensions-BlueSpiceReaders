@@ -24,7 +24,8 @@
 				"viewreaders": {
 					"type": "global",
 					"roles": [
-						"admin"
+						"admin",
+						"maintenanceadmin"
 					]
 				}
 			}
