@@ -4,7 +4,7 @@
 	bs.readers.flyout.makeItems = function() {
 		return {
 			centerRight: [
-				Ext.create( 'BS.Readers.panel.Readers', {} )
+				Ext.create( 'BS.Readers.grid.Readers', {} )
 			]
 		}
 	};

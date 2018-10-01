@@ -122,6 +122,9 @@
 			"scripts": [
 				"bluespice.readers.flyout.js"
 			],
+			"styles": [
+				"bluespice.readers.flyout.less"
+			],
 			"dependencies": [
 				"ext.bluespice.extjs"
 			],
