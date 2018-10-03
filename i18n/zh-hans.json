@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Liuxinyu970226",
-			"Cosine02"
+			"Cosine02",
+			"A Chinese Wikipedian"
 		]
 	},
 	"bs-readers-desc": "创建阅读某一页面的人的列表",
@@ -24,5 +25,6 @@
 	"apihelp-bs-readers-users-store-description": "获取指定页面的所有读者信息。",
 	"apihelp-bs-readers-users-store-summary": "获取指定页面的所有读者信息。",
 	"apihelp-bs-readers-page-readers-store-summary": "获取所有页面的所有阅读者",
+	"action-viewreaders": "查看页面的读者们",
 	"bs-readers-flyout-title": "此页面的阅读者"
 }
