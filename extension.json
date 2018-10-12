@@ -138,7 +138,10 @@
 		"remoteExtPath": "BlueSpiceReaders/resources"
 	},
 	"Hooks": {
-		"LoadExtensionSchemaUpdates": "Readers::getSchemaUpdates"
+		"LoadExtensionSchemaUpdates": "Readers::getSchemaUpdates",
+		"SkinTemplateOutputPageBeforeExec": [
+			"\\BlueSpice\\Readers\\Hook\\SkinTemplateOutputPageBeforeExec\\AddContentActionToBlacklist::callback"
+		]
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
