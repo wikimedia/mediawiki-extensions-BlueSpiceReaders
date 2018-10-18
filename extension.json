@@ -9,6 +9,9 @@
 	],
 	"descriptionmsg": "bs-readers-desc",
 	"type": "bluespice",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
 	"attributes": {
 		"BlueSpiceFoundation": {
 			"Extensions": {
