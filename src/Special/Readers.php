@@ -5,7 +5,7 @@ use ViewTagErrorList;
 use ViewTagError;
 use BlueSpice\Services;
 
-class Readers extends \BsSpecialPage {
+class Readers extends \BlueSpice\SpecialPage {
 
 	public function __construct() {
 		parent::__construct( 'Readers', 'viewreaders', false );
