@@ -80,7 +80,6 @@
 	},
 	"AutoloadClasses": {
 		"Readers": "Readers.class.php",
-		"ViewReaders": "views/view.Readers.php",
 		"BSApiReadersDataStore": "includes/api/BSApiReadersDataStore.php",
 		"BSApiReadersUsersStore": "includes/api/BSApiReadersUsersStore.php",
 		"BSReadersFixtures": "tests/phpunit/BSReadersFixtures.php"
