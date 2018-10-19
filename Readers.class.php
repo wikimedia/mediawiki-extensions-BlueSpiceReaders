@@ -25,9 +25,6 @@
  * @filesource
  */
 
-use BlueSpice\Renderer\Params;
-use BlueSpice\Renderer\UserImage;
-
 /**
  * Readers extension
  * @package BlueSpiceReaders
@@ -38,7 +35,6 @@ class Readers extends BsExtensionMW {
 	 */
 	public function  initExt() {
 		$this->setHook( 'BeforePageDisplay' );
-		$this->setHook( 'SkinTemplateOutputPageBeforeExec' );
 		$this->setHook( 'SkinTemplateNavigation' );
 	}
 
@@ -151,73 +147,6 @@ class Readers extends BsExtensionMW {
 		);
 
 		return true;
-	}
-
-	/**
-	 * Hook-Handler for 'SkinTemplateOutputPageBeforeExec'. Creates the Readers list below an article.
-	 * @param SkinTemplate $sktemplate a collection of views. Add the view that needs to be displayed
-	 * @param BaseTemplate $tpl currently logged in user. Not used in this context.
-	 * @return bool always true
-	 */
-	public function onSkinTemplateOutputPageBeforeExec( &$sktemplate, &$tpl ) {
-		if ( $this->checkContext() === false ||
-				!$sktemplate->getTitle()->userCan( 'viewreaders' ) ) {
-			return true;
-		}
-		if ( !$sktemplate->getTitle()->userCan( 'viewreaders' ) ) {
-			return true;
-		}
-
-		$oViewReaders = $this->getReadersViewForAfterContent( $sktemplate->getTitle() );
-
-		$tpl->data['bs_dataAfterContent']['bs-readers'] = array(
-			'position' => 20,
-			'label' => wfMessage( 'bs-readers-title' )->text(),
-			'content' => $oViewReaders
-		);
-
-		return true;
-	}
-
-	/**
-	 * Generates a Readers view
-	 * @param Title $oTitle Current title object
-	 * @return View Readers view
-	 */
-	private function getReadersViewForAfterContent( $oTitle ) {
-		$oViewReaders = null;
-		$oDbr = wfGetDB( DB_REPLICA );
-		$config = \MediaWiki\MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
-		$res = $oDbr->select(
-				array( 'bs_readers' ),
-				array( 'readers_user_id', 'MAX(readers_ts) as readers_ts' ),
-				array( 'readers_page_id' => $oTitle->getArticleID() ),
-				__METHOD__,
-				array(
-					'GROUP BY' => 'readers_user_id',
-					'ORDER BY' => 'MAX(readers_ts) DESC',
-					'LIMIT' => $config->get( 'ReadersNumOfReaders' )
-				)
-		);
-
-		if ( $oDbr->numRows( $res ) > 0 ) {
-			$oViewReaders = new ViewReaders();
-			$factory = \BlueSpice\Services::getInstance()
-				->getBSRendererFactory();
-			while ( $row = $oDbr->fetchObject( $res ) ) {
-				if( !$user = User::newFromId( (int)$row->readers_user_id ) ) {
-					continue;
-				}
-
-				$renderer = $factory->get( 'userimage', new Params( [
-					UserImage::PARAM_USER => $user,
-					UserImage::PARAM_CLASS => 'bs-readers-profile',
-				]));
-				$oViewReaders->addItem( $renderer );
-			}
-		}
-
-		return $oViewReaders;
 	}
 
 	/**
