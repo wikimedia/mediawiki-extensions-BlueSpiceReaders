@@ -39,25 +39,6 @@ class Readers extends BsExtensionMW {
 	}
 
 	/**
-	 * Hook-Handler for Hook 'LoadExtensionSchemaUpdates'
-	 * @param object §updater Updater
-	 * @return boolean Always true
-	 */
-	public static function getSchemaUpdates( $updater ) {
-		$updater->addExtensionTable(
-			'bs_readers',
-			__DIR__ . '/db/readers.sql'
-		);
-		$updater->addExtensionField(
-			'bs_readers',
-			'readers_ts',
-			__DIR__ . '/db/mysql/readers.patch.readers_ts.sql'
-		);
-
-		return true;
-	}
-
-	/**
 	 * Hook-Handler for MediaWiki 'BeforePageDisplay' hook. Sets context if needed.
 	 * @param OutputPage $oOutputPage
 	 * @param Skin $oSkin
