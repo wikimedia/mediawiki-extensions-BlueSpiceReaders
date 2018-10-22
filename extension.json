@@ -137,7 +137,9 @@
 		"remoteExtPath": "BlueSpiceReaders/resources"
 	},
 	"Hooks": {
-		"LoadExtensionSchemaUpdates": "Readers::getSchemaUpdates",
+		"LoadExtensionSchemaUpdates": [
+			"\\BlueSpice\\Readers\\Hook\\LoadExtensionSchemaUpdates\\AddReadersTable::callback"
+		],
 		"SkinTemplateOutputPageBeforeExec": [
 			"\\BlueSpice\\Readers\\Hook\\SkinTemplateOutputPageBeforeExec\\AddContentActionToBlacklist::callback"
 		]
