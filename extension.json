@@ -41,6 +41,11 @@
 					"skip-callback": "Readers::flyoutCheckPermissions"
 				}
 			}
+		},
+		"BlueSpicePrivacy": {
+			"Handlers": [
+				"\\BlueSpice\\Readers\\Privacy\\Handler"
+			]
 		}
 	},
 	"GroupPermissions": {
