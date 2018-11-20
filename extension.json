@@ -150,7 +150,12 @@
 		],
 		"SkinTemplateOutputPageBeforeExec": [
 			"\\BlueSpice\\Readers\\Hook\\SkinTemplateOutputPageBeforeExec\\AddContentActionToBlacklist::callback"
-		]
+		],
+		"BeforePageDisplay": [
+			"\\BlueSpice\\Readers\\Hook\\BeforePageDisplay\\AddResources::callback",
+			"\\BlueSpice\\Readers\\Hook\\BeforePageDisplay\\InsertTrace::callback"
+		],
+		"SkinTemplateNavigation": "\\BlueSpice\\Readers\\Hook\\SkinTemplateNavigation\\AddReaders::callback"
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2

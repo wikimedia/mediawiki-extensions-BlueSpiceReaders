@@ -30,39 +30,16 @@
  * @package BlueSpiceReaders
  */
 class Readers extends BsExtensionMW {
-	/**
-	 * Initialization of ExtensionTemplate extension
-	 */
-	public function  initExt() {
-		$this->setHook( 'BeforePageDisplay' );
-		$this->setHook( 'SkinTemplateNavigation' );
-	}
-
-	/**
-	 * Hook-Handler for MediaWiki 'BeforePageDisplay' hook. Sets context if needed.
-	 * @param OutputPage $oOutputPage
-	 * @param Skin $oSkin
-	 * @return bool
-	 */
-	public function onBeforePageDisplay( &$oOutputPage, &$oSkin ) {
-		if ( $this->checkContext() === false ) return true;
-		$oOutputPage->addModuleStyles( 'ext.bluespice.readers.styles' );
-		$this->insertTrace();
-
-		$config = \MediaWiki\MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
-		$oOutputPage->addJsConfigVars( 'bsgReadersNumOfReaders',  $config->get( 'ReadersNumOfReaders' ) );
-
-		return true;
-	}
 
 	/**
 	 * Hook-Handler for Hook 'ParserFirstCallInit'
-	 * @param object $oParser Parser
+	 * TODO: Make this a \Job and use better logic
+	 * @param \Title $title
 	 * @return boolean Always true
 	 */
-	public function insertTrace() {
+	public function insertTrace( \Title $title = null ) {
 		$oUser = $this->getUser();
-		$oTitle = $this->getTitle();
+		$oTitle = $title ? $title : $this->getTitle();
 		$oRevision = Revision::newFromTitle( $oTitle );
 
 		if ( !( $oRevision instanceof Revision ) ) return true;
@@ -90,51 +67,13 @@ class Readers extends BsExtensionMW {
 	}
 
 	/**
-	 * Adds the "Readers" menu entry in view mode
-	 * @param SkinTemplate $sktemplate
-	 * @param array $links
-	 * @return boolean Always true to keep hook running
-	 */
-	public function onSkinTemplateNavigation( &$sktemplate, &$links ) {
-		if ( $this->checkContext() === false ) {
-			return true;
-		}
-		//Check if menu entry has to be displayed
-		$oCurrentUser = $this->getUser();
-		if ( $oCurrentUser->isLoggedIn() === false ) {
-			return true;
-		}
-
-		$oCurrentTitle = $this->getTitle();
-		if ( $oCurrentTitle->exists() === false ) {
-			return true;
-		}
-
-		if ( !$oCurrentTitle->userCan( 'viewreaders' ) ) {
-			return true;
-		}
-
-		$oSpecialPageWithParam = SpecialPage::getTitleFor(
-			'Readers', $oCurrentTitle->getPrefixedText()
-		);
-
-		//Add menu entry
-		$links['actions']['readers'] = array(
-			'class' => false,
-			'text' => wfMessage( 'bs-readers-contentactions-label' )->text(),
-			'href' => $oSpecialPageWithParam->getLocalURL(),
-			'id' => 'ca-readers',
-			'bs-group' => 'hidden'
-		);
-
-		return true;
-	}
-
-	/**
+	 * DEPRECATED
 	 * Checks wether to set Context or not.
+	 * @deprecated since version 3.0.1 - not in use anymore
 	 * @return bool
 	 */
 	public function checkContext() {
+		wfDebugLog( 'bluespice-deprecations', __METHOD__, 'private' );
 		$oTitle = $this->getTitle();
 		$oUser = $this->getUser();
 
