@@ -25,5 +25,6 @@
 	"apihelp-bs-readers-page-readers-store-summary": "Gets all readers of all pages",
 	"action-viewreaders": "view the readers of pages",
 	"bs-readers-flyout-title": "Readers of this page",
-	"right-viewreaders": "Allows viewing readers of a page"
+	"right-viewreaders": "Allows viewing readers of a page",
+	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|You}} read the page $1 on $2"
 }
