@@ -27,5 +27,6 @@
 	"apihelp-bs-readers-page-readers-store-summary": "Obter todos os leitores de todas as páginas",
 	"action-viewreaders": "ver os leitores de páginas",
 	"bs-readers-flyout-title": "Leitores desta página",
-	"right-viewreaders": "Permite ver os leitores de uma página"
+	"right-viewreaders": "Permite ver os leitores de uma página",
+	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|Leu}} a página $1 a $2"
 }
