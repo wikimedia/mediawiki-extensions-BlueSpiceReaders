@@ -12,11 +12,12 @@
  */
 
 Ext.define( 'BS.Readers.PathPanel', {
-	extend: 'Ext.grid.Panel',
-	requires: [ 'Ext.ux.grid.FiltersFeature', 'BS.store.BSApi' ],
+	extend: 'BS.CRUDGridPanel',
+	requires: [ 'BS.store.BSApi' ],
+	plugin: 'gridfilters',
 	id: 'bs-readers-pathpanel',
 	initComponent: function () {
-		this.store =  new BS.store.BSApi({
+		this.strMain =  new BS.store.BSApi({
 			apiAction: 'bs-readers-data-store',
 			proxy: {
 				extraParams: {
@@ -27,16 +28,17 @@ Ext.define( 'BS.Readers.PathPanel', {
 				'pv_date', 'pv_readers_link' ]
 		} );
 
-		this.colPage = Ext.create( 'Ext.grid.column.Template', {
+		this.columns = [ Ext.create( 'Ext.grid.column.Template',{
 			id: 'pvpage',
 			header: mw.message( 'bs-readers-header-page' ).plain(),
 			sortable: true,
 			dataIndex: 'pv_page_title',
 			tpl: '{pv_readers_link} {pv_page_link}',
-			filterable: true,
+			filter: {
+				type: 'string'
+			},
 			flex: 1
-		} );
-		this.colTs = Ext.create( 'Ext.grid.column.Template', {
+		}), Ext.create( 'Ext.grid.column.Template', {
 			id: 'pvts',
 			header: mw.message( 'bs-readers-header-ts' ).plain(),
 			sortable: true,
@@ -46,24 +48,16 @@ Ext.define( 'BS.Readers.PathPanel', {
 				type: 'date'
 			},
 			flex: 1
-		} );
+		}) ];
 
-		this.columns = [
-			this.colPage,
-			this.colTs
-		];
-
-		this.bbar = new Ext.PagingToolbar({
-			store : this.store,
-			displayInfo : true
-		});
-
-		this.features = [
-			new Ext.ux.grid.FiltersFeature({
-				encode: true
-			})
-		];
-
+		this.colMainConf.columns = this.columns;
 		this.callParent( arguments );
+	},
+
+	makeActionColumn: function( cols ) {
+		return false;
+	},
+	makeTbar : function() {
+		return false;
 	}
 } );
