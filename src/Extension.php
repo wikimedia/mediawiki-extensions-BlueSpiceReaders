@@ -36,43 +36,6 @@ use IContextSource;
 class Extension extends \BlueSpice\Extension {
 
 	/**
-	 * Hook-Handler for Hook 'ParserFirstCallInit'
-	 * TODO: Make this a \Job and use better logic
-	 * @param \Title|null $title
-	 * @return bool Always true
-	 */
-	public function insertTrace( \Title $title = null ) {
-		$oUser = $this->getUser();
-		$oTitle = $title ? $title : $this->getTitle();
-		$oRevision = \Revision::newFromTitle( $oTitle );
-
-		if ( !( $oRevision instanceof Revision ) ) {
-			return true;
-		}
-
-		$oDbw = wfGetDB( DB_MASTER );
-
-		$oDbw->delete(
-			'bs_readers',
-			[
-				'readers_user_id' => $oUser->getId(),
-				'readers_page_id' => $oTitle->getArticleID()
-			]
-		);
-
-		$aNewRow = [];
-		$aNewRow['readers_user_id'] = $oUser->getId();
-		$aNewRow['readers_user_name'] = $oUser->getName();
-		$aNewRow['readers_page_id'] = $oTitle->getArticleID();
-		$aNewRow['readers_rev_id'] = $oRevision->getId();
-		$aNewRow['readers_ts'] = wfTimestampNow();
-
-		$oDbw->insert( 'bs_readers', $aNewRow );
-
-		return true;
-	}
-
-	/**
 	 * Checks if the Readers segment should be added to the flyout
 	 *
 	 * @param IContextSource $context
