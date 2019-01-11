@@ -11,6 +11,12 @@ class Store implements \BlueSpice\Data\IStore {
 
 	/**
 	 *
+	 * @var \Wikimedia\Rdbms\LoadBalancer
+	 */
+	protected $loadBalancer = null;
+
+	/**
+	 *
 	 * @param \IContextSource $context
 	 * @param \Wikimedia\Rdbms\LoadBalancer $loadBalancer
 	 */
@@ -19,12 +25,24 @@ class Store implements \BlueSpice\Data\IStore {
 		$this->loadBalancer = $loadBalancer;
 	}
 
+	/**
+	 *
+	 * @return Reader
+	 */
 	public function getReader() {
 		return new Reader( $this->loadBalancer, $this->context );
 	}
 
+	/**
+	 *
+	 * @return Writer
+	 */
 	public function getWriter() {
-		throw new Exception( 'This store does not support writing!' );
+		return new Writer(
+			$this->getReader(),
+			$this->loadBalancer,
+			$this->context
+		);
 	}
 
 }
