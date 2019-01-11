@@ -5,18 +5,22 @@
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:Readers",
 	"author": [
 		"Stephan Muggli",
-		"Leonid Verhovskij"
+		"Leonid Verhovskij",
+		"Dejan Savuljesku"
 	],
 	"descriptionmsg": "bs-readers-desc",
 	"type": "bluespice",
 	"requires": {
-		"MediaWiki": ">= 1.29.0"
+		"MediaWiki": ">= 1.31.0",
+		"extensions": {
+			"BlueSpiceFoundation": ">= 3.0.0"
+		}
 	},
 	"attributes": {
 		"BlueSpiceFoundation": {
 			"Extensions": {
 				"BlueSpiceReaders": {
-					"className": "Readers",
+					"className": "\\BlueSpice\\Readers\\Extension",
 					"extPath": "/BlueSpiceReaders",
 					"configDefinitions": {
 						"ReadersNumOfReaders": "\\BlueSpice\\Readers\\ConfigDefinition\\ReadersNumOfReaders::getInstance"
@@ -38,7 +42,7 @@
 				"readers": {
 					"module": "ext.bluespice.readers.flyout",
 					"make-items-callback": "bs.readers.flyout.makeItems",
-					"skip-callback": "Readers::flyoutCheckPermissions"
+					"skip-callback": "\\BlueSpice\\Readers\\Extension::flyoutCheckPermissions"
 				}
 			}
 		},
@@ -90,7 +94,6 @@
 		"BlueSpice\\Readers\\": "src/"
 	},
 	"AutoloadClasses": {
-		"Readers": "Readers.class.php",
 		"BSApiReadersDataStore": "includes/api/BSApiReadersDataStore.php",
 		"BSApiReadersUsersStore": "includes/api/BSApiReadersUsersStore.php",
 		"BSReadersFixtures": "tests/phpunit/BSReadersFixtures.php"
@@ -99,8 +102,7 @@
 		"ext.bluespice.readers.styles": {
 			"styles": [
 				"bluespice.readers.css"
-			],
-			"position": "top"
+			]
 		},
 		"ext.bluespice.readers.specialreaders": {
 			"scripts": [

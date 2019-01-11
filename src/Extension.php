@@ -25,11 +25,15 @@
  * @filesource
  */
 
+namespace BlueSpice\Readers;
+
+use IContextSource;
+
 /**
  * Readers extension
  * @package BlueSpiceReaders
  */
-class Readers extends BsExtensionMW {
+class Extension extends \BlueSpice\Extension {
 
 	/**
 	 * Hook-Handler for Hook 'ParserFirstCallInit'
@@ -40,7 +44,7 @@ class Readers extends BsExtensionMW {
 	public function insertTrace( \Title $title = null ) {
 		$oUser = $this->getUser();
 		$oTitle = $title ? $title : $this->getTitle();
-		$oRevision = Revision::newFromTitle( $oTitle );
+		$oRevision = \Revision::newFromTitle( $oTitle );
 
 		if ( !( $oRevision instanceof Revision ) ) {
 			return true;
@@ -69,57 +73,12 @@ class Readers extends BsExtensionMW {
 	}
 
 	/**
-	 * DEPRECATED
-	 * Checks wether to set Context or not.
-	 * @deprecated since version 3.0.1 - not in use anymore
-	 * @return bool
-	 */
-	public function checkContext() {
-		wfDebugLog( 'bluespice-deprecations', __METHOD__, 'private' );
-		$oTitle = $this->getTitle();
-		$oUser = $this->getUser();
-
-		if ( wfReadOnly() ) {
-			return false;
-		}
-
-		if ( is_null( $oTitle ) ) {
-			return false;
-		}
-
-		if ( !$oTitle->exists() ) {
-			return false;
-		}
-
-		if ( $oUser->isAnon() || User::isIP( $oUser->getName() ) ) {
-			return false;
-		}
-
-		// Do only display when user is allowed to read
-		if ( !$oTitle->userCan( 'read' ) ) {
-			return false;
-		}
-
-		// Do only display in view mode
-		if ( $this->getRequest()->getVal( 'action', 'view' ) !== 'view' ) {
-			return false;
-		}
-
-		// Do not display on SpecialPages, CategoryPages or ImagePages
-		if ( in_array( $oTitle->getNamespace(), [ NS_SPECIAL, NS_CATEGORY, NS_FILE, NS_MEDIAWIKI ] ) ) {
-			return false;
-		}
-
-		return true;
-	}
-
-	/**
 	 * Checks if the Readers segment should be added to the flyout
 	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */
-	public static function flyoutCheckPermissions( \IContextSource $context ) {
+	public static function flyoutCheckPermissions( IContextSource $context ) {
 		if ( $context->getTitle()->userCan( 'viewreaders' ) == false ) {
 			return false;
 		}
