@@ -2,6 +2,9 @@
 
 namespace BlueSpice\Readers\Hook\BeforePageDisplay;
 
+use BlueSpice\Readers\Job\InsertTrace as Job;
+use JobQueueGroup;
+
 class InsertTrace extends \BlueSpice\Hook\BeforePageDisplay {
 
 	protected function skipProcessing() {
@@ -29,10 +32,14 @@ class InsertTrace extends \BlueSpice\Hook\BeforePageDisplay {
 	}
 
 	protected function doProcess() {
-		$extension = $this->getServices()->getBSExtensionFactory()->getExtension(
-			'BlueSpiceReaders'
-		);
-		$extension->insertTrace( $this->out->getTitle() );
+		// TODO: Use Javascript and new Taks api and task base class instead of
+		// BeforePageDisplayHook to insert this job.
+		// There should not be any insert on the simple reading of any page
+		$job = new Job( $this->out->getTitle(), [
+			Job::PARAM_USER_ID => $this->out->getUser()->getId(),
+			Job::PARAM_TIMESTAMP => wfTimestampNow(),
+		] );
+		JobQueueGroup::singleton()->push( $job );
 		return true;
 	}
 
