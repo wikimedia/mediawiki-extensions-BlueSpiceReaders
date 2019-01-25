@@ -3,7 +3,8 @@
 		"authors": [
 			"SPQRobin",
 			"Siebrand",
-			"Esketti"
+			"Esketti",
+			"Mainframe98"
 		]
 	},
 	"bs-readers-desc": "Maakt een lijst van de mensen die het lezen van een pagina",
@@ -18,5 +19,6 @@
 	"bs-readers-emptyinput": "Er is geen pagina opgegeven.",
 	"bs-readers-header-username": "Gebruikersnaam",
 	"bs-readers-header-readerspath": "Lezer",
-	"bs-readers-header-ts": "Datum"
+	"bs-readers-header-ts": "Datum",
+	"bs-readers-header-page": "Pagina"
 }
