@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saederup92"
+		]
+	},
+	"bs-readers-header-username": "Brugernavn",
+	"bs-readers-header-readerspath": "Læser",
+	"bs-readers-header-ts": "Dato",
+	"bs-readers-header-page": "Side"
+}
