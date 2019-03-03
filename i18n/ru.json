@@ -14,7 +14,7 @@
 	"readers-user": "Страницы {{GENDER:$1|прочитаны}}: $1",
 	"readers": "Читатели страницы «$1»",
 	"bs-readers-contentactions-label": "Отобразить читателей",
-	"bs-readers-pagenotexists": "Страницы не существует.",
+	"bs-readers-pagenotexists": "Страница не существует.",
 	"bs-readers-pref-active": "Активные читатели",
 	"bs-readers-pref-numofreaders": "Количество читателей для отображения:",
 	"bs-readers-emptyinput": "Страница не была предоставлена.",
