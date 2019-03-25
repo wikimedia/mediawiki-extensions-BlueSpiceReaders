@@ -28,7 +28,7 @@ Ext.define( 'BS.Readers.grid.Readers', {
 
 
 		this.colAggregatedInfo = Ext.create( 'Ext.grid.column.Template', {
-			id: 'aggregated',
+			id: 'readers-aggregated',
 			sortable: false,
 			width: 400,
 			tpl: "<div class='bs-readers-flyout-grid-item'>" +
