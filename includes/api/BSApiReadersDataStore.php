@@ -22,7 +22,7 @@
  * @author     Leonid Verhovskij <verhovskij@hallowelt.com>
  * @package    Bluespice_Extensions
  * @copyright  Copyright (C) 2017 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v3
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  */
 
 /**
@@ -32,32 +32,31 @@
 class BSApiReadersDataStore extends BSApiExtJSStoreBase {
 
 	protected function makeData( $sQuery = '' ) {
-
 		$oDbr = wfGetDB( DB_REPLICA );
 
 		$res = $oDbr->select(
-			array( 'page', 'bs_readers' ),
-			array(
+			[ 'page', 'bs_readers' ],
+			[
 				'page_title', 'readers_page_id', 'readers_user_name',
 				'readers_ts'
-			),
-			array(
+			],
+			[
 				'readers_page_id = page_id',
-				'readers_user_id' => (int) $sQuery
-			),
+				'readers_user_id' => (int)$sQuery
+			],
 			__METHOD__,
-			array(
+			[
 				'ORDER BY' => 'readers_ts DESC'
-			)
+			]
 		);
 
-		$aPages = array();
+		$aPages = [];
 		if ( $oDbr->numRows( $res ) > 0 ) {
 			foreach ( $res as $row ) {
 				$oTitle = Title::newFromID( $row->readers_page_id );
 				$oSpecialReaders = SpecialPage::getTitleFor( 'Readers', $oTitle->getPrefixedText() );
 
-				$aTmpPage = array();
+				$aTmpPage = [];
 				$aTmpPage['pv_page'] = $oTitle->getLocalURL();
 				$aTmpPage['pv_page_link'] = Linker::link( $oTitle );
 				$aTmpPage['pv_page_title'] = $oTitle->getPrefixedText();
@@ -66,12 +65,12 @@ class BSApiReadersDataStore extends BSApiExtJSStoreBase {
 				$aTmpPage['pv_readers_link'] = Linker::link(
 					$oSpecialReaders,
 					'',
-					array(
+					[
 						'class' => 'icon-list'
-					)
+					]
 				);
 
-				$aPages[] = (object) $aTmpPage;
+				$aPages[] = (object)$aTmpPage;
 			}
 		}
 		$oDbr->freeResult( $res );

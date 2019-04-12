@@ -5,7 +5,7 @@ namespace BlueSpice\Readers\Hook\BeforePageDisplay;
 class InsertTrace extends \BlueSpice\Hook\BeforePageDisplay {
 
 	protected function skipProcessing() {
-		if( $this->getServices()->getReadOnlyMode()->isReadOnly() ) {
+		if ( $this->getServices()->getReadOnlyMode()->isReadOnly() ) {
 			return true;
 		}
 		if ( !$this->out->getTitle() || !$this->out->getTitle()->exists() ) {

@@ -1,17 +1,17 @@
 <?php
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English */
-$specialPageAliases['en'] = array(
-	'Readers' => array( 'Readers' ),
-);
+$specialPageAliases['en'] = [
+	'Readers' => [ 'Readers' ],
+];
 
 /** German (Deutsch) */
-$specialPageAliases['de'] = array(
-	'Readers' => array( 'Leser' ),
-);
+$specialPageAliases['de'] = [
+	'Readers' => [ 'Leser' ],
+];
 
 /** German (Deutsch) */
-$specialPageAliases['de-formal'] = array(
-	'Readers' => array( 'Leser' ),
-);
+$specialPageAliases['de-formal'] = [
+	'Readers' => [ 'Leser' ],
+];

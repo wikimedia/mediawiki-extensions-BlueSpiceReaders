@@ -24,7 +24,7 @@ class AddReaders extends \BlueSpice\Hook\SkinTemplateNavigation {
 			$this->sktemplate->getTitle()->getPrefixedText()
 		);
 
-		//Add menu entry
+		// Add menu entry
 		$this->links['actions']['readers'] = [
 			'class' => false,
 			'text' => $this->sktemplate->msg( 'bs-readers-contentactions-label' ),

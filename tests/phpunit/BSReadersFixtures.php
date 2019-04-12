@@ -8,10 +8,10 @@ class BSReadersFixtures {
 	 */
 	public function __construct( $db ) {
 		$oFixtures = FormatJson::decode(
-			file_get_contents( __DIR__ .'/data/bs_readers.fixtures.json' )
+			file_get_contents( __DIR__ . '/data/bs_readers.fixtures.json' )
 		);
 
-		foreach( $oFixtures->rows as $row ) {
+		foreach ( $oFixtures->rows as $row ) {
 			$title = Title::newFromText( $row[0] );
 			$user = User::newFromName( $row[1] );
 			$db->insert( 'bs_readers', [

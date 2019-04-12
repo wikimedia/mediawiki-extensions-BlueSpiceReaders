@@ -4,8 +4,6 @@ namespace BlueSpice\Readers\Privacy;
 
 use BlueSpice\Privacy\IPrivacyHandler;
 use BlueSpice\Privacy\Module\Transparency;
-use MediaWiki\Storage\RevisionRecord;
-use MediaWiki\Storage\RevisionStore;
 
 class Handler implements IPrivacyHandler {
 	protected $db;
@@ -49,7 +47,7 @@ class Handler implements IPrivacyHandler {
 		);
 
 		$data = [];
-		foreach( $res as $row ) {
+		foreach ( $res as $row ) {
 			$title = \Title::newFromID( $row->readers_page_id );
 			if ( $title instanceof \Title === false ) {
 				continue;
