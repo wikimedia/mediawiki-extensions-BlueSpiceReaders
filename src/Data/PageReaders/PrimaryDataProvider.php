@@ -2,7 +2,6 @@
 
 namespace BlueSpice\Readers\Data\PageReaders;
 
-use BlueSpice\Services;
 use BlueSpice\Readers\Data\Record;
 
 class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
@@ -28,6 +27,7 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 	/**
 	 *
 	 * @param \Wikimedia\Rdbms\IDatabase $db
+	 * @param \IContextSource $context
 	 */
 	public function __construct( $db, $context ) {
 		$this->db = $db;
@@ -37,6 +37,7 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 	/**
 	 *
 	 * @param \BlueSpice\Data\ReaderParams $params
+	 * @return array
 	 */
 	public function makeData( $params ) {
 		$this->data = [];
@@ -46,7 +47,7 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 			'*'
 		);
 
-		foreach( $rows as $row ) {
+		foreach ( $rows as $row ) {
 			$record = new Record( $row );
 			$this->appendRowToData( $record );
 		}
