@@ -16,5 +16,7 @@
 	"bs-readers-header-username": "利用者名",
 	"bs-readers-header-readerspath": "閲覧者",
 	"bs-readers-header-ts": "日時",
-	"bs-readers-header-page": "ページ"
+	"bs-readers-header-page": "ページ",
+	"action-viewreaders": "ページの閲覧者一覧の閲覧",
+	"right-viewreaders": "ページの閲覧者一覧を閲覧"
 }
