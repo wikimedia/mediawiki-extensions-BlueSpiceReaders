@@ -42,6 +42,6 @@ class Schema extends \BlueSpice\Data\Schema {
 				self::SORTABLE => false,
 				self::TYPE => FieldType::STRING
 			],
-		]);
+		] );
 	}
 }

@@ -41,7 +41,7 @@ class Readers extends \BlueSpice\SpecialPage {
 				$stringOut = $errorView->execute();
 			}
 		} else {
-			$errorView = new ViewTagErrorList( Services::getInstance()->getBSExtensionFactory()->getExtension('BlueSpiceReaders'));
+			$errorView = new ViewTagErrorList( Services::getInstance()->getBSExtensionFactory()->getExtension( 'BlueSpiceReaders' ) );
 			$errorView->addItem( new ViewTagError( wfMessage( 'bs-readers-emptyinput' )->plain() ) );
 			$stringOut = $errorView->execute();
 		}

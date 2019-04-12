@@ -22,7 +22,7 @@
  * @author     Leonid Verhovskij <verhovskij@hallowelt.com>
  * @package    Bluespice_Extensions
  * @copyright  Copyright (C) 2017 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v3
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  */
 
 use BlueSpice\DynamicFileDispatcher\Params;
@@ -38,26 +38,26 @@ class BSApiReadersUsersStore extends BSApiExtJSStoreBase {
 		$oTitle = Title::newFromText( $sQuery );
 
 		if ( $oTitle == null || !$oTitle->exists() ) {
-			return array();
+			return [];
 		}
 
 		$oDbr = wfGetDB( DB_REPLICA );
 		$res = $oDbr->select(
 			'bs_readers',
 			'*',
-			array(
+			[
 				'readers_page_id' => $oTitle->getArticleID()
-			),
+			],
 			__METHOD__,
-			array(
+			[
 				'ORDER BY' => 'readers_ts DESC'
-			)
+			]
 		);
 
-		$aUsers = array();
+		$aUsers = [];
 		if ( $oDbr->numRows( $res ) > 0 ) {
 			foreach ( $res as $row ) {
-				$oUser = User::newFromId( (int) $row->readers_user_id );
+				$oUser = User::newFromId( (int)$row->readers_user_id );
 				$oTitle = Title::makeTitle( NS_USER, $oUser->getName() );
 				$params = [
 					Params::MODULE => UserProfileImage::MODULE_NAME,
@@ -68,29 +68,29 @@ class BSApiReadersUsersStore extends BSApiExtJSStoreBase {
 
 				$dfdUrlBuilder = \BlueSpice\Services::getInstance()
 					->getBSDynamicFileDispatcherUrlBuilder();
-				$sImage = $dfdUrlBuilder->build( new Params( $params ) );;
+				$sImage = $dfdUrlBuilder->build( new Params( $params ) );
 
 				$oSpecialReaders = SpecialPage::getTitleFor( 'Readers', $oTitle->getPrefixedText() );
 
-				$aTmpUser = array();
+				$aTmpUser = [];
 				$aTmpUser[ 'user_image' ] = $sImage;
 				$aTmpUser[ 'user_name' ] = $oUser->getName();
 				$aTmpUser[ 'user_page' ] = $oTitle->getLocalURL();
-				//TODO: Implement good "real_name" handling
-				$aTmpUser[ 'user_page_link' ] = Linker::link( $oTitle, $oTitle->getText().' ' );
+				// TODO: Implement good "real_name" handling
+				$aTmpUser[ 'user_page_link' ] = Linker::link( $oTitle, $oTitle->getText() . ' ' );
 				$aTmpUser[ 'user_readers' ] = $oSpecialReaders->getLocalURL();
 				$aTmpUser[ 'user_readers_link' ] = Linker::link(
 					$oSpecialReaders,
 					'',
-					array(
+					[
 						'class' => 'icon-bookmarks'
-					)
+					]
 				);
 
 				$aTmpUser[ 'user_ts' ] = $this->getLanguage()->userAdjust( $row->readers_ts );
 				$aTmpUser[ 'user_date' ] = $this->getLanguage()->timeanddate( $row->readers_ts, true );
 
-				$aUsers[] = (object) $aTmpUser;
+				$aUsers[] = (object)$aTmpUser;
 			}
 		}
 

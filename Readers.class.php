@@ -21,7 +21,7 @@
  * @author     Stephan Muggli <muggli@hallowelt.com>
  * @package    BlueSpiceReaders
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v3
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  * @filesource
  */
 
@@ -34,27 +34,29 @@ class Readers extends BsExtensionMW {
 	/**
 	 * Hook-Handler for Hook 'ParserFirstCallInit'
 	 * TODO: Make this a \Job and use better logic
-	 * @param \Title $title
-	 * @return boolean Always true
+	 * @param \Title|null $title
+	 * @return bool Always true
 	 */
 	public function insertTrace( \Title $title = null ) {
 		$oUser = $this->getUser();
 		$oTitle = $title ? $title : $this->getTitle();
 		$oRevision = Revision::newFromTitle( $oTitle );
 
-		if ( !( $oRevision instanceof Revision ) ) return true;
+		if ( !( $oRevision instanceof Revision ) ) {
+			return true;
+		}
 
 		$oDbw = wfGetDB( DB_MASTER );
 
 		$oDbw->delete(
 			'bs_readers',
-			array(
+			[
 				'readers_user_id' => $oUser->getId(),
 				'readers_page_id' => $oTitle->getArticleID()
-			)
+			]
 		);
 
-		$aNewRow = array();
+		$aNewRow = [];
 		$aNewRow['readers_user_id'] = $oUser->getId();
 		$aNewRow['readers_user_name'] = $oUser->getName();
 		$aNewRow['readers_page_id'] = $oTitle->getArticleID();
@@ -77,22 +79,34 @@ class Readers extends BsExtensionMW {
 		$oTitle = $this->getTitle();
 		$oUser = $this->getUser();
 
-		if ( wfReadOnly() ) return false;
+		if ( wfReadOnly() ) {
+			return false;
+		}
 
-		if ( is_null( $oTitle ) ) return false;
+		if ( is_null( $oTitle ) ) {
+			return false;
+		}
 
-		if ( !$oTitle->exists() ) return false;
+		if ( !$oTitle->exists() ) {
+			return false;
+		}
 
-		if ( $oUser->isAnon() || User::isIP( $oUser->getName() ) ) return false;
+		if ( $oUser->isAnon() || User::isIP( $oUser->getName() ) ) {
+			return false;
+		}
 
 		// Do only display when user is allowed to read
-		if ( !$oTitle->userCan( 'read' ) ) return false;
+		if ( !$oTitle->userCan( 'read' ) ) {
+			return false;
+		}
 
 		// Do only display in view mode
-		if ( $this->getRequest()->getVal( 'action', 'view' ) !== 'view' ) return false;
+		if ( $this->getRequest()->getVal( 'action', 'view' ) !== 'view' ) {
+			return false;
+		}
 
 		// Do not display on SpecialPages, CategoryPages or ImagePages
-		if ( in_array( $oTitle->getNamespace(), array( NS_SPECIAL, NS_CATEGORY, NS_FILE, NS_MEDIAWIKI ) ) ) {
+		if ( in_array( $oTitle->getNamespace(), [ NS_SPECIAL, NS_CATEGORY, NS_FILE, NS_MEDIAWIKI ] ) ) {
 			return false;
 		}
 
@@ -106,7 +120,7 @@ class Readers extends BsExtensionMW {
 	 * @return bool
 	 */
 	public static function flyoutCheckPermissions( \IContextSource $context ) {
-		if( $context->getTitle()->userCan( 'viewreaders' ) == false ) {
+		if ( $context->getTitle()->userCan( 'viewreaders' ) == false ) {
 			return false;
 		}
 		return true;

@@ -12,7 +12,7 @@ class BSAPIReadersUsersStoreTest extends \BlueSpice\Tests\BSApiExtJSStoreTestBas
 	protected $iFixtureTotal = 3;
 	protected $sQuery = "Test"; // ID = 2; ID = 1 has default "UTPage"; See BSPageFixturesProvider / pages.json
 
-	protected function getStoreSchema () {
+	protected function getStoreSchema() {
 		return [
 			'user_image' => [
 				'type' => 'string'
@@ -52,14 +52,12 @@ class BSAPIReadersUsersStoreTest extends \BlueSpice\Tests\BSApiExtJSStoreTestBas
 	protected function createStoreFixtureData() {
 		$oPageFixtures = new \BlueSpice\Tests\BSPageFixturesProvider();
 		$aFixtures = $oPageFixtures->getFixtureData();
-		foreach( $aFixtures as $aFixture ) {
+		foreach ( $aFixtures as $aFixture ) {
 			$this->insertPage( $aFixture[0], $aFixture[1] );
 		}
-
-		return;
 	}
 
-	protected function getModuleName () {
+	protected function getModuleName() {
 		return 'bs-readers-users-store';
 	}
 
@@ -74,7 +72,7 @@ class BSAPIReadersUsersStoreTest extends \BlueSpice\Tests\BSApiExtJSStoreTestBas
 		];
 	}
 
-	public function provideMultipleFilterData () {
+	public function provideMultipleFilterData() {
 		return [
 			'Filter by username starts with and timestamp equals' => [
 				[

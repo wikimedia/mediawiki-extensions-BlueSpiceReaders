@@ -12,7 +12,7 @@ class BSApiReadersDataStoreTest extends \BlueSpice\Tests\BSApiExtJSStoreTestBase
 	protected $iFixtureTotal = 4;
 	protected $sQuery = 1; // Thats the ID of UTSysop
 
-	protected function getStoreSchema () {
+	protected function getStoreSchema() {
 		return [
 			'pv_page' => [
 				'type' => 'string'
@@ -46,7 +46,7 @@ class BSApiReadersDataStoreTest extends \BlueSpice\Tests\BSApiExtJSStoreTestBase
 		 */
 		$oPageFixtures = new \BlueSpice\Tests\BSPageFixturesProvider();
 		$aFixtures = $oPageFixtures->getFixtureData();
-		foreach( $aFixtures as $aFixture ) {
+		foreach ( $aFixtures as $aFixture ) {
 			$this->insertPage( $aFixture[0], $aFixture[1] );
 		}
 
@@ -54,10 +54,9 @@ class BSApiReadersDataStoreTest extends \BlueSpice\Tests\BSApiExtJSStoreTestBase
 	}
 
 	protected function createStoreFixtureData() {
-		return;
 	}
 
-	protected function getModuleName () {
+	protected function getModuleName() {
 		return 'bs-readers-data-store';
 	}
 
@@ -72,7 +71,7 @@ class BSApiReadersDataStoreTest extends \BlueSpice\Tests\BSApiExtJSStoreTestBase
 		];
 	}
 
-	public function provideMultipleFilterData () {
+	public function provideMultipleFilterData() {
 		return [
 			'Filter by pv_page_title contains and pv_ts equals' => [
 				[
@@ -80,7 +79,7 @@ class BSApiReadersDataStoreTest extends \BlueSpice\Tests\BSApiExtJSStoreTestBase
 						'type' => 'date',
 						'comparison' => 'gt',
 						'field' => 'pv_ts',
-						'value' => '20170102000000' //That's "Help:Test"
+						'value' => '20170102000000' // That's "Help:Test"
 					],
 					[
 						'type' => 'string',
