@@ -93,6 +93,9 @@
 			"public": true
 		}
 	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\Readers\\": "src/"
+	},
 	"AutoloadClasses": {
 		"BSApiReadersDataStore": "includes/api/BSApiReadersDataStore.php",
 		"BSApiReadersUsersStore": "includes/api/BSApiReadersUsersStore.php",
