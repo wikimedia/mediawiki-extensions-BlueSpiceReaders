@@ -19,5 +19,6 @@
 	"bs-readers-header-username": "Nome utente",
 	"bs-readers-header-readerspath": "Lettore",
 	"bs-readers-header-ts": "Data",
-	"bs-readers-header-page": "Pagina"
+	"bs-readers-header-page": "Pagina",
+	"right-viewreaders": "Visualizza i lettori di una pagina"
 }

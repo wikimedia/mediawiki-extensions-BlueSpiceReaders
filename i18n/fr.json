@@ -29,6 +29,6 @@
 	"apihelp-bs-readers-page-readers-store-summary": "Obtenir tous les lecteurs de toutes le pages",
 	"action-viewreaders": "afficher les lecteurs des pages",
 	"bs-readers-flyout-title": "Lecteurs de cette page",
-	"right-viewreaders": "Autorise de voir les lecteurs d'une page",
+	"right-viewreaders": "Afficher les lecteurs d’une page",
 	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|Vous}} lisez la page $1 sur $2"
 }

@@ -21,5 +21,6 @@
 	"bs-readers-header-page": "Säit",
 	"apihelp-bs-readers-users-store-description": "Informatioune vun alle Lieser vun enger spezifescher Säit kréien.",
 	"apihelp-bs-readers-page-readers-store-summary": "Kritt all Lieser vun alle Säiten",
-	"bs-readers-flyout-title": "Lieser vun dëser Säit"
+	"bs-readers-flyout-title": "Lieser vun dëser Säit",
+	"right-viewreaders": "Lieser vun enger Säit weisen"
 }

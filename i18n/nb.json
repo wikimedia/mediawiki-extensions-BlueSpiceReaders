@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Tarjeimo"
+			"Tarjeimo",
+			"Orf3us"
 		]
 	},
-	"bs-readers-header-page": "Side"
+	"bs-readers-header-page": "Side",
+	"right-viewreaders": "Se en sides lesere"
 }

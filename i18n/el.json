@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Nikosgranturismogt",
-			"KATRINE1993"
+			"KATRINE1993",
+			"Geraki"
 		]
 	},
 	"bs-readers-desc": "Δημιουργεί μια λίστα ανθρώπων που διαβάζουν μια σελίδα",
@@ -19,6 +20,6 @@
 	"bs-readers-header-page": "Σελίδα",
 	"apihelp-bs-readers-data-store-description": "Λάβετε πληροφορίες αναγνωστών για μια συγκεκριμένη σελίδα.",
 	"action-viewreaders": "προβολή των αναγνωστών των σελίδων",
-	"right-viewreaders": "Επιτρέπει την προβολή των αναγνωστών μιας σελίδας",
+	"right-viewreaders": "Προβολή των αναγνωστών μιας σελίδας",
 	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|You}} διαβάστε την σελίδα $1 στη $2"
 }

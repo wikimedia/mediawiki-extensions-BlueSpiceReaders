@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bjankuloski06"
+			"Bjankuloski06",
+			"Vlad5250"
 		]
 	},
 	"bs-readers-desc": "Создава список на луѓе што читаат дадена страница",
@@ -17,5 +18,6 @@
 	"bs-readers-header-username": "Корисничко име",
 	"bs-readers-header-readerspath": "Читател",
 	"bs-readers-header-ts": "Датум",
-	"bs-readers-header-page": "Страница"
+	"bs-readers-header-page": "Страница",
+	"bs-readers-flyout-title": "Читатели на страницава"
 }
