@@ -44,7 +44,9 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 
 		$rows = $this->db->select(
 			'bs_readers',
-			'*'
+			'*',
+			'',
+			__METHOD__
 		);
 
 		foreach ( $rows as $row ) {
