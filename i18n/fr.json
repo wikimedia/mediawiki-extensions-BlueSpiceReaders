@@ -5,14 +5,15 @@
 			"Ltrlg",
 			"Macofe",
 			"Wladek92",
-			"Alacabe"
+			"Alacabe",
+			"Thibaut120094"
 		]
 	},
 	"bs-readers-desc": "Crée une liste des lecteurs d’une page",
 	"prefs-readers": "Lecteurs",
 	"bs-readers-title": "{{PLURAL:$1|{{GENDER:$2|Lecteur|Lectrice}}|Lecteurs}}",
 	"readers-user": "Pages {{GENDER:$1|lues}} par : $1",
-	"readers": "Lecteurs de « $1 »",
+	"readers": "Lecteurs de « $1 »",
 	"bs-readers-contentactions-label": "Afficher les lecteurs",
 	"bs-readers-pagenotexists": "La page n’existe pas.",
 	"bs-readers-pref-active": "Lecteurs actifs",
