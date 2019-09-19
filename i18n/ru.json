@@ -30,5 +30,6 @@
 	"apihelp-bs-readers-page-readers-store-summary": "Получить всех читателей всех страниц",
 	"action-viewreaders": "Просмотреть читателей страницы",
 	"bs-readers-flyout-title": "Читатели этой страницы",
-	"right-viewreaders": "просмотр читателей страницы"
+	"right-viewreaders": "просмотр читателей страницы",
+	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders — $2 {{GENDER:$3|вы}} прочитали страницу $1"
 }
