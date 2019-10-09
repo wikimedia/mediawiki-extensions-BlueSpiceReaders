@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saederup92"
+		]
+	},
+	"prefs-readers": "Læsere",
+	"bs-readers-pagenotexists": "Siden findes ikke.",
+	"bs-readers-pref-active": "Aktive læsere",
+	"bs-readers-header-username": "Brugernavn",
+	"bs-readers-header-readerspath": "Læser",
+	"bs-readers-header-ts": "Dato",
+	"bs-readers-header-page": "Side"
+}

@@ -5,7 +5,8 @@
 			"Striking Blue",
 			"Kaganer",
 			"Facenapalm",
-			"Vlad5250"
+			"Vlad5250",
+			"Movses"
 		]
 	},
 	"bs-readers-desc": "Создаёт список людей, читающих страницу",
@@ -14,7 +15,7 @@
 	"readers-user": "Страницы {{GENDER:$1|прочитаны}}: $1",
 	"readers": "Читатели страницы «$1»",
 	"bs-readers-contentactions-label": "Отобразить читателей",
-	"bs-readers-pagenotexists": "Страницы не существует.",
+	"bs-readers-pagenotexists": "Страница не существует.",
 	"bs-readers-pref-active": "Активные читатели",
 	"bs-readers-pref-numofreaders": "Количество читателей для отображения:",
 	"bs-readers-emptyinput": "Страница не была предоставлена.",
@@ -29,5 +30,6 @@
 	"apihelp-bs-readers-page-readers-store-summary": "Получить всех читателей всех страниц",
 	"action-viewreaders": "Просмотреть читателей страницы",
 	"bs-readers-flyout-title": "Читатели этой страницы",
-	"right-viewreaders": "позволяет просматривать читателей страницы"
+	"right-viewreaders": "просмотр читателей страницы",
+	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders — $2 {{GENDER:$3|вы}} прочитали страницу $1"
 }

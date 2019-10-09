@@ -1,10 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mirzali",
-			"Orbot707"
+			"Mirzali"
 		]
 	},
-	"bs-readers-header-ts": "Tarix",
+	"bs-readers-header-username": "Namê karberi",
 	"bs-readers-header-page": "Pele"
 }

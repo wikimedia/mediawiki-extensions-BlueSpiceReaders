@@ -24,5 +24,10 @@
 	"apihelp-bs-readers-data-store-description": "Отримати інформацію про читача конкретної сторінки.",
 	"apihelp-bs-readers-data-store-summary": "Отримати інформацію про читача конкретної сторінки.",
 	"apihelp-bs-readers-users-store-description": "Отримати інформацію про всіх читачів конкретної сторінки.",
-	"apihelp-bs-readers-users-store-summary": "Отримати інформацію про всіх читачів конкретної сторінки."
+	"apihelp-bs-readers-users-store-summary": "Отримати інформацію про всіх читачів конкретної сторінки.",
+	"apihelp-bs-readers-page-readers-store-summary": "Отримує всіх читачів усіх сторінок",
+	"action-viewreaders": "перегляд читачів сторінок",
+	"bs-readers-flyout-title": "Читачі цієї сторінки",
+	"right-viewreaders": "перегляд читачів сторінки",
+	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders — {{GENDER:$3|Ви}} читали сторінку $1 станом на $2"
 }

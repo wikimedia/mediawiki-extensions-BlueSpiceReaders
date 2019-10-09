@@ -7,7 +7,8 @@
 			"Corainn",
 			"Sanmosa",
 			"Kly",
-			"A2093064"
+			"A2093064",
+			"Willy1018"
 		]
 	},
 	"bs-readers-desc": "建立有讀取過頁面用戶的清單",
@@ -17,7 +18,7 @@
 	"readers": "\"$1\" 的讀者",
 	"bs-readers-contentactions-label": "顯示讀者",
 	"bs-readers-pagenotexists": "頁面不存在。",
-	"bs-readers-pref-active": "活動中的讀者",
+	"bs-readers-pref-active": "活躍讀者",
 	"bs-readers-pref-numofreaders": "顯示讀者數量：",
 	"bs-readers-emptyinput": "未提供頁面",
 	"bs-readers-header-username": "使用者名稱",
@@ -31,6 +32,6 @@
 	"apihelp-bs-readers-page-readers-store-summary": "取得所有頁面的所有讀者",
 	"action-viewreaders": "檢視頁面讀者",
 	"bs-readers-flyout-title": "此頁面讀者",
-	"right-viewreaders": "允許檢視頁面的讀者",
+	"right-viewreaders": "檢視頁面的讀者",
 	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|您}}已閱讀頁面$1於$2"
 }
