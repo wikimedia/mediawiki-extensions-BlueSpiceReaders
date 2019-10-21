@@ -43,7 +43,7 @@ class BSAPIReadersUsersStoreTest extends \BlueSpice\Tests\BSApiExtJSStoreTestBas
 
 	protected $tablesUsed = [ 'bs_readers', 'page', 'user', 'user_groups', 'user_properties' ];
 
-	protected function setUp() {
+	protected function setUp() : void {
 		parent::setUp();
 
 		new BSReadersFixtures( $this->db );
