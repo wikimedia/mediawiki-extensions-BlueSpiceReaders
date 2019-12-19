@@ -11,6 +11,9 @@ class Readers extends \BlueSpice\SpecialPage {
 		parent::__construct( 'Readers', 'viewreaders', false );
 	}
 
+	/**
+	 * @param string $parameters
+	 */
 	public function execute( $parameters ) {
 		$this->checkPermissions();
 		$requestedTitle = null;
@@ -19,7 +22,8 @@ class Readers extends \BlueSpice\SpecialPage {
 		if ( !empty( $parameters ) ) {
 			$requestedTitle = \Title::newFromText( $parameters );
 
-			if ( $requestedTitle->exists() && ( $requestedTitle->getNamespace() !== \NS_USER || $requestedTitle->isSubpage() === true ) ) {
+			if ( $requestedTitle->exists() && ( $requestedTitle->getNamespace() !== \NS_USER
+				|| $requestedTitle->isSubpage() === true ) ) {
 				$stringOut = $this->renderReadersGrid();
 
 				$out->addModules( 'ext.bluespice.readers.specialreaders' );
@@ -41,7 +45,9 @@ class Readers extends \BlueSpice\SpecialPage {
 				$stringOut = $errorView->execute();
 			}
 		} else {
-			$errorView = new ViewTagErrorList( Services::getInstance()->getBSExtensionFactory()->getExtension( 'BlueSpiceReaders' ) );
+			$errorView = new ViewTagErrorList(
+				Services::getInstance()->getBSExtensionFactory()->getExtension( 'BlueSpiceReaders' )
+			);
 			$errorView->addItem( new ViewTagError( wfMessage( 'bs-readers-emptyinput' )->plain() ) );
 			$stringOut = $errorView->execute();
 		}
