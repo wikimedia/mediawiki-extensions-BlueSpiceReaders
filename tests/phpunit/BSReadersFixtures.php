@@ -18,7 +18,8 @@ class BSReadersFixtures {
 				'readers_user_id'   => $user->getId(),
 				'readers_user_name' => $user->getName(),
 				'readers_page_id'   => $title->getArticleID(),
-				'readers_rev_id'    => 0, // This is not used by the extension
+				// This is not used by the extension
+				'readers_rev_id'    => 0,
 				'readers_ts'        => $row[2],
 			] );
 		}
