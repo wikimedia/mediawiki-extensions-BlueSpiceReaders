@@ -57,6 +57,10 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 		return $this->data;
 	}
 
+	/**
+	 *
+	 * @param Record $record
+	 */
 	protected function appendRowToData( Record $record ) {
 		$this->data[] = $record;
 	}

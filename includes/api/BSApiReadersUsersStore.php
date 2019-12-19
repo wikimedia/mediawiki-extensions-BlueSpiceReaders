@@ -34,6 +34,11 @@ use BlueSpice\DynamicFileDispatcher\UserProfileImage;
  */
 class BSApiReadersUsersStore extends BSApiExtJSStoreBase {
 
+	/**
+	 *
+	 * @param string $sQuery
+	 * @return \stdClass[]
+	 */
 	protected function makeData( $sQuery = '' ) {
 		$oTitle = Title::newFromText( $sQuery );
 

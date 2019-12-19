@@ -10,7 +10,8 @@
  */
 class BSApiReadersDataStoreTest extends \BlueSpice\Tests\BSApiExtJSStoreTestBase {
 	protected $iFixtureTotal = 4;
-	protected $sQuery = 1; // Thats the ID of UTSysop
+	// Thats the ID of UTSysop
+	protected $sQuery = 1;
 
 	protected function getStoreSchema() {
 		return [
@@ -79,7 +80,8 @@ class BSApiReadersDataStoreTest extends \BlueSpice\Tests\BSApiExtJSStoreTestBase
 						'type' => 'date',
 						'comparison' => 'gt',
 						'field' => 'pv_ts',
-						'value' => '20170102000000' // That's "Help:Test"
+						// That's "Help:Test"
+						'value' => '20170102000000'
 					],
 					[
 						'type' => 'string',

@@ -31,6 +31,11 @@
  */
 class BSApiReadersDataStore extends BSApiExtJSStoreBase {
 
+	/**
+	 *
+	 * @param string $sQuery
+	 * @return \stdClass[]
+	 */
 	protected function makeData( $sQuery = '' ) {
 		$oDbr = wfGetDB( DB_REPLICA );
 

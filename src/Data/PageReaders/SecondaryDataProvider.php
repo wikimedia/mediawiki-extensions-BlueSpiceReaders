@@ -5,6 +5,12 @@ namespace BlueSpice\Readers\Data\PageReaders;
 use BlueSpice\Readers\Data\Record;
 
 class SecondaryDataProvider extends \BlueSpice\Data\SecondaryDataProvider {
+
+	/**
+	 *
+	 * @param Record &$dataSet
+	 * @return null
+	 */
 	protected function doExtend( &$dataSet ) {
 		$factory = \BlueSpice\Services::getInstance()->getBSRendererFactory();
 		$user = \User::newFromId( $dataSet->get( Record::USER_ID ) );

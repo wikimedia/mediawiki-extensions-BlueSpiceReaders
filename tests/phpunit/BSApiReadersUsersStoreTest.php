@@ -8,9 +8,10 @@
  * @group BlueSpiceExtensions
  * @group BlueSpiceReaders
  */
-class BSAPIReadersUsersStoreTest extends \BlueSpice\Tests\BSApiExtJSStoreTestBase {
+class BSApiReadersUsersStoreTest extends \BlueSpice\Tests\BSApiExtJSStoreTestBase {
 	protected $iFixtureTotal = 3;
-	protected $sQuery = "Test"; // ID = 2; ID = 1 has default "UTPage"; See BSPageFixturesProvider / pages.json
+	// ID = 2; ID = 1 has default "UTPage"; See BSPageFixturesProvider / pages.json
+	protected $sQuery = "Test";
 
 	protected function getStoreSchema() {
 		return [

@@ -12,18 +12,31 @@ class Writer extends \BlueSpice\Data\DatabaseWriter {
 	 * @param \LoadBalancer $loadBalancer
 	 * @param \IContextSource|null $context
 	 */
-	public function __construct( \BlueSpice\Data\IReader $reader, $loadBalancer, \IContextSource $context = null ) {
+	public function __construct( \BlueSpice\Data\IReader $reader, $loadBalancer,
+		\IContextSource $context = null ) {
 		parent::__construct( $reader, $loadBalancer, $context, $context->getConfig() );
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	protected function getTableName() {
 		return 'bs_readers';
 	}
 
+	/**
+	 *
+	 * @return \BlueSpice\Readers\Data\Schema
+	 */
 	public function getSchema() {
 		return new \BlueSpice\Readers\Data\Schema();
 	}
 
+	/**
+	 *
+	 * @return string[]
+	 */
 	protected function getIdentifierFields() {
 		return [ Record::PAGE_ID, Record::USER_ID ];
 	}
