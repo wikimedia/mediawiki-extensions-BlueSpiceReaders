@@ -1,9 +1,9 @@
 <?php
 namespace BlueSpice\Readers\Special;
 
-use ViewTagErrorList;
-use ViewTagError;
 use BlueSpice\Services;
+use ViewTagError;
+use ViewTagErrorList;
 
 class Readers extends \BlueSpice\SpecialPage {
 

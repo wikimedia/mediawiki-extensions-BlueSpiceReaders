@@ -2,14 +2,14 @@
 
 namespace BlueSpice\Readers\Job;
 
-use Job;
-use User;
-use Title;
-use BlueSpice\Services;
 use BlueSpice\Context;
 use BlueSpice\Data\RecordSet;
-use BlueSpice\Readers\Data\Record;
 use BlueSpice\Readers\Data\PageReaders\Store;
+use BlueSpice\Readers\Data\Record;
+use BlueSpice\Services;
+use Job;
+use Title;
+use User;
 
 class InsertTrace extends Job {
 

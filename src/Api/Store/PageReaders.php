@@ -1,8 +1,8 @@
 <?php
 namespace BlueSpice\Readers\Api\Store;
 
-use BlueSpice\Readers\Data\PageReaders\Store;
 use BlueSpice\Context;
+use BlueSpice\Readers\Data\PageReaders\Store;
 
 class PageReaders extends \BlueSpice\Api\Store {
 
