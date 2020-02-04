@@ -4,7 +4,8 @@
 			"Violetanka",
 			"KorkmazO",
 			"Sadrettin",
-			"1917 Ekim Devrimi"
+			"1917 Ekim Devrimi",
+			"BaRaN6161 TURK"
 		]
 	},
 	"bs-readers-desc": "Bir sayfayı okuyan insanların listesini oluşturur",
@@ -20,5 +21,14 @@
 	"bs-readers-header-username": "Kullanıcı adı",
 	"bs-readers-header-readerspath": "Okuyucu",
 	"bs-readers-header-ts": "Tarih",
-	"bs-readers-header-page": "Sayfa"
+	"bs-readers-header-page": "Sayfa",
+	"apihelp-bs-readers-data-store-description": "Belirli sayfanın okuyucu bilgisini al.",
+	"apihelp-bs-readers-data-store-summary": "Belirli sayfanın okuyucu bilgisini al.",
+	"apihelp-bs-readers-users-store-description": "Belirli sayfanın tüm okuyucularına bilgi ver.",
+	"apihelp-bs-readers-users-store-summary": "Belirli sayfanın tüm okuyucularına bilgi ver.",
+	"apihelp-bs-readers-page-readers-store-summary": "Tüm sayfaların tüm okuyucularını alır",
+	"action-viewreaders": "sayfaların okuyucularını görüntüle",
+	"bs-readers-flyout-title": "Bu sayfanın okuyucuları",
+	"right-viewreaders": "Sayfanın okuyucularını görüntüle",
+	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|Siz}} $1 sayfasını $2 üzerinde okudunuz"
 }
