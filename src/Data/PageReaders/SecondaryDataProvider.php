@@ -12,7 +12,7 @@ class SecondaryDataProvider extends \BlueSpice\Data\SecondaryDataProvider {
 	 * @return null
 	 */
 	protected function doExtend( &$dataSet ) {
-		$factory = \BlueSpice\Services::getInstance()->getBSRendererFactory();
+		$factory = \BlueSpice\Services::getInstance()->getService( 'BSRendererFactory' );
 		$user = \User::newFromId( $dataSet->get( Record::USER_ID ) );
 		if ( $user instanceof \User == false ) {
 			return;
