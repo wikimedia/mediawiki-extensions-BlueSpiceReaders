@@ -8,7 +8,14 @@ class AddReaders extends \BlueSpice\Hook\SkinTemplateNavigation {
 		if ( !$this->sktemplate->getTitle() || !$this->sktemplate->getTitle()->exists() ) {
 			return true;
 		}
-		if ( !$this->sktemplate->getTitle()->userCan( 'viewreaders' ) ) {
+		if ( !\MediaWiki\MediaWikiServices::getInstance()
+			->getPermissionManager()
+			->userCan(
+				'viewreaders',
+				$this->sktemplate->getUser(),
+				$this->sktemplate->getTitle()
+			)
+		) {
 			return true;
 		}
 		$excludeNS = [ NS_MEDIA, NS_SPECIAL, NS_CATEGORY, NS_FILE, NS_MEDIAWIKI ];

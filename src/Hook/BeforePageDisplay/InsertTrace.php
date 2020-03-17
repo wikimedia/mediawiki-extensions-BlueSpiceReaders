@@ -14,7 +14,14 @@ class InsertTrace extends \BlueSpice\Hook\BeforePageDisplay {
 		if ( !$this->out->getTitle() || !$this->out->getTitle()->exists() ) {
 			return true;
 		}
-		if ( !$this->out->getTitle()->userCan( 'read' ) ) {
+		if ( !\MediaWiki\MediaWikiServices::getInstance()
+			->getPermissionManager()
+			->userCan(
+				'read',
+				$this->out->getUser(),
+				$this->out->getTitle()
+			)
+		) {
 			return true;
 		}
 		if ( $this->out->getUser()->isAnon() ) {
