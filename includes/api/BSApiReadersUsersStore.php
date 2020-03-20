@@ -72,7 +72,7 @@ class BSApiReadersUsersStore extends BSApiExtJSStoreBase {
 				];
 
 				$dfdUrlBuilder = \BlueSpice\Services::getInstance()
-					->getBSDynamicFileDispatcherUrlBuilder();
+					->getService( 'BSDynamicFileDispatcherUrlBuilder' );
 				$sImage = $dfdUrlBuilder->build( new Params( $params ) );
 
 				$oSpecialReaders = SpecialPage::getTitleFor( 'Readers', $oTitle->getPrefixedText() );
