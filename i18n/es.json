@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Macofe",
-			"Fitoschido",
 			"AVIADOR",
 			"Alberrg",
-			"Astroemi"
+			"Astroemi",
+			"Fitoschido",
+			"Macofe"
 		]
 	},
 	"bs-readers-desc": "Crea una lista de las personas que leen una página",

@@ -1,12 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Facenapalm",
+			"Kaganer",
+			"Movses",
 			"Okras",
 			"Striking Blue",
-			"Kaganer",
-			"Facenapalm",
-			"Vlad5250",
-			"Movses"
+			"Vlad5250"
 		]
 	},
 	"bs-readers-desc": "Создаёт список людей, читающих страницу",

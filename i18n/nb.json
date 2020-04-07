@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Tarjeimo",
+			"Jon Harald Søby",
 			"Orf3us",
-			"Jon Harald Søby"
+			"Tarjeimo"
 		]
 	},
 	"bs-readers-desc": "Oppretter en liste over personer som har lest en side",

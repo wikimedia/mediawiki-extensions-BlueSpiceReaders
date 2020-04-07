@@ -1,12 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Alacabe",
 			"Gomoko",
 			"Ltrlg",
 			"Macofe",
-			"Wladek92",
-			"Alacabe",
-			"Thibaut120094"
+			"Thibaut120094",
+			"Wladek92"
 		]
 	},
 	"bs-readers-desc": "Crée une liste des lecteurs d’une page",
