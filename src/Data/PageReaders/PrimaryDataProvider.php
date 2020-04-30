@@ -42,11 +42,26 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 	public function makeData( $params ) {
 		$this->data = [];
 
+		$conds = [];
+		$options = [
+			'ORDER BY' => 'readers_ts ASC'
+		];
+
+		$filters = $params->getFilter();
+		foreach ( $filters as $filter ) {
+			if ( $filter->getField() === Record::PAGE_ID && $filter->getComparison() === 'eq' ) {
+				$pageId = $filter->getValue();
+				$conds['readers_page_id'] = $pageId;
+				break;
+			}
+		}
+
 		$rows = $this->db->select(
 			'bs_readers',
 			'*',
-			'',
-			__METHOD__
+			$conds,
+			__METHOD__,
+			$options
 		);
 
 		foreach ( $rows as $row ) {
