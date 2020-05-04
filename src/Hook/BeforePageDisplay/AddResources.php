@@ -24,7 +24,6 @@ class AddResources extends \BlueSpice\Hook\BeforePageDisplay {
 	}
 
 	protected function doProcess() {
-		$this->out->addModuleStyles( 'ext.bluespice.readers.styles' );
 		$this->out->addJsConfigVars(
 			'bsgReadersNumOfReaders',
 			$this->getConfig()->get( 'ReadersNumOfReaders' )
