@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"SPQRobin",
-			"Siebrand",
 			"Esketti",
-			"Mainframe98"
+			"Mainframe98",
+			"SPQRobin",
+			"Siebrand"
 		]
 	},
 	"bs-readers-desc": "Maakt een lijst van de mensen die het lezen van een pagina",

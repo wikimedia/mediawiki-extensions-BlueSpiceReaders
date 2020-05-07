@@ -10,5 +10,7 @@
 	"bs-readers-header-username": "Brugernavn",
 	"bs-readers-header-readerspath": "Læser",
 	"bs-readers-header-ts": "Dato",
-	"bs-readers-header-page": "Side"
+	"bs-readers-header-page": "Side",
+	"bs-readers-flyout-title": "Læsere af denne side",
+	"right-viewreaders": "Vis læsere af en side"
 }
