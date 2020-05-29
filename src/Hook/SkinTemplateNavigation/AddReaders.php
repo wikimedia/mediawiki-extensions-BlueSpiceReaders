@@ -18,7 +18,7 @@ class AddReaders extends \BlueSpice\Hook\SkinTemplateNavigation {
 		) {
 			return true;
 		}
-		$excludeNS = [ NS_MEDIA, NS_SPECIAL, NS_CATEGORY, NS_FILE, NS_MEDIAWIKI ];
+		$excludeNS = $this->getConfig()->get( 'ReadersNamespaceBlacklist' );
 		if ( in_array( $this->sktemplate->getTitle()->getNamespace(), $excludeNS ) ) {
 			return true;
 		}
