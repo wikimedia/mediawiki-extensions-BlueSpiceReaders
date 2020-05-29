@@ -28,6 +28,7 @@
 namespace BlueSpice\Readers;
 
 use IContextSource;
+use MediaWiki\MediaWikiServices;
 
 /**
  * Readers extension
@@ -42,9 +43,22 @@ class Extension extends \BlueSpice\Extension {
 	 * @return bool
 	 */
 	public static function flyoutCheckPermissions( IContextSource $context ) {
-		if ( $context->getTitle()->userCan( 'viewreaders' ) == false ) {
+		$currentTitle = $context->getTitle();
+
+		if ( $currentTitle->isSpecialPage() ) {
 			return false;
 		}
+
+		$config = MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
+		$excludeNS = $config->get( 'ReadersNamespaceBlacklist' );
+		if ( in_array( $currentTitle->getNamespace(), $excludeNS ) ) {
+			return false;
+		}
+
+		if ( $currentTitle->userCan( 'viewreaders' ) == false ) {
+			return false;
+		}
+
 		return true;
 	}
 

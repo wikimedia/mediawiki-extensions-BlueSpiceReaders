@@ -14,8 +14,8 @@ class AddResources extends \BlueSpice\Hook\BeforePageDisplay {
 		if ( $this->out->getRequest()->getVal( 'action', 'view' ) !== 'view' ) {
 			return true;
 		}
-		// TODO: config
-		$excludeNS = [ NS_MEDIA, NS_SPECIAL, NS_CATEGORY, NS_FILE, NS_MEDIAWIKI ];
+
+		$excludeNS = $this->getConfig()->get( 'ReadersNamespaceBlacklist' );
 		if ( in_array( $this->out->getTitle()->getNamespace(), $excludeNS ) ) {
 			return true;
 		}
