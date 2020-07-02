@@ -4,6 +4,7 @@ $specialPageAliases = [];
 /** English */
 $specialPageAliases['en'] = [
 	'Readers' => [ 'Readers' ],
+	'RevisionReaders' => [ 'RevisionReaders', 'Revision readers' ],
 ];
 
 /** German (Deutsch) */

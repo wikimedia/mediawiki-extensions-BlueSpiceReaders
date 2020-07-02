@@ -29,6 +29,7 @@ namespace BlueSpice\Readers;
 
 use IContextSource;
 use MediaWiki\MediaWikiServices;
+use Title;
 
 /**
  * Readers extension
@@ -37,14 +38,42 @@ use MediaWiki\MediaWikiServices;
 class Extension extends \BlueSpice\Extension {
 
 	/**
-	 * Checks if the Readers segment should be added to the flyout
+	 * Checks if the PageReaders segment should be added to the flyout
 	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */
-	public static function flyoutCheckPermissions( IContextSource $context ) {
+	public static function pageReadersFlyoutCheckPermissions( IContextSource $context ) {
 		$currentTitle = $context->getTitle();
+		if ( self::flyoutCheckPermissions( $currentTitle ) ) {
+			if ( $currentTitle->userCan( 'viewreaders' ) === true ) {
+				return true;
+			}
+		}
+		return false;
+	}
 
+	/**
+	 * Checks if the RevisionReaders segment should be added to the flyout
+	 *
+	 * @param IContextSource $context
+	 * @return bool
+	 */
+	public static function revisionReadersFlyoutCheckPermissions( IContextSource $context ) {
+		$currentTitle = $context->getTitle();
+		if ( self::flyoutCheckPermissions( $currentTitle ) ) {
+			if ( $currentTitle->userCan( 'viewrevisionreaders' ) === true ) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	/**
+	 * @param Title $currentTitle
+	 * @return bool
+	 */
+	protected static function flyoutCheckPermissions( $currentTitle ) {
 		if ( $currentTitle->isSpecialPage() ) {
 			return false;
 		}
@@ -61,5 +90,4 @@ class Extension extends \BlueSpice\Extension {
 
 		return true;
 	}
-
 }

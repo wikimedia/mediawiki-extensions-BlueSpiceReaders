@@ -27,8 +27,18 @@
 	"apihelp-bs-readers-users-store-description": "{{doc-apihelp-description|bs-readers-users-store}}",
 	"apihelp-bs-readers-users-store-summary": "{{doc-apihelp-summary|bs-readers-users-store}}",
 	"apihelp-bs-readers-page-readers-store-summary": "{{doc-apihelp-summary|bs-readers-page-readers-store}}",
+	"apihelp-bs-readers-revision-readers-store-summary": "{{doc-apihelp-summary|bs-readers-revision-readers-store}}",
+	"apihelp-bs-readers-tasks-summary": "{{doc-apihelp-summary|bs-readers-tasks}}",
 	"action-viewreaders": "label for denied special page\n{{doc-action|viewreaders}}",
+	"action-viewrevisionreaders": "label for denied special page\n{{doc-action|viewreaders}}",
 	"bs-readers-flyout-title": "Title of the panel showing readers of a page",
 	"right-viewreaders": "{{doc-right|viewreaders}}",
-	"bs-readers-privacy-transparency-working-readers": "Message for item in BlueSpicePrivacy when exporting user reader data. $1 - Page prefixed title, $2 - Read timestamp"
+	"right-viewrevisionreaders": "{{doc-right|viewrevisionreaders}}",
+	"bs-readers-privacy-transparency-working-readers": "Message for item in BlueSpicePrivacy when exporting user reader data. $1 - Page prefixed title, $2 - Read timestamp",
+	"bs-readers-flyout-header-read-by": "Headline for 'Read by' column, used in readers flyout",
+	"bs-readers-flyout-header-revision-id": "Headline for 'Revision ID' column, used in readers flyout",
+	"bs-readers-flyout-header-revision-date": "Headline for 'Revision date' column, used in readers flyout",
+	"bs-readers-flyout-header-read-on":  "Headline for 'Read on' column, used in readers flyout",
+	"bs-readers-revision-flyout-title": "Title of the panel showing the readers of each revision",
+	"revisionreaders": "Special page title of RevisionReaders for reader by revision of \"$1\"\n*$1 the page name"
 }

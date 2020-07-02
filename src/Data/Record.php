@@ -10,4 +10,6 @@ class Record extends \BlueSpice\Data\Record {
 	const REV_ID = 'readers_rev_id';
 	const TIMESTAMP = 'readers_ts';
 	const USER_IMAGE_HTML = 'user_image_html';
+	const DATETIME = 'datetime';
+	const REV_DATETIME = 'rev_datetime';
 }
