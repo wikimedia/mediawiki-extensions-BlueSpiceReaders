@@ -4,7 +4,7 @@ Ext.Loader.setPath(
 );
 
 Ext.onReady( function(){
-	Ext.create( 'BS.Readers.panel.Readers', {
+	Ext.create( 'BS.Readers.panel.RevisionReaders', {
 		renderTo: 'bs-readers-grid'
 	} );
 } );

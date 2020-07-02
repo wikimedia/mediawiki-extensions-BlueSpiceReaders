@@ -29,6 +29,7 @@ namespace BlueSpice\Readers;
 
 use IContextSource;
 use MediaWiki\MediaWikiServices;
+use Title;
 
 /**
  * Readers extension
@@ -37,31 +38,56 @@ use MediaWiki\MediaWikiServices;
 class Extension extends \BlueSpice\Extension {
 
 	/**
-	 * Checks if the Readers segment should be added to the flyout
+	 * Checks if the PageReaders segment should be added to the flyout
 	 *
 	 * @param IContextSource $context
 	 * @return bool
 	 */
-	public static function flyoutCheckPermissions( IContextSource $context ) {
+	public static function pageReadersFlyoutCheckPermissions( IContextSource $context ) {
 		$currentTitle = $context->getTitle();
+		if ( self::flyoutCheckPermissions( $currentTitle ) ) {
+			return MediaWikiServices::getInstance()
+				->getPermissionManager()
+				->userCan(
+					'viewreaders',
+					$context->getUser(),
+					$context->getTitle()
+				);
+		}
+		return false;
+	}
 
+	/**
+	 * Checks if the RevisionReaders segment should be added to the flyout
+	 *
+	 * @param IContextSource $context
+	 * @return bool
+	 */
+	public static function revisionReadersFlyoutCheckPermissions( IContextSource $context ) {
+		$currentTitle = $context->getTitle();
+		if ( self::flyoutCheckPermissions( $currentTitle ) ) {
+			return MediaWikiServices::getInstance()
+				->getPermissionManager()
+				->userCan(
+					'viewrevisionreaders',
+					$context->getUser(),
+					$context->getTitle()
+				);
+		}
+		return false;
+	}
+
+	/**
+	 * @param Title $currentTitle
+	 * @return bool
+	 */
+	protected static function flyoutCheckPermissions( $currentTitle ) {
 		if ( $currentTitle->isSpecialPage() ) {
 			return false;
 		}
 
 		$config = MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
 		$excludeNS = $config->get( 'ReadersNamespaceBlacklist' );
-		if ( in_array( $currentTitle->getNamespace(), $excludeNS ) ) {
-			return false;
-		}
-
-		return MediaWikiServices::getInstance()
-			->getPermissionManager()
-			->userCan(
-				'viewreaders',
-				$context->getUser(),
-				$context->getTitle()
-			);
+		return !in_array( $currentTitle->getNamespace(), $excludeNS );
 	}
-
 }
