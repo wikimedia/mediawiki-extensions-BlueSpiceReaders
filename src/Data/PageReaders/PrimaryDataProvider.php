@@ -44,7 +44,8 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 
 		$conds = [];
 		$options = [
-			'ORDER BY' => 'readers_ts ASC'
+			'ORDER BY' => 'readers_ts ASC',
+			'GROUP BY' => Record::USER_ID
 		];
 
 		$filters = $params->getFilter();

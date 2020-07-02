@@ -28,8 +28,8 @@ class Schema extends \BlueSpice\Data\Schema {
 				self::TYPE => FieldType::INT
 			],
 			Record::REV_ID => [
-				self::FILTERABLE => false,
-				self::SORTABLE => false,
+				self::FILTERABLE => true,
+				self::SORTABLE => true,
 				self::TYPE => FieldType::INT
 			],
 			Record::TIMESTAMP => [

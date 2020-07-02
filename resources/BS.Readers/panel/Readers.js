@@ -1,5 +1,5 @@
 /**
- * UserManager Panel
+ * Readers Panel
  *
  * Part of BlueSpice MediaWiki
  *
@@ -10,9 +10,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  * @filesource
  */
-
-
-Ext.define( 'BS.Readers.Panel', {
+Ext.define( 'BS.Readers.panel.Readers', {
 	extend: 'Ext.grid.Panel',
 	requires: [ 'BS.store.BSApi' ],
 	id: 'bs-readers-panel',

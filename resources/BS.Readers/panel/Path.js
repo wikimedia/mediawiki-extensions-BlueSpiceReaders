@@ -10,8 +10,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  * @filesource
  */
-
-Ext.define( 'BS.Readers.PathPanel', {
+Ext.define( 'BS.Readers.panel.Path', {
 	extend: 'BS.CRUDGridPanel',
 	requires: [ 'BS.store.BSApi' ],
 	plugin: 'gridfilters',

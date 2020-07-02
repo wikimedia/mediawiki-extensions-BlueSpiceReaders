@@ -2,20 +2,21 @@
 
 namespace BlueSpice\Readers\Job;
 
-use Job;
-use User;
-use Title;
-use BlueSpice\Services;
 use BlueSpice\Context;
 use BlueSpice\Data\RecordSet;
-use BlueSpice\Readers\Data\Record;
 use BlueSpice\Readers\Data\PageReaders\Store;
+use BlueSpice\Readers\Data\Record;
+use BlueSpice\Services;
+use Job;
+use Title;
+use User;
 
 class InsertTrace extends Job {
 
 	const COMMAND = 'BlueSpiceReadersInsertTrace';
 	const PARAM_USER_ID = 'userid';
 	const PARAM_TIMESTAMP = 'ts';
+	const PARAM_REV_ID = 'revId';
 
 	/**
 	 *
@@ -41,7 +42,7 @@ class InsertTrace extends Job {
 			Record::PAGE_ID => (int)$this->getTitle()->getArticleID(),
 			Record::TIMESTAMP => $params[static::PARAM_TIMESTAMP],
 			Record::USER_NAME => $user->getName(),
-			Record::REV_ID => $this->getTitle()->getLatestRevID()
+			Record::REV_ID => $params[static::PARAM_REV_ID]
 		] );
 
 		$this->getStore()->getWriter()->write( new RecordSet( [ $record ] ) );

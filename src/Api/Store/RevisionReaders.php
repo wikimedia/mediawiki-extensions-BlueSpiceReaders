@@ -2,9 +2,9 @@
 namespace BlueSpice\Readers\Api\Store;
 
 use BlueSpice\Context;
-use BlueSpice\Readers\Data\PageReaders\Store;
+use BlueSpice\Readers\Data\RevisionReaders\Store;
 
-class PageReaders extends \BlueSpice\Api\Store {
+class RevisionReaders extends \BlueSpice\Api\Store {
 
 	protected function makeDataStore() {
 		return new Store(

@@ -1,6 +1,6 @@
 <?php
 
-namespace BlueSpice\Readers\Data\PageReaders;
+namespace BlueSpice\Readers\Data\RevisionReaders;
 
 use BlueSpice\Readers\Data\Record;
 

@@ -23,8 +23,18 @@
 	"apihelp-bs-readers-users-store-description": "Get all readers info of specific page.",
 	"apihelp-bs-readers-users-store-summary": "Get all readers info of specific page.",
 	"apihelp-bs-readers-page-readers-store-summary": "Gets all readers of all pages",
+	"apihelp-bs-readers-revision-readers-store-summary": "Gets all readers of all revisions of a page",
+	"apihelp-bs-readers-tasks-summary": "Provides common operations for Readers",
 	"action-viewreaders": "view the readers of pages",
+	"action-viewrevisionreaders": "view the readers of single page revisions",
 	"bs-readers-flyout-title": "Readers of this page",
 	"right-viewreaders": "View readers of a page",
-	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|You}} read the page $1 on $2"
+	"right-viewrevisionreaders": "View readers of single page revisions",
+	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|You}} read the page $1 on $2",
+	"bs-readers-flyout-header-read-by": "Read by",
+	"bs-readers-flyout-header-revision-id": "Revision ID",
+	"bs-readers-flyout-header-revision-date": "Revision date",
+	"bs-readers-flyout-header-read-on": "Read on",
+	"bs-readers-revision-flyout-title": "Readers by revision",
+	"revisionreaders": "Readers by revision of \"$1\""
 }

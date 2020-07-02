@@ -28,6 +28,7 @@ class AddResources extends \BlueSpice\Hook\BeforePageDisplay {
 			'bsgReadersNumOfReaders',
 			$this->getConfig()->get( 'ReadersNumOfReaders' )
 		);
+		$this->out->addModules( [ 'ext.bluespice.readers.insertTrace' ] );
 		return true;
 	}
 
