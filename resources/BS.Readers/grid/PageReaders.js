@@ -1,10 +1,9 @@
-Ext.define( 'BS.Readers.grid.Readers', {
+Ext.define( 'BS.Readers.grid.PageReaders', {
 	extend: 'Ext.grid.Panel',
-	requires: [ "BS.store.BSApi" ],
+	requires: [ 'BS.store.BSApi' ],
 	title: mw.message( 'bs-readers-flyout-title' ).plain(),
 	cls: 'bs-readers-flyout',
 	maxWidth: 600,
-	pageSize : 3,
 	articleId: mw.config.get( 'wgArticleId' ),
 	readersLimit: mw.config.get( 'bsgReadersNumOfReaders' ),
 	hideHeaders: true,
@@ -23,22 +22,23 @@ Ext.define( 'BS.Readers.grid.Readers', {
 				type: 'numeric',
 				comparison: 'eq',
 				value: this.articleId
-			}]
+			}],
+			pageSize: this.readersLimit
 		} );
-
 
 		this.colAggregatedInfo = Ext.create( 'Ext.grid.column.Template', {
 			id: 'readers-aggregated',
 			sortable: false,
 			width: 400,
 			tpl: "<div class='bs-readers-flyout-grid-item'>" +
-			"{user_image_html}" +
-			"<span>{readers_user_name}</span></div>",
+				"{user_image_html}" +
+				"<span>{readers_user_name}</span></div>",
 			flex: 1
 		} );
 
+
 		this.columns = [
-			this.colAggregatedInfo
+			this.colAggregatedInfo,
 		];
 
 		this.bbar = new Ext.toolbar.Paging( {

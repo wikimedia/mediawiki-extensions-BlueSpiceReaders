@@ -1,6 +1,6 @@
 ( function( mw, $, bs, undefined ) {
 	Ext.onReady( function() {
-		Ext.create( 'BS.Readers.PathPanel', {
+		Ext.create( 'BS.Readers.panel.Path', {
 			renderTo: 'bs-readerspath-grid'
 		} );
 	} );
