@@ -103,7 +103,9 @@
 	},
 	"AutoloadClasses": {
 		"BSApiReadersDataStore": "includes/api/BSApiReadersDataStore.php",
-		"BSApiReadersUsersStore": "includes/api/BSApiReadersUsersStore.php",
+		"BSApiReadersUsersStore": "includes/api/BSApiReadersUsersStore.php"
+	},
+	"TestAutoloadClasses": {
 		"BSReadersFixtures": "tests/phpunit/BSReadersFixtures.php"
 	},
 	"ResourceModules": {
