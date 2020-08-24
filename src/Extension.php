@@ -84,10 +84,6 @@ class Extension extends \BlueSpice\Extension {
 			return false;
 		}
 
-		if ( $currentTitle->userCan( 'viewreaders' ) == false ) {
-			return false;
-		}
-
 		return true;
 	}
 }
