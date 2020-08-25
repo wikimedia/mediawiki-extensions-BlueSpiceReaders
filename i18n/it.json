@@ -20,5 +20,6 @@
 	"bs-readers-header-readerspath": "Lettore",
 	"bs-readers-header-ts": "Data",
 	"bs-readers-header-page": "Pagina",
-	"right-viewreaders": "Visualizza i lettori di una pagina"
+	"right-viewreaders": "Visualizza i lettori di una pagina",
+	"bs-readers-flyout-header-revision-id": "ID versione"
 }

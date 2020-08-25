@@ -38,7 +38,7 @@
 	"bs-readers-flyout-header-read-by": "Headline for 'Read by' column, used in readers flyout",
 	"bs-readers-flyout-header-revision-id": "Headline for 'Revision ID' column, used in readers flyout",
 	"bs-readers-flyout-header-revision-date": "Headline for 'Revision date' column, used in readers flyout",
-	"bs-readers-flyout-header-read-on":  "Headline for 'Read on' column, used in readers flyout",
+	"bs-readers-flyout-header-read-on": "Headline for 'Read on' column, used in readers flyout",
 	"bs-readers-revision-flyout-title": "Title of the panel showing the readers of each revision",
 	"revisionreaders": "Special page title of RevisionReaders for reader by revision of \"$1\"\n*$1 the page name"
 }
