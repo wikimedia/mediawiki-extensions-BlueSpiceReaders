@@ -3,6 +3,7 @@
 		"authors": [
 			"Josve05a",
 			"Lokal Profil",
+			"Sabelöga",
 			"WikiPhoenix"
 		]
 	},
@@ -25,5 +26,10 @@
 	"apihelp-bs-readers-page-readers-store-summary": "Hämtar alla läsare för alla sidor",
 	"action-viewreaders": "visa sidans läsare",
 	"bs-readers-flyout-title": "Läsare för denna sida",
-	"right-viewreaders": "Visa en sidas läsare"
+	"right-viewreaders": "Visa en sidas läsare",
+	"bs-readers-flyout-header-read-by": "Läst av",
+	"bs-readers-flyout-header-revision-id": "Sidversions-ID",
+	"bs-readers-flyout-header-revision-date": "Sidversionsdatum",
+	"bs-readers-flyout-header-read-on": "Läs på",
+	"revisionreaders": "Läsare efter sidversion av \"$1\""
 }
