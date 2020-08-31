@@ -5,7 +5,8 @@
 			"Ebraminio",
 			"FarsiNevis",
 			"Huji",
-			"Reza1615"
+			"Reza1615",
+			"Sunfyre"
 		]
 	},
 	"bs-readers-desc": "فهرستی از کاربرانی که یک صفحه را خوانده‌اند می‌سازد",
@@ -23,5 +24,6 @@
 	"bs-readers-header-ts": "تاریخ",
 	"bs-readers-header-page": "صفحه",
 	"bs-readers-flyout-title": "خوانندگان این صفحه",
-	"right-viewreaders": "مشاهدهٔ خوانندگان یک صفحه"
+	"right-viewreaders": "مشاهدهٔ خوانندگان یک صفحه",
+	"bs-readers-flyout-header-revision-id": "شناسهٔ بازبینی"
 }
