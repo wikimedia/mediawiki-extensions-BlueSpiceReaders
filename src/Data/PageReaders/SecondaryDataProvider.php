@@ -3,6 +3,7 @@
 namespace BlueSpice\Readers\Data\PageReaders;
 
 use BlueSpice\Readers\Data\Record;
+use MediaWiki\MediaWikiServices;
 
 class SecondaryDataProvider extends \BlueSpice\Data\SecondaryDataProvider {
 
@@ -12,7 +13,7 @@ class SecondaryDataProvider extends \BlueSpice\Data\SecondaryDataProvider {
 	 * @return null
 	 */
 	protected function doExtend( &$dataSet ) {
-		$factory = \BlueSpice\Services::getInstance()->getService( 'BSRendererFactory' );
+		$factory = MediaWikiServices::getInstance()->getService( 'BSRendererFactory' );
 		$user = \User::newFromId( $dataSet->get( Record::USER_ID ) );
 		if ( $user instanceof \User == false ) {
 			return;

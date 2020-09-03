@@ -6,8 +6,8 @@ use BlueSpice\Context;
 use BlueSpice\Data\RecordSet;
 use BlueSpice\Readers\Data\PageReaders\Store;
 use BlueSpice\Readers\Data\Record;
-use BlueSpice\Services;
 use Job;
+use MediaWiki\MediaWikiServices;
 use Title;
 use User;
 
@@ -72,10 +72,10 @@ class InsertTrace extends Job {
 
 	/**
 	 *
-	 * @return Services
+	 * @return MediaWikiServices
 	 */
 	protected function getServices() {
-		return Services::getInstance();
+		return MediaWikiServices::getInstance();
 	}
 
 }
