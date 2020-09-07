@@ -22,5 +22,11 @@
 	"apihelp-bs-readers-users-store-description": "Informatioune vun alle Lieser vun enger spezifescher Säit kréien.",
 	"apihelp-bs-readers-page-readers-store-summary": "Kritt all Lieser vun alle Säiten",
 	"bs-readers-flyout-title": "Lieser vun dëser Säit",
-	"right-viewreaders": "Lieser vun enger Säit weisen"
+	"right-viewreaders": "Lieser vun enger Säit weisen",
+	"bs-readers-flyout-header-read-by": "Geliest vun",
+	"bs-readers-flyout-header-revision-id": "Versioun ID",
+	"bs-readers-flyout-header-revision-date": "Versiounsdatum",
+	"bs-readers-flyout-header-read-on": "Geliest den",
+	"bs-readers-revision-flyout-title": "Lieser pro Versioun",
+	"revisionreaders": "Lieser pro Versioun vun \"$1\""
 }

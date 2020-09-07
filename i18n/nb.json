@@ -28,5 +28,15 @@
 	"apihelp-bs-readers-page-readers-store-summary": "Henter alle lesere for alle sider",
 	"action-viewreaders": "vise leserne av sider",
 	"bs-readers-flyout-title": "Lesere av denne siden",
-	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders – {{GENDER:$3|Du}} leste siden $1 $2"
+	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders – {{GENDER:$3|Du}} leste siden $1 $2",
+	"apihelp-bs-readers-revision-readers-store-summary": "Henter alle lesere av alle revisjoner av en side",
+	"apihelp-bs-readers-tasks-summary": "Gir felles operasjoner for lesere",
+	"action-viewrevisionreaders": "vise leserne til enkeltrevisjoner av sider",
+	"right-viewrevisionreaders": "Vise leserne til enkeltrevisjoner av sider",
+	"bs-readers-flyout-header-read-by": "Lest av",
+	"bs-readers-flyout-header-revision-id": "Revisjons-ID",
+	"bs-readers-flyout-header-revision-date": "Revisjonsdato",
+	"bs-readers-flyout-header-read-on": "Lest",
+	"bs-readers-revision-flyout-title": "Lesere etter revisjon",
+	"revisionreaders": "Lesere etter revisjon av «$1»"
 }
