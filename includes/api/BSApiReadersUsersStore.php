@@ -27,6 +27,7 @@
 
 use BlueSpice\DynamicFileDispatcher\Params;
 use BlueSpice\DynamicFileDispatcher\UserProfileImage;
+use MediaWiki\MediaWikiServices;
 
 /**
  * GroupManager Api class
@@ -71,7 +72,7 @@ class BSApiReadersUsersStore extends BSApiExtJSStoreBase {
 					UserProfileImage::HEIGHT => 50,
 				];
 
-				$dfdUrlBuilder = \BlueSpice\Services::getInstance()
+				$dfdUrlBuilder = MediaWikiServices::getInstance()
 					->getService( 'BSDynamicFileDispatcherUrlBuilder' );
 				$sImage = $dfdUrlBuilder->build( new Params( $params ) );
 
