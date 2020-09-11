@@ -233,7 +233,7 @@
 		"BeforePageDisplay": [
 			"\\BlueSpice\\Readers\\Hook\\BeforePageDisplay\\AddResources::callback"
 		],
-		"SkinTemplateNavigation": "\\BlueSpice\\Readers\\Hook\\SkinTemplateNavigation\\AddReaders::callback"
+		"SkinTemplateNavigation::Universal": "\\BlueSpice\\Readers\\Hook\\SkinTemplateNavigationUniversal\\AddReaders::callback"
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2

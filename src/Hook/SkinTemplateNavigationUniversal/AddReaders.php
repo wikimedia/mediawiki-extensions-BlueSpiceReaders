@@ -1,14 +1,17 @@
 <?php
 
-namespace BlueSpice\Readers\Hook\SkinTemplateNavigation;
+namespace BlueSpice\Readers\Hook\SkinTemplateNavigationUniversal;
 
-class AddReaders extends \BlueSpice\Hook\SkinTemplateNavigation {
+use BlueSpice\Hook\SkinTemplateNavigationUniversal;
+use SpecialPage;
+
+class AddReaders extends SkinTemplateNavigationUniversal {
 
 	protected function skipProcessing() {
 		if ( !$this->sktemplate->getTitle() || !$this->sktemplate->getTitle()->exists() ) {
 			return true;
 		}
-		if ( !\MediaWiki\MediaWikiServices::getInstance()
+		if ( !$this->getServices()
 			->getPermissionManager()
 			->userCan(
 				'viewreaders',
@@ -26,7 +29,7 @@ class AddReaders extends \BlueSpice\Hook\SkinTemplateNavigation {
 	}
 
 	protected function doProcess() {
-		$special = \SpecialPage::getTitleFor(
+		$special = SpecialPage::getTitleFor(
 			'Readers',
 			$this->sktemplate->getTitle()->getPrefixedText()
 		);
