@@ -27,5 +27,15 @@
 	"action-viewreaders": "ver os leitores de páginas",
 	"bs-readers-flyout-title": "Leitores desta página",
 	"right-viewreaders": "Visualizar leitores de uma página",
-	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|Leu}} a página $1 a $2"
+	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|Leu}} a página $1 a $2",
+	"apihelp-bs-readers-revision-readers-store-summary": "Obtém todos os leitores de todas as revisões de uma página",
+	"apihelp-bs-readers-tasks-summary": "Fornece operações comuns para leitores",
+	"action-viewrevisionreaders": "ver os leitores de revisões individuais de uma página",
+	"right-viewrevisionreaders": "Ver os leitores das revisões individuais de uma página",
+	"bs-readers-flyout-header-read-by": "Lido por",
+	"bs-readers-flyout-header-revision-id": "ID da revisão",
+	"bs-readers-flyout-header-revision-date": "Data da revisão",
+	"bs-readers-flyout-header-read-on": "Ler em",
+	"bs-readers-revision-flyout-title": "Leitores por revisão",
+	"revisionreaders": "Leitores por revisão de \"$1\""
 }
