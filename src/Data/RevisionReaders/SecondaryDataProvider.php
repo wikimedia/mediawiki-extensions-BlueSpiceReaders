@@ -10,12 +10,12 @@ use MediaWiki\Storage\RevisionRecord;
 class SecondaryDataProvider extends \BlueSpice\Data\SecondaryDataProvider {
 
 	/**
-	 * @var Language $language
+	 * @var Language
 	 */
 	private $language;
 
 	/**
-	 * @var RevisionLookup $revisionLookup
+	 * @var RevisionLookup
 	 */
 	private $revisionLookup;
 
