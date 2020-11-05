@@ -3,6 +3,7 @@
 		"authors": [
 			"Elliot",
 			"Metalhead64",
+			"Mglaser",
 			"Stephan Muggli <muggli@hallowelt.biz>"
 		]
 	},
@@ -32,5 +33,11 @@
 	"apihelp-bs-readers-tasks-summary": "Ermöglicht häufig vorkommende Arbeitsvorgänge für Leser",
 	"action-viewrevisionreaders": "Sieh die Leser von Überarbeitungen einzelner Seiten",
 	"right-viewrevisionreaders": "Sieh die Leser von Überarbeitungen einzelner Seiten",
-	"bs-readers-flyout-header-read-by": "Gelesen von"
+	"bs-readers-flyout-header-read-by": "Gelesen von",
+	"apihelp-bs-readers-revision-readers-store-summary": "Ruft alle Leser aller Versionen eines Artikels ab",
+	"bs-readers-flyout-header-revision-id": "Versions-ID",
+	"bs-readers-flyout-header-revision-date": "Versionsdatum",
+	"bs-readers-flyout-header-read-on": "Gelesen am",
+	"bs-readers-revision-flyout-title": "Leser je Version",
+	"revisionreaders": "Leser je Version für Artikel \"$1\""
 }
