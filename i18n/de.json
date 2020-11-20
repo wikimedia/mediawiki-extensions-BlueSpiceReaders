@@ -4,7 +4,8 @@
 			"Elliot",
 			"Metalhead64",
 			"Mglaser",
-			"Stephan Muggli <muggli@hallowelt.biz>"
+			"Stephan Muggli <muggli@hallowelt.biz>",
+			"Umherirrender"
 		]
 	},
 	"bs-readers-desc": "Erstellt eine Liste mit Personen, die eine Seite lesen",
@@ -39,5 +40,5 @@
 	"bs-readers-flyout-header-revision-date": "Versionsdatum",
 	"bs-readers-flyout-header-read-on": "Gelesen am",
 	"bs-readers-revision-flyout-title": "Leser je Version",
-	"revisionreaders": "Leser je Version für Artikel \"$1\""
+	"revisionreaders": "Leser je Version für Artikel „$1“"
 }
