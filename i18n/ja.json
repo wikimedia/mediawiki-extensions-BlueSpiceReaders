@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Shirayuki",
-			"Sujiniku"
+			"Sujiniku",
+			"つぶあん派"
 		]
 	},
 	"bs-readers-desc": "ページを閲覧した利用者の一覧を作成する",
@@ -18,5 +19,5 @@
 	"bs-readers-header-ts": "日時",
 	"bs-readers-header-page": "ページ",
 	"action-viewreaders": "ページの閲覧者一覧の閲覧",
-	"right-viewreaders": "ページの閲覧者一覧を閲覧"
+	"right-viewreaders": "ページの閲覧者一覧を表示する"
 }
