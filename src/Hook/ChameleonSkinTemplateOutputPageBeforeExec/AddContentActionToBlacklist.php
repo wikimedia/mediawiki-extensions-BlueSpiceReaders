@@ -2,7 +2,7 @@
 
 namespace BlueSpice\Readers\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 
-use BlueSpice\Calumma\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
+use BlueSpice\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 use BlueSpice\SkinData;
 
 class AddContentActionToBlacklist extends ChameleonSkinTemplateOutputPageBeforeExec {
