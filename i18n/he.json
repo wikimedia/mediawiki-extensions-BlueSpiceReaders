@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Guycn2"
+			"Guycn2",
+			"YaronSh"
 		]
 	},
 	"bs-readers-desc": "יצירת רשימה של האנשים שקוראים דף",
@@ -24,5 +25,7 @@
 	"apihelp-bs-readers-users-store-summary": "קבלת מידע מלא על הקוראים של דף מסוים.",
 	"apihelp-bs-readers-page-readers-store-summary": "קבלת כל הקוראים של כל הדפים",
 	"action-viewreaders": "לצפות בקוראים של דפים",
-	"bs-readers-flyout-title": "קוראי דף זה"
+	"bs-readers-flyout-title": "קוראי דף זה",
+	"bs-readers-flyout-header-revision-id": "מזהה גרסה",
+	"bs-readers-flyout-header-revision-date": "תאריך גרסה"
 }

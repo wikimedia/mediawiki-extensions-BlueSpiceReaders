@@ -26,5 +26,15 @@
 	"action-viewreaders": "'ndruche le letture de le pàggene",
 	"bs-readers-flyout-title": "Letture de sta pàgene",
 	"right-viewreaders": "'Ndruche le letture de 'na pàgene",
-	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|Tu}} è lette 'a pàgene $1 'u $2"
+	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|Tu}} è lette 'a pàgene $1 'u $2",
+	"apihelp-bs-readers-revision-readers-store-summary": "Pigghie tutte le letture de tutte le versiune de 'na pàgene",
+	"apihelp-bs-readers-tasks-summary": "Dèje operazziune comune pe le Letture",
+	"action-viewrevisionreaders": "'ndruche le letture de 'na sole versione de pàgene",
+	"right-viewrevisionreaders": "'Ndruche le letture de 'na sole versione de pàgene",
+	"bs-readers-flyout-header-read-by": "Lette da",
+	"bs-readers-flyout-header-revision-id": "ID d'a revisione",
+	"bs-readers-flyout-header-revision-date": "Date d'a revisione",
+	"bs-readers-flyout-header-read-on": "Lette 'u",
+	"bs-readers-revision-flyout-title": "Letture pe versione",
+	"revisionreaders": "Letture pe versione de \"$1\""
 }

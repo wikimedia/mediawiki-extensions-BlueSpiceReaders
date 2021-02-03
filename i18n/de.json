@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Elliot",
+			"Metalhead64",
+			"Mglaser",
 			"Stephan Muggli <muggli@hallowelt.biz>",
-			"Metalhead64"
+			"Umherirrender"
 		]
 	},
 	"bs-readers-desc": "Erstellt eine Liste mit Personen, die eine Seite lesen",
@@ -27,5 +30,15 @@
 	"action-viewreaders": "die Leser von Seiten anzusehen",
 	"bs-readers-flyout-title": "Leser dieser Seite",
 	"right-viewreaders": "Die Leser einer Seite ansehen",
-	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders – {{GENDER:$3|Du}} hast die Seite $1 am $2 gelesen"
+	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders – {{GENDER:$3|Du}} hast die Seite $1 am $2 gelesen",
+	"apihelp-bs-readers-revision-readers-store-summary": "Ruft alle Leser aller Versionen eines Artikels ab",
+	"apihelp-bs-readers-tasks-summary": "Ermöglicht häufig vorkommende Arbeitsvorgänge für Leser",
+	"action-viewrevisionreaders": "Sieh die Leser von Überarbeitungen einzelner Seiten",
+	"right-viewrevisionreaders": "Sieh die Leser von Überarbeitungen einzelner Seiten",
+	"bs-readers-flyout-header-read-by": "Gelesen von",
+	"bs-readers-flyout-header-revision-id": "Versions-ID",
+	"bs-readers-flyout-header-revision-date": "Versionsdatum",
+	"bs-readers-flyout-header-read-on": "Gelesen am",
+	"bs-readers-revision-flyout-title": "Leser je Version",
+	"revisionreaders": "Leser je Version für Artikel „$1“"
 }

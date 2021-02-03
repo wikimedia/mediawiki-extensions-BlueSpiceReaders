@@ -3,8 +3,10 @@
 		"authors": [
 			"Alirezaaa",
 			"Ebraminio",
+			"FarsiNevis",
+			"Huji",
 			"Reza1615",
-			"Huji"
+			"Sunfyre"
 		]
 	},
 	"bs-readers-desc": "فهرستی از کاربرانی که یک صفحه را خوانده‌اند می‌سازد",
@@ -20,5 +22,8 @@
 	"bs-readers-header-username": "نام کاربری",
 	"bs-readers-header-readerspath": "خواننده",
 	"bs-readers-header-ts": "تاریخ",
-	"bs-readers-header-page": "صفحه"
+	"bs-readers-header-page": "صفحه",
+	"bs-readers-flyout-title": "خوانندگان این صفحه",
+	"right-viewreaders": "مشاهدهٔ خوانندگان یک صفحه",
+	"bs-readers-flyout-header-revision-id": "شناسهٔ بازبینی"
 }

@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vitorvicentevalente",
+			"Hamilton Abreu",
 			"Macofe",
-			"Hamilton Abreu"
+			"Vitorvicentevalente"
 		]
 	},
 	"bs-readers-desc": "Cria uma lista das pessoas que leem uma página",
@@ -20,13 +20,23 @@
 	"bs-readers-header-readerspath": "Leitor",
 	"bs-readers-header-ts": "Data",
 	"bs-readers-header-page": "Página",
-	"apihelp-bs-readers-data-store-description": "Obter informação de um leitor de uma página específica.",
-	"apihelp-bs-readers-data-store-summary": "Obter informação de um leitor de uma página específica.",
+	"apihelp-bs-readers-data-store-description": "Obter informação dos leitores de uma página específica.",
+	"apihelp-bs-readers-data-store-summary": "Obter informação dos leitores de uma página específica.",
 	"apihelp-bs-readers-users-store-description": "Obter informação de todos os leitores de uma página específica.",
 	"apihelp-bs-readers-users-store-summary": "Obter informação de todos os leitores de uma página específica.",
 	"apihelp-bs-readers-page-readers-store-summary": "Obter todos os leitores de todas as páginas",
 	"action-viewreaders": "ver os leitores de páginas",
 	"bs-readers-flyout-title": "Leitores desta página",
 	"right-viewreaders": "Ver os leitores de uma página",
-	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|Leu}} a página $1 a $2"
+	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|Leu}} a página $1 a $2",
+	"apihelp-bs-readers-revision-readers-store-summary": "Obtém todos os leitores de todas as revisões de uma página",
+	"apihelp-bs-readers-tasks-summary": "Fornece operações comuns para leitores",
+	"action-viewrevisionreaders": "ver os leitores de revisões individuais de uma página",
+	"right-viewrevisionreaders": "Ver os leitores das revisões individuais de uma página",
+	"bs-readers-flyout-header-read-by": "Lida por",
+	"bs-readers-flyout-header-revision-id": "Identificador da revisão",
+	"bs-readers-flyout-header-revision-date": "Data da revisão",
+	"bs-readers-flyout-header-read-on": "Lida em",
+	"bs-readers-revision-flyout-title": "Leitores por revisão",
+	"revisionreaders": "Leitores por revisão de \"$1\""
 }

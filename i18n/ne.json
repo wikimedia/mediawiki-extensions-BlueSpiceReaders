@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Nirajan pant"
+			"Nirajan pant",
+			"हिमाल सुबेदी"
 		]
 	},
-	"action-viewreaders": "पृष्ठहरूका पाठकहरू हेर्नुहोस्"
+	"action-viewreaders": "पृष्ठहरूका पाठकहरू हेर्नुहोस्",
+	"bs-readers-header-page": "पृष्ठ"
 }
