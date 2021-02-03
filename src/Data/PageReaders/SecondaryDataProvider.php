@@ -10,7 +10,6 @@ class SecondaryDataProvider extends \BlueSpice\Data\SecondaryDataProvider {
 	/**
 	 *
 	 * @param Record &$dataSet
-	 * @return null
 	 */
 	protected function doExtend( &$dataSet ) {
 		$factory = MediaWikiServices::getInstance()->getService( 'BSRendererFactory' );

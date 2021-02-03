@@ -32,7 +32,6 @@ class SecondaryDataProvider extends \BlueSpice\Data\SecondaryDataProvider {
 	/**
 	 *
 	 * @param Record &$dataSet
-	 * @return null
 	 */
 	protected function doExtend( &$dataSet ) {
 		$datetime = $this->language->timeanddate(
