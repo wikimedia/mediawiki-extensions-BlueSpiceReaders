@@ -20,5 +20,7 @@
 	"bs-readers-header-username": "Gebruikersnaam",
 	"bs-readers-header-readerspath": "Lezer",
 	"bs-readers-header-ts": "Datum",
-	"bs-readers-header-page": "Pagina"
+	"bs-readers-header-page": "Pagina",
+	"bs-readers-flyout-header-read-by": "Gelezen door",
+	"bs-readers-flyout-header-read-on": "Gelezen op"
 }
