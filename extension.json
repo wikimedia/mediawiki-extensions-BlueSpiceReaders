@@ -21,11 +21,11 @@
 			"Extensions": {
 				"BlueSpiceReaders": {
 					"className": "\\BlueSpice\\Readers\\Extension",
-					"extPath": "/BlueSpiceReaders",
-					"configDefinitions": {
-						"ReadersNumOfReaders": "\\BlueSpice\\Readers\\ConfigDefinition\\ReadersNumOfReaders::getInstance"
-					}
+					"extPath": "/BlueSpiceReaders"
 				}
+			},
+			"ConfigDefinitionRegistry": {
+				"ReadersNumOfReaders": "\\BlueSpice\\Readers\\ConfigDefinition\\ReadersNumOfReaders::getInstance"
 			},
 			"PermissionRegistry": {
 				"viewreaders": {
