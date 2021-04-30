@@ -83,15 +83,13 @@ class BSApiReadersUsersStore extends BSApiExtJSStoreBase {
 				$aTmpUser[ 'user_name' ] = $oUser->getName();
 				$aTmpUser[ 'user_page' ] = $oTitle->getLocalURL();
 				// TODO: Implement good "real_name" handling
-				$aTmpUser[ 'user_page_link' ] = Linker::link( $oTitle, $oTitle->getText() . ' ' );
+				$aTmpUser[ 'user_page_link' ] = MediaWikiServices::getInstance()->getLinkRenderer()
+					->makeLink( $oTitle, new HtmlArmor( $oTitle->getText() . ' ' ) );
 				$aTmpUser[ 'user_readers' ] = $oSpecialReaders->getLocalURL();
-				$aTmpUser[ 'user_readers_link' ] = Linker::link(
-					$oSpecialReaders,
-					'',
-					[
+				$aTmpUser[ 'user_readers_link' ] = MediaWikiServices::getInstance()->getLinkRenderer()
+					->makeLink( $oSpecialReaders, new HtmlArmor( '' ), [
 						'class' => 'icon-bookmarks'
-					]
-				);
+				] );
 
 				$aTmpUser[ 'user_ts' ] = $this->getLanguage()->userAdjust( $row->readers_ts );
 				$aTmpUser[ 'user_date' ] = $this->getLanguage()->timeanddate( $row->readers_ts, true );
