@@ -48,7 +48,7 @@ class DBCleaner extends RunJobsTriggerHandler {
 
 		MediaWikiServices::getInstance()
 			->getDBLoadBalancer()
-			->getConnection( DB_MASTER )
+			->getConnection( DB_PRIMARY )
 			->delete(
 				'bs_readers',
 				[ 'readers_ts < ' . $currentTS ]
