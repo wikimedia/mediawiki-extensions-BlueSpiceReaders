@@ -26,4 +26,12 @@ class ReadersNumOfReaders extends IntSetting {
 		return 'bs-readers-pref-numofreaders';
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
+	public function getHelpMessageKey() {
+		return 'bs-readers-pref-numofreaders-help';
+	}
+
 }
