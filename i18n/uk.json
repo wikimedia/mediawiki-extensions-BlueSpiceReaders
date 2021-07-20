@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Andriykopanytsia",
+			"DDPAT",
 			"Dars",
 			"Piramidion",
 			"Ата"
@@ -29,5 +30,15 @@
 	"action-viewreaders": "перегляд читачів сторінок",
 	"bs-readers-flyout-title": "Читачі цієї сторінки",
 	"right-viewreaders": "Перегляд читачів сторінки",
-	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders — {{GENDER:$3|Ви}} читали сторінку $1 станом на $2"
+	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders — {{GENDER:$3|Ви}} читали сторінку $1 станом на $2",
+	"apihelp-bs-readers-revision-readers-store-summary": "Отримує всіх читачів усіх версій сторінки",
+	"apihelp-bs-readers-tasks-summary": "Забезпечує загальні дії для Readers",
+	"action-viewrevisionreaders": "переглянути читачів односторінкових версій",
+	"right-viewrevisionreaders": "Перегляньте читачів односторінкових версій",
+	"bs-readers-flyout-header-read-by": "Читав",
+	"bs-readers-flyout-header-revision-id": "ID версії",
+	"bs-readers-flyout-header-revision-date": "Дата перегляду",
+	"bs-readers-flyout-header-read-on": "Читайте далі",
+	"bs-readers-revision-flyout-title": "Читачі шляхом перегляду",
+	"revisionreaders": "Читачі шляхом перегляду \"$1\""
 }

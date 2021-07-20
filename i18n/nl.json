@@ -3,11 +3,12 @@
 		"authors": [
 			"Esketti",
 			"Mainframe98",
+			"McDutchie",
 			"SPQRobin",
 			"Siebrand"
 		]
 	},
-	"bs-readers-desc": "Maakt een lijst van de mensen die het lezen van een pagina",
+	"bs-readers-desc": "Maakt een lijst van de mensen die een pagina lezen",
 	"prefs-readers": "Lezers",
 	"bs-readers-title": "{{PLURAL:$1|{{GENDER:$2|Lezer}}|Lezers}}",
 	"readers-user": "Pagina's {{GENDER:$1|gelezen}} door: $1",
