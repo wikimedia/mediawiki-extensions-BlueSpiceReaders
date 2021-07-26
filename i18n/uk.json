@@ -28,7 +28,7 @@
 	"apihelp-bs-readers-users-store-summary": "Отримати інформацію про всіх читачів конкретної сторінки.",
 	"apihelp-bs-readers-page-readers-store-summary": "Отримує всіх читачів усіх сторінок",
 	"apihelp-bs-readers-revision-readers-store-summary": "Отримує всіх читачів усіх версій сторінки",
-	"apihelp-bs-readers-tasks-summary": "Забезпечує загальні дії для Readers",
+	"apihelp-bs-readers-tasks-summary": "Забезпечує загальні дії для читачів",
 	"action-viewreaders": "перегляд читачів сторінок",
 	"action-viewrevisionreaders": "переглянути читачів односторінкових версій",
 	"bs-readers-flyout-title": "Читачі цієї сторінки",
