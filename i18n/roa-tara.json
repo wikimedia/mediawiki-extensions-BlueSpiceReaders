@@ -36,5 +36,6 @@
 	"bs-readers-flyout-header-revision-date": "Date d'a revisione",
 	"bs-readers-flyout-header-read-on": "Lette 'u",
 	"bs-readers-revision-flyout-title": "Letture pe versione",
-	"revisionreaders": "Letture pe versione de \"$1\""
+	"revisionreaders": "Letture pe versione de \"$1\"",
+	"bs-readers-pref-numofreaders-help": "Numere de letture ca avène visualizzate sus a le 'mbormaziune d'a pàgene jndr'à le struminde de gestione d'a qualitate."
 }
