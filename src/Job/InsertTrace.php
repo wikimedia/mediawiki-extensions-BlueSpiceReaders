@@ -13,10 +13,10 @@ use User;
 
 class InsertTrace extends Job {
 
-	const COMMAND = 'BlueSpiceReadersInsertTrace';
-	const PARAM_USER_ID = 'userid';
-	const PARAM_TIMESTAMP = 'ts';
-	const PARAM_REV_ID = 'revId';
+	public const COMMAND = 'BlueSpiceReadersInsertTrace';
+	public const PARAM_USER_ID = 'userid';
+	public const PARAM_TIMESTAMP = 'ts';
+	public const PARAM_REV_ID = 'revId';
 
 	/**
 	 *
