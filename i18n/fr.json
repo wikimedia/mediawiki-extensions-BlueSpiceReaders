@@ -42,5 +42,6 @@
 	"bs-readers-flyout-header-revision-date": "Date de version",
 	"bs-readers-flyout-header-read-on": "Lu le",
 	"bs-readers-revision-flyout-title": "Lecteurs par version",
-	"revisionreaders": "Lecteurs par version de « $1 »"
+	"revisionreaders": "Lecteurs par version de « $1 »",
+	"bs-readers-pref-numofreaders-help": "Nombre de lecteurs qui est affiché sur l’information de la page dans les outils de gestion de la qualité."
 }
