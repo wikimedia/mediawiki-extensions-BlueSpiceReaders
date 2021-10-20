@@ -5,6 +5,7 @@
 			"Ebraminio",
 			"FarsiNevis",
 			"Huji",
+			"Jeeputer",
 			"Reza1615",
 			"Sunfyre"
 		]
@@ -25,5 +26,8 @@
 	"bs-readers-header-page": "صفحه",
 	"bs-readers-flyout-title": "خوانندگان این صفحه",
 	"right-viewreaders": "مشاهدهٔ خوانندگان یک صفحه",
-	"bs-readers-flyout-header-revision-id": "شناسهٔ بازبینی"
+	"bs-readers-flyout-header-revision-id": "شناسهٔ بازبینی",
+	"bs-readers-flyout-header-read-by": "خوانده‌شده توسط",
+	"bs-readers-flyout-header-revision-date": "تاریخ نسخه",
+	"bs-readers-flyout-header-read-on": "خوانده‌شده در"
 }

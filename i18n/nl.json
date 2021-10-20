@@ -4,6 +4,7 @@
 			"Esketti",
 			"Mainframe98",
 			"McDutchie",
+			"Romaine",
 			"SPQRobin",
 			"Siebrand"
 		]
@@ -23,5 +24,19 @@
 	"bs-readers-header-ts": "Datum",
 	"bs-readers-header-page": "Pagina",
 	"bs-readers-flyout-header-read-by": "Gelezen door",
-	"bs-readers-flyout-header-read-on": "Gelezen op"
+	"bs-readers-flyout-header-read-on": "Gelezen op",
+	"apihelp-bs-readers-data-store-description": "Verkrijg lezersinformatie van specifieke pagina.",
+	"apihelp-bs-readers-data-store-summary": "Verkrijg lezersinformatie van specifieke pagina.",
+	"apihelp-bs-readers-users-store-description": "Verkrijg alle lezersinformatie van specifieke pagina.",
+	"apihelp-bs-readers-users-store-summary": "Verkrijg alle lezersinformatie van specifieke pagina.",
+	"apihelp-bs-readers-page-readers-store-summary": "Verkrijg alle lezers van alle pagina's",
+	"apihelp-bs-readers-revision-readers-store-summary": "Verkrijg alle lezers van alle revisies van een pagina",
+	"apihelp-bs-readers-tasks-summary": "Voorziet in algemene bewerkingen voor Readers",
+	"action-viewreaders": "bekijk de lezers van pagina's",
+	"bs-readers-flyout-title": "Lezers van deze pagina",
+	"right-viewreaders": "Toon lezers van een pagina",
+	"bs-readers-flyout-header-revision-id": "Versienummer",
+	"bs-readers-flyout-header-revision-date": "Revisiedatum",
+	"bs-readers-revision-flyout-title": "Lezers per revisie",
+	"revisionreaders": "Lezers per revisie van \"$1\""
 }
