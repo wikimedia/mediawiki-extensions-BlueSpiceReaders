@@ -40,5 +40,6 @@
 	"bs-readers-flyout-header-revision-date": "Дата перегляду",
 	"bs-readers-flyout-header-read-on": "Читайте далі",
 	"bs-readers-revision-flyout-title": "Читачі шляхом перегляду",
-	"revisionreaders": "Читачі шляхом перегляду \"$1\""
+	"revisionreaders": "Читачі шляхом перегляду \"$1\"",
+	"bs-readers-pref-numofreaders-help": "Кількість читачів, які відображаються на сторінці інформації в засобах управління якістю."
 }
