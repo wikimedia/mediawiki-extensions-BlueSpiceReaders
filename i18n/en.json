@@ -37,5 +37,6 @@
 	"bs-readers-flyout-header-read-on": "Read on",
 	"bs-readers-revision-flyout-title": "Readers by revision",
 	"revisionreaders": "Readers by revision of \"$1\"",
-	"bs-readers-pref-numofreaders-help": "Number of readers that is displayed on the page information in the quality management tools."
+	"bs-readers-pref-numofreaders-help": "Number of readers that is displayed on the page information in the quality management tools.",
+	"bs-readers-info-dialog": "Readers of this page"
 }
