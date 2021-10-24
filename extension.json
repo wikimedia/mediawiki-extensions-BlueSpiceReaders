@@ -217,11 +217,30 @@
 			"dependencies": [
 				"ext.bluespice"
 			]
+		},
+		"ext.bluespice.readers.dialoginfo.pages": {
+			"scripts": [
+				"bluespice.readers.ReadersInformationPage.js"
+			],
+			"styles": [
+				"bluespice.readers.flyout.less"
+			],
+			"messages": [
+				"bs-readers-info-dialog"
+			],
+			"dependencies": [
+				"ext.bluespice"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",
 		"remoteExtPath": "BlueSpiceReaders/resources"
+	},
+	"HookHandlers": {
+		"standard-dialogs": {
+			"class": "\\BlueSpice\\Readers\\HookHandler\\StandardDialogs"
+		}
 	},
 	"Hooks": {
 		"LoadExtensionSchemaUpdates": [
@@ -234,7 +253,8 @@
 			"\\BlueSpice\\Readers\\Hook\\BeforePageDisplay\\AddResources::callback"
 		],
 		"SkinTemplateNavigation::Universal": "\\BlueSpice\\Readers\\Hook\\SkinTemplateNavigationUniversal\\AddReaders::callback",
-		"UserMergeAccountFields": "\\BlueSpice\\Readers\\Hook\\UserMergeAccountFields\\MergeReadersDBFields::callback"
+		"UserMergeAccountFields": "\\BlueSpice\\Readers\\Hook\\UserMergeAccountFields\\MergeReadersDBFields::callback",
+		"StandardDialogsRegisterPageInfoPanelModules": "standard-dialogs"
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
