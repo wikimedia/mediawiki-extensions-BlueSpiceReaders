@@ -5,6 +5,7 @@
 			"Alberrg",
 			"Astroemi",
 			"Fitoschido",
+			"Jakeukalane",
 			"Macofe"
 		]
 	},
@@ -23,5 +24,6 @@
 	"bs-readers-header-ts": "Fecha",
 	"bs-readers-header-page": "Página",
 	"action-viewreaders": "ver los lectores de páginas",
-	"bs-readers-flyout-title": "Lectores de esta página"
+	"bs-readers-flyout-title": "Lectores de esta página",
+	"bs-readers-info-dialog": "Lectores de esta página"
 }
