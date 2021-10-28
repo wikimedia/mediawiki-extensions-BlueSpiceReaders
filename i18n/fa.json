@@ -29,5 +29,6 @@
 	"bs-readers-flyout-header-revision-id": "شناسهٔ بازبینی",
 	"bs-readers-flyout-header-read-by": "خوانده‌شده توسط",
 	"bs-readers-flyout-header-revision-date": "تاریخ نسخه",
-	"bs-readers-flyout-header-read-on": "خوانده‌شده در"
+	"bs-readers-flyout-header-read-on": "خوانده‌شده در",
+	"bs-readers-info-dialog": "خوانندگان این صفحه"
 }
