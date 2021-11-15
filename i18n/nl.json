@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Danieldegroot2",
 			"Esketti",
 			"Mainframe98",
 			"McDutchie",
@@ -38,5 +39,6 @@
 	"bs-readers-flyout-header-revision-date": "Revisiedatum",
 	"bs-readers-revision-flyout-title": "Lezers per revisie",
 	"revisionreaders": "Lezers per revisie van \"$1\"",
-	"bs-readers-flyout-header-revision-id": "Versienummer"
+	"bs-readers-flyout-header-revision-id": "Versienummer",
+	"bs-readers-info-dialog": "Lezers van deze pagina"
 }
