@@ -28,5 +28,6 @@
 	"bs-readers-flyout-header-revision-date": "Versiounsdatum",
 	"bs-readers-flyout-header-read-on": "Geliest den",
 	"bs-readers-revision-flyout-title": "Lieser pro Versioun",
-	"revisionreaders": "Lieser pro Versioun vun \"$1\""
+	"revisionreaders": "Lieser pro Versioun vun \"$1\"",
+	"bs-readers-info-dialog": "Lieser vun dëser Säit"
 }
