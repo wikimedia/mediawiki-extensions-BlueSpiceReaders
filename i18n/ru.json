@@ -6,7 +6,8 @@
 			"Movses",
 			"Okras",
 			"Striking Blue",
-			"Vlad5250"
+			"Vlad5250",
+			"DDPAT"
 		]
 	},
 	"bs-readers-desc": "Создаёт список людей, читающих страницу",
@@ -31,5 +32,8 @@
 	"action-viewreaders": "Просмотреть читателей страницы",
 	"bs-readers-flyout-title": "Читатели этой страницы",
 	"right-viewreaders": "просмотр читателей страницы",
-	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders — $2 {{GENDER:$3|вы}} прочитали страницу $1"
+	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders — $2 {{GENDER:$3|вы}} прочитали страницу $1",
+	"bs-readers-flyout-header-read-by": "Прочитано",
+	"bs-readers-flyout-header-revision-id": "Идентификатор правки",
+	"bs-readers-flyout-header-read-on": "Прочитано"
 }

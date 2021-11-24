@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Joao Xavier"
+			"Joao Xavier",
+			"JSantos"
 		]
 	},
 	"bs-readers-header-username": "Uzeronomo",
+	"bs-readers-header-ts": "Dato",
 	"bs-readers-header-page": "Pagino"
 }
