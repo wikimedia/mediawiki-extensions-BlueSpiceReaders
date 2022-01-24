@@ -6,7 +6,8 @@
 			"KorkmazO",
 			"MuratTheTurkish",
 			"Sadrettin",
-			"Violetanka"
+			"Violetanka",
+			"Can"
 		]
 	},
 	"bs-readers-desc": "Bir sayfayı okuyan insanların listesini oluşturur",
@@ -28,18 +29,19 @@
 	"apihelp-bs-readers-users-store-description": "Belirli sayfanın tüm okuyucularına bilgi ver.",
 	"apihelp-bs-readers-users-store-summary": "Belirli sayfanın tüm okuyucularına bilgi ver.",
 	"apihelp-bs-readers-page-readers-store-summary": "Tüm sayfaların tüm okuyucularını alır",
-	"action-viewreaders": "sayfaların okuyucularını görüntüle",
-	"bs-readers-flyout-title": "Bu sayfanın okuyucuları",
-	"right-viewreaders": "Sayfanın okuyucularını görüntüle",
-	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|Siz}} $1 sayfasını $2 üzerinde okudunuz",
 	"apihelp-bs-readers-revision-readers-store-summary": "Bir sayfanın tüm revizyonlarının tüm okuyucularını alır",
 	"apihelp-bs-readers-tasks-summary": "Okuyucular için ortak işlemler sağlar",
+	"action-viewreaders": "sayfaların okuyucularını görüntüle",
 	"action-viewrevisionreaders": "tek sayfalık revizyonların okuyucularını görüntüle",
+	"bs-readers-flyout-title": "Bu sayfanın okuyucuları",
+	"right-viewreaders": "Sayfanın okuyucularını görüntüle",
 	"right-viewrevisionreaders": "Tek sayfalık revizyonların okuyucularını görüntüle",
+	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|Siz}} $1 sayfasını $2 üzerinde okudunuz",
 	"bs-readers-flyout-header-read-by": "Okuyan",
 	"bs-readers-flyout-header-revision-id": "Revizyon kimliği",
 	"bs-readers-flyout-header-revision-date": "Revizyon tarihi",
 	"bs-readers-flyout-header-read-on": "Şunu üzerine oku",
 	"bs-readers-revision-flyout-title": "Revizyona göre okuyucular",
-	"revisionreaders": "\"$1\" revizyonuna göre okuyucular"
+	"revisionreaders": "\"$1\" revizyonuna göre okuyucular",
+	"bs-readers-info-dialog": "Bu sayfayı okuyanlar"
 }
