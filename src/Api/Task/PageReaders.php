@@ -3,7 +3,6 @@ namespace BlueSpice\Readers\Api\Task;
 
 use BlueSpice\Api\Response\Standard;
 use BlueSpice\Readers\Job\InsertTrace as Job;
-use JobQueueGroup;
 use MediaWiki\MediaWikiServices;
 
 class PageReaders extends \BSApiTasksBase {
@@ -47,7 +46,7 @@ class PageReaders extends \BSApiTasksBase {
 			Job::PARAM_REV_ID => $taskData->revId ? $taskData->revId : $this->getTitle()->getLatestRevID()
 		] );
 
-		JobQueueGroup::singleton()->push( $job );
+		MediaWikiServices::getInstance()->getJobQueueGroup()->push( $job );
 
 		$result->success = true;
 		return $result;
