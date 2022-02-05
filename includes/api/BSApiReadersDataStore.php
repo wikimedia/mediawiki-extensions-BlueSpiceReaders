@@ -58,7 +58,7 @@ class BSApiReadersDataStore extends BSApiExtJSStoreBase {
 		);
 
 		$aPages = [];
-		if ( $oDbr->numRows( $res ) > 0 ) {
+		if ( $res->numRows() > 0 ) {
 			foreach ( $res as $row ) {
 				$oTitle = Title::newFromID( $row->readers_page_id );
 				$oSpecialReaders = SpecialPage::getTitleFor( 'Readers', $oTitle->getPrefixedText() );
@@ -78,7 +78,6 @@ class BSApiReadersDataStore extends BSApiExtJSStoreBase {
 				$aPages[] = (object)$aTmpPage;
 			}
 		}
-		$oDbr->freeResult( $res );
 
 		return $aPages;
 	}

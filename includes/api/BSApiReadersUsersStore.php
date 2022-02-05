@@ -61,7 +61,7 @@ class BSApiReadersUsersStore extends BSApiExtJSStoreBase {
 		);
 
 		$aUsers = [];
-		if ( $oDbr->numRows( $res ) > 0 ) {
+		if ( $res->numRows() > 0 ) {
 			foreach ( $res as $row ) {
 				$oUser = User::newFromId( (int)$row->readers_user_id );
 				$oTitle = Title::makeTitle( NS_USER, $oUser->getName() );
