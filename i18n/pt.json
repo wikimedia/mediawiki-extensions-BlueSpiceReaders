@@ -38,5 +38,7 @@
 	"bs-readers-flyout-header-revision-date": "Data da revisão",
 	"bs-readers-flyout-header-read-on": "Lida em",
 	"bs-readers-revision-flyout-title": "Leitores por revisão",
-	"revisionreaders": "Leitores por revisão de \"$1\""
+	"revisionreaders": "Leitores por revisão de \"$1\"",
+	"bs-readers-pref-numofreaders-help": "Número de leitores que é apresentado na informação da página, nas ferramentas da gestão de qualidade.",
+	"bs-readers-info-dialog": "Leitores desta página"
 }
