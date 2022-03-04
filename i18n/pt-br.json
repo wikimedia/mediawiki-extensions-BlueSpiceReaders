@@ -3,7 +3,8 @@
 		"authors": [
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
-			"Felipe L. Ewald"
+			"Felipe L. Ewald",
+			"Juan90264"
 		]
 	},
 	"bs-readers-desc": "Cria uma lista das pessoas que lêem uma página",
@@ -38,5 +39,7 @@
 	"bs-readers-flyout-header-revision-date": "Data da revisão",
 	"bs-readers-flyout-header-read-on": "Ler em",
 	"bs-readers-revision-flyout-title": "Leitores por revisão",
-	"revisionreaders": "Leitores por revisão de \"$1\""
+	"revisionreaders": "Leitores por revisão de \"$1\"",
+	"bs-readers-pref-numofreaders-help": "Número de leitores que são exibidos nas informações da página nas ferramentas de gerenciamento de qualidade.",
+	"bs-readers-info-dialog": "Leitores desta página"
 }
