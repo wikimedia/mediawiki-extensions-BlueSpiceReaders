@@ -3,7 +3,8 @@
 		"authors": [
 			"Jon Harald Søby",
 			"Orf3us",
-			"Tarjeimo"
+			"Tarjeimo",
+			"Vukky"
 		]
 	},
 	"bs-readers-header-page": "Side",
@@ -38,5 +39,6 @@
 	"bs-readers-flyout-header-revision-date": "Revisjonsdato",
 	"bs-readers-flyout-header-read-on": "Lest",
 	"bs-readers-revision-flyout-title": "Lesere etter revisjon",
-	"revisionreaders": "Lesere etter revisjon av «$1»"
+	"revisionreaders": "Lesere etter revisjon av «$1»",
+	"bs-readers-info-dialog": "Lesere av denne siden"
 }
