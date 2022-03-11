@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"FiberAhmed",
 			"Meno25",
 			"ديفيد",
 			"محمد أحمد عبد الفتاح"
@@ -29,5 +30,6 @@
 	"bs-readers-flyout-title": "قراء هذه الصفحة",
 	"right-viewreaders": "عرض قراء صفحة",
 	"bs-readers-privacy-transparency-working-readers": "قراء بلو سبيس - {{GENDER:$3|أنت}} قرأت الصفحة $1 في $2",
-	"bs-readers-info-dialog": "قراء هذه الصفحة"
+	"bs-readers-info-dialog": "قراء هذه الصفحة",
+	"bs-readers-flyout-header-read-on": "القراءة في"
 }
