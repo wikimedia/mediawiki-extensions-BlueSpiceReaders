@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Alirezaaa",
+			"Beginneruser",
 			"Ebraminio",
 			"FarsiNevis",
 			"Huji",
@@ -13,7 +14,7 @@
 	"bs-readers-desc": "فهرستی از کاربرانی که یک صفحه را خوانده‌اند می‌سازد",
 	"prefs-readers": "خوانندگان",
 	"bs-readers-title": "{{PLURAL:$1|{{GENDER:$2|خواننده}}|خوانندگان}}",
-	"readers-user": "صفحات {{GENDER:$1|خوانده‌شده}} توسط: $1",
+	"readers-user": "صفحه‌های {{GENDER:$1|خوانده‌شده}} توسط: $1",
 	"readers": "خوانندگان «$1»",
 	"bs-readers-contentactions-label": "نمایش خوانندگان",
 	"bs-readers-pagenotexists": "صفحه وجود ندارد.",
