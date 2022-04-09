@@ -4,8 +4,8 @@ namespace BlueSpice\Readers\Data\RevisionReaders;
 
 use BlueSpice\Readers\Data\Record;
 use Language;
-use MediaWiki\Storage\RevisionLookup;
-use MediaWiki\Storage\RevisionRecord;
+use MediaWiki\Revision\RevisionLookup;
+use MediaWiki\Revision\RevisionRecord;
 
 class SecondaryDataProvider extends \BlueSpice\Data\SecondaryDataProvider {
 
