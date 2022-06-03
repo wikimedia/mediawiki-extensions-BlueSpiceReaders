@@ -40,5 +40,6 @@
 	"bs-readers-flyout-header-read-on": "Lest",
 	"bs-readers-revision-flyout-title": "Lesere etter revisjon",
 	"revisionreaders": "Lesere etter revisjon av «$1»",
-	"bs-readers-info-dialog": "Lesere av denne siden"
+	"bs-readers-info-dialog": "Lesere av denne siden",
+	"bs-readers-pref-numofreaders-help": "Antall lesere som vises under sideinformasjon i kvalitetsbehandlingsverktøy."
 }
