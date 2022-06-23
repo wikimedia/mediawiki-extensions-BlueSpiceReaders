@@ -3,7 +3,8 @@
 		"authors": [
 			"Beta16",
 			"Macofe",
-			"Selven"
+			"Selven",
+			"GpieroMW"
 		]
 	},
 	"bs-readers-desc": "Crea un elenco di persone che leggono una pagina",
@@ -24,5 +25,6 @@
 	"bs-readers-flyout-header-read-by": "Letto da",
 	"bs-readers-flyout-header-revision-id": "ID versione",
 	"bs-readers-flyout-header-revision-date": "Data versione",
-	"bs-readers-flyout-header-read-on": "Letto il"
+	"bs-readers-flyout-header-read-on": "Letto il",
+	"bs-readers-info-dialog": "Lettori di questa pagina"
 }
