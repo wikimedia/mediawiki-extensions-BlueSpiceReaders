@@ -2,9 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Beta16",
+			"GpieroMW",
 			"Macofe",
-			"Selven",
-			"GpieroMW"
+			"Selven"
 		]
 	},
 	"bs-readers-desc": "Crea un elenco di persone che leggono una pagina",
