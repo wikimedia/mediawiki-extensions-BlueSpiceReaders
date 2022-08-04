@@ -5,11 +5,12 @@ namespace BlueSpice\Readers\Hook\LoadExtensionSchemaUpdates;
 class AddReadersTable extends \BlueSpice\Hook\LoadExtensionSchemaUpdates {
 
 	protected function doProcess() {
+		$dbType = $this->updater->getDB()->getType();
 		$dir = $this->getExtensionPath();
 
 		$this->updater->addExtensionTable(
 			'bs_readers',
-			"$dir/maintenance/db/bs_readers.sql"
+			"$dir/maintenance/db/sql/$dbType/bs_readers-generated.sql"
 		);
 
 		$this->updater->addExtensionField(
