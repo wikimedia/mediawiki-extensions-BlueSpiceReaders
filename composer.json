@@ -4,7 +4,7 @@
 	"description": "Creates a list of the people who read a page",
 	"license": "GPL-3.0-only",
 	"require": {
-		"composer/installers": "~1.0"
+		"composer/installers": "~1.0|~2"
 	},
 	"autoload": {
 		"psr-4": {
