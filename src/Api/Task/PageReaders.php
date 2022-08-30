@@ -4,7 +4,6 @@ namespace BlueSpice\Readers\Api\Task;
 use BlueSpice\Api\Response\Standard;
 use BlueSpice\Readers\Job\InsertTrace as Job;
 use JobQueueGroup;
-use MediaWiki\MediaWikiServices;
 
 class PageReaders extends \BSApiTasksBase {
 
@@ -57,15 +56,15 @@ class PageReaders extends \BSApiTasksBase {
 	 * @return bool
 	 */
 	protected function skipRequest() {
-		if ( $this->getServices()->getReadOnlyMode()->isReadOnly() ) {
+		$services = $this->getServices();
+		if ( $services->getReadOnlyMode()->isReadOnly() ) {
 			return true;
 		}
 		if ( !$this->getTitle() || !$this->getTitle()->exists() ) {
 			return true;
 		}
 
-		$canRead = MediaWikiServices::getInstance()
-			->getPermissionManager()
+		$canRead = $services->getPermissionManager()
 			->userCan(
 				'read',
 				$this->getUser(),
@@ -80,7 +79,7 @@ class PageReaders extends \BSApiTasksBase {
 			return true;
 		}
 		// Not sure if this is needed additionaly to isAnon...
-		if ( \User::isIP( $this->getUser()->getName() ) ) {
+		if ( $services->getUserNameUtils()->isIP( $this->getUser()->getName() ) ) {
 			return true;
 		}
 		$excludeNS = $this->getConfig()->get( 'ReadersNamespaceBlacklist' );
