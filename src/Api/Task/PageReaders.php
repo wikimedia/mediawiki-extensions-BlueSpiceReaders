@@ -3,7 +3,6 @@ namespace BlueSpice\Readers\Api\Task;
 
 use BlueSpice\Api\Response\Standard;
 use BlueSpice\Readers\Job\InsertTrace as Job;
-use MediaWiki\MediaWikiServices;
 
 class PageReaders extends \BSApiTasksBase {
 
@@ -46,7 +45,7 @@ class PageReaders extends \BSApiTasksBase {
 			Job::PARAM_REV_ID => $taskData->revId ? $taskData->revId : $this->getTitle()->getLatestRevID()
 		] );
 
-		MediaWikiServices::getInstance()->getJobQueueGroup()->push( $job );
+		$this->getServices()->getJobQueueGroup()->push( $job );
 
 		$result->success = true;
 		return $result;
@@ -56,20 +55,20 @@ class PageReaders extends \BSApiTasksBase {
 	 * @return bool
 	 */
 	protected function skipRequest() {
-		$services = MediaWikiServices::getInstance();
-
-		if ( $this->getServices()->getReadOnlyMode()->isReadOnly() ) {
+		$services = $this->getServices();
+		if ( $services->getReadOnlyMode()->isReadOnly() ) {
 			return true;
 		}
 		if ( !$this->getTitle() || !$this->getTitle()->exists() ) {
 			return true;
 		}
 
-		$canRead = $services->getPermissionManager()->userCan(
-			'read',
-			$this->getUser(),
-			$this->getTitle()
-		);
+		$canRead = $services->getPermissionManager()
+			->userCan(
+				'read',
+				$this->getUser(),
+				$this->getTitle()
+			);
 
 		if ( !$canRead ) {
 			return true;
