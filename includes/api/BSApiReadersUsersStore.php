@@ -27,7 +27,6 @@
 
 use BlueSpice\DynamicFileDispatcher\Params;
 use BlueSpice\DynamicFileDispatcher\UserProfileImage;
-use MediaWiki\MediaWikiServices;
 
 /**
  * GroupManager Api class
@@ -61,9 +60,14 @@ class BSApiReadersUsersStore extends BSApiExtJSStoreBase {
 		);
 
 		$aUsers = [];
+
 		if ( $res->numRows() > 0 ) {
+			$services = $this->getServices();
+			$userFactory = $services->getUserFactory();
+			$linkRenderer = $services->getLinkRenderer();
+
 			foreach ( $res as $row ) {
-				$oUser = User::newFromId( (int)$row->readers_user_id );
+				$oUser = $userFactory->newFromId( (int)$row->readers_user_id );
 				$oTitle = Title::makeTitle( NS_USER, $oUser->getName() );
 				$params = [
 					Params::MODULE => UserProfileImage::MODULE_NAME,
@@ -72,8 +76,7 @@ class BSApiReadersUsersStore extends BSApiExtJSStoreBase {
 					UserProfileImage::HEIGHT => 50,
 				];
 
-				$dfdUrlBuilder = MediaWikiServices::getInstance()
-					->getService( 'BSDynamicFileDispatcherUrlBuilder' );
+				$dfdUrlBuilder = $services->getService( 'BSDynamicFileDispatcherUrlBuilder' );
 				$sImage = $dfdUrlBuilder->build( new Params( $params ) );
 
 				$oSpecialReaders = SpecialPage::getTitleFor( 'Readers', $oTitle->getPrefixedText() );
@@ -83,10 +86,10 @@ class BSApiReadersUsersStore extends BSApiExtJSStoreBase {
 				$aTmpUser[ 'user_name' ] = $oUser->getName();
 				$aTmpUser[ 'user_page' ] = $oTitle->getLocalURL();
 				// TODO: Implement good "real_name" handling
-				$aTmpUser[ 'user_page_link' ] = MediaWikiServices::getInstance()->getLinkRenderer()
+				$aTmpUser[ 'user_page_link' ] = $linkRenderer
 					->makeLink( $oTitle, new HtmlArmor( $oTitle->getText() . ' ' ) );
 				$aTmpUser[ 'user_readers' ] = $oSpecialReaders->getLocalURL();
-				$aTmpUser[ 'user_readers_link' ] = MediaWikiServices::getInstance()->getLinkRenderer()
+				$aTmpUser[ 'user_readers_link' ] = $linkRenderer
 					->makeLink( $oSpecialReaders, new HtmlArmor( '' ), [
 						'class' => 'icon-bookmarks'
 				] );

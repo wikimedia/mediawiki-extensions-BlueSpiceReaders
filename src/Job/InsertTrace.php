@@ -9,7 +9,6 @@ use BlueSpice\Readers\Data\Record;
 use Job;
 use MediaWiki\MediaWikiServices;
 use Title;
-use User;
 
 class InsertTrace extends Job {
 
@@ -18,6 +17,9 @@ class InsertTrace extends Job {
 	public const PARAM_TIMESTAMP = 'ts';
 	public const PARAM_REV_ID = 'revId';
 
+	/** @var MediaWikiServices */
+	private $services = null;
+
 	/**
 	 *
 	 * @param Title $title
@@ -25,11 +27,12 @@ class InsertTrace extends Job {
 	 */
 	public function __construct( $title, $params ) {
 		parent::__construct( static::COMMAND, $title, $params );
+		$this->services = MediaWikiServices::getInstance();
 	}
 
 	public function run() {
 		$params = $this->getParams();
-		$user = User::newFromId( $params[ static::PARAM_USER_ID ] );
+		$user = $this->services->getUserFactory()->newFromId( $params[ static::PARAM_USER_ID ] );
 		if ( !$user || $user->isAnon() ) {
 			return;
 		}
@@ -55,7 +58,7 @@ class InsertTrace extends Job {
 	protected function getStore() {
 		return new Store(
 			$this->getContext(),
-			$this->getServices()->getDBLoadBalancer()
+			$this->services->getDBLoadBalancer()
 		);
 	}
 
@@ -66,16 +69,8 @@ class InsertTrace extends Job {
 	protected function getContext() {
 		return new Context(
 			\RequestContext::getMain(),
-			$this->getServices()->getConfigFactory()->makeConfig( 'bsg' )
+			$this->services->getConfigFactory()->makeConfig( 'bsg' )
 		);
-	}
-
-	/**
-	 *
-	 * @return MediaWikiServices
-	 */
-	protected function getServices() {
-		return MediaWikiServices::getInstance();
 	}
 
 }
