@@ -12,8 +12,9 @@ class SecondaryDataProvider extends \BlueSpice\Data\SecondaryDataProvider {
 	 * @param Record &$dataSet
 	 */
 	protected function doExtend( &$dataSet ) {
-		$factory = MediaWikiServices::getInstance()->getService( 'BSRendererFactory' );
-		$user = \User::newFromId( $dataSet->get( Record::USER_ID ) );
+		$services = MediaWikiServices::getInstance();
+		$factory = $services->getService( 'BSRendererFactory' );
+		$user = $services->getUserFactory()->newFromId( $dataSet->get( Record::USER_ID ) );
 		if ( $user instanceof \User == false ) {
 			return;
 		}
