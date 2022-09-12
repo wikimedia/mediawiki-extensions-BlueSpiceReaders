@@ -2,7 +2,6 @@
 namespace BlueSpice\Readers\Special;
 
 use Html;
-use MediaWiki\MediaWikiServices;
 use PermissionsError;
 use Title;
 use User;
@@ -82,7 +81,7 @@ class Readers extends \BlueSpice\SpecialPage {
 	protected function emptyInputError() {
 		$this->getOutput()->setPageTitle( wfMessage( 'bs-readers-emptyinput' ) );
 		$errorView = new ViewTagErrorList(
-			MediaWikiServices::getInstance()->getService( 'BSExtensionFactory' )
+			$this->services->getService( 'BSExtensionFactory' )
 				->getExtension( 'BlueSpiceReaders' )
 		);
 		$errorView->addItem( new ViewTagError( wfMessage( 'bs-readers-emptyinput' )->plain() ) );
