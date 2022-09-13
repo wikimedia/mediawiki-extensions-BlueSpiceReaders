@@ -18,6 +18,9 @@ class InsertTrace extends Job {
 	public const PARAM_TIMESTAMP = 'ts';
 	public const PARAM_REV_ID = 'revId';
 
+	/** @var MediaWikiServices */
+	protected $services = null;
+
 	/**
 	 *
 	 * @param Title $title
