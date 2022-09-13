@@ -3,7 +3,6 @@
 namespace BlueSpice\Readers\RunJobsTriggerHandler;
 
 use BlueSpice\RunJobsTriggerHandler;
-use MediaWiki\MediaWikiServices;
 use MWTimestamp;
 use Status;
 
@@ -20,7 +19,7 @@ class DBCleaner extends RunJobsTriggerHandler {
 	protected function doRun() {
 		$status = Status::newGood();
 
-		$config = MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
+		$config = $this->services->getConfigFactory()->makeConfig( 'bsg' );
 		if ( $config->get( 'ReadersCleanData' ) !== true ) {
 			return $status;
 		}
@@ -34,7 +33,7 @@ class DBCleaner extends RunJobsTriggerHandler {
 		$currentTS = MWTimestamp::getInstance( time() - $daysToLive * $this->secondsInDay )
 			->getTimestamp( TS_MW );
 
-		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
+		$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
 
 		$entriesCount = $dbr->select(
 			'bs_readers',
@@ -46,8 +45,7 @@ class DBCleaner extends RunJobsTriggerHandler {
 			return $status;
 		}
 
-		MediaWikiServices::getInstance()
-			->getDBLoadBalancer()
+		$this->services->getDBLoadBalancer()
 			->getConnection( DB_MASTER )
 			->delete(
 				'bs_readers',
