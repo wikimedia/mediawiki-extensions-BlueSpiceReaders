@@ -61,9 +61,8 @@ class BSApiReadersUsersStore extends BSApiExtJSStoreBase {
 
 		$aUsers = [];
 		if ( $oDbr->numRows( $res ) > 0 ) {
-			$services = $this->getServices();
-			$userFactory = $services->getUserFactory();
-			$linkRenderer = $services->getLinkRenderer();
+			$userFactory = $this->services->getUserFactory();
+			$linkRenderer = $this->services->getLinkRenderer();
 			foreach ( $res as $row ) {
 				$oUser = $userFactory->newFromId( (int)$row->readers_user_id );
 				$oTitle = Title::makeTitle( NS_USER, $oUser->getName() );
@@ -74,7 +73,7 @@ class BSApiReadersUsersStore extends BSApiExtJSStoreBase {
 					UserProfileImage::HEIGHT => 50,
 				];
 
-				$dfdUrlBuilder = $services->getService( 'BSDynamicFileDispatcherUrlBuilder' );
+				$dfdUrlBuilder = $this->services->getService( 'BSDynamicFileDispatcherUrlBuilder' );
 				$sImage = $dfdUrlBuilder->build( new Params( $params ) );
 
 				$oSpecialReaders = SpecialPage::getTitleFor( 'Readers', $oTitle->getPrefixedText() );

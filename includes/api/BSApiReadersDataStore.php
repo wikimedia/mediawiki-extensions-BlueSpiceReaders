@@ -25,8 +25,6 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  */
 
-use MediaWiki\MediaWikiServices;
-
 /**
  * GroupManager Api class
  * @package BlueSpice_Extensions
@@ -65,12 +63,11 @@ class BSApiReadersDataStore extends BSApiExtJSStoreBase {
 
 				$aTmpPage = [];
 				$aTmpPage['pv_page'] = $oTitle->getLocalURL();
-				$aTmpPage['pv_page_link'] = MediaWikiServices::getInstance()->getLinkRenderer()
-					->makeLink( $oTitle );
+				$aTmpPage['pv_page_link'] = $this->services->getLinkRenderer()->makeLink( $oTitle );
 				$aTmpPage['pv_page_title'] = $oTitle->getPrefixedText();
 				$aTmpPage['pv_ts'] = $this->getLanguage()->userAdjust( $row->readers_ts );
 				$aTmpPage['pv_date'] = $this->getLanguage()->timeanddate( $row->readers_ts, true );
-				$aTmpPage['pv_readers_link'] = MediaWikiServices::getInstance()->getLinkRenderer()
+				$aTmpPage['pv_readers_link'] = $this->services->getLinkRenderer()
 					->makeLink( $oSpecialReaders, new HtmlArmor( '' ), [
 						'class' => 'icon-list'
 				] );
