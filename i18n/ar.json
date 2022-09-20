@@ -4,7 +4,8 @@
 			"Meno25",
 			"ديفيد",
 			"محمد أحمد عبد الفتاح",
-			"FiberAhmed"
+			"FiberAhmed",
+			"أَحمد"
 		]
 	},
 	"bs-readers-desc": "ينشئ قائمة بالأشخاص الذين يقرؤون صفحة",
@@ -30,5 +31,6 @@
 	"bs-readers-flyout-title": "قراء هذه الصفحة",
 	"right-viewreaders": "عرض قراء صفحة",
 	"bs-readers-privacy-transparency-working-readers": "قراء بلو سبيس - {{GENDER:$3|أنت}} قرأت الصفحة $1 في $2",
+	"bs-readers-flyout-header-revision-date": "تاريخ المراجعة",
 	"bs-readers-flyout-header-read-on": "القراءة في"
 }
