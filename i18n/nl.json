@@ -40,5 +40,9 @@
 	"bs-readers-flyout-header-revision-date": "Revisiedatum",
 	"bs-readers-revision-flyout-title": "Lezers per revisie",
 	"revisionreaders": "Lezers per revisie van \"$1\"",
-	"bs-readers-info-dialog": "Lezers van deze pagina"
+	"bs-readers-info-dialog": "Lezers van deze pagina",
+	"action-viewrevisionreaders": "de lezers van afzonderlijke paginaversies te bekijken",
+	"right-viewrevisionreaders": "De lezers van afzonderlijke paginaversies bekijken",
+	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|U}} leest de pagina $1 op $2",
+	"bs-readers-pref-numofreaders-help": "Aantal lezers dat wordt weergegeven op de pagina-informatie in de tools voor kwaliteitsbeheer."
 }
