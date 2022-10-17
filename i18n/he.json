@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Guycn2",
 			"YaronSh"
 		]
@@ -27,5 +28,17 @@
 	"action-viewreaders": "לצפות בקוראים של דפים",
 	"bs-readers-flyout-title": "קוראי דף זה",
 	"bs-readers-flyout-header-revision-id": "מזהה גרסה",
-	"bs-readers-flyout-header-revision-date": "תאריך גרסה"
+	"bs-readers-flyout-header-revision-date": "תאריך גרסה",
+	"apihelp-bs-readers-revision-readers-store-summary": "קבלת כל הקוראים של כל הגרסאות של דף",
+	"apihelp-bs-readers-tasks-summary": "מספק פעולות נפוצות ל־Readers",
+	"action-viewrevisionreaders": "להציג את הקוראים של תיקונים בדף בודד",
+	"right-viewreaders": "הצגת הקוראים של דף",
+	"right-viewrevisionreaders": "הצגת קוראים של גרסה בודדת של דף",
+	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|קראת}} את הדף $1 ב־$2",
+	"bs-readers-flyout-header-read-by": "נקראה על־ידי",
+	"bs-readers-flyout-header-read-on": "נקראה ב־",
+	"bs-readers-revision-flyout-title": "קוראים לפי גרסה",
+	"revisionreaders": "קוראים לפי גרסה של \"$1\"",
+	"bs-readers-pref-numofreaders-help": "מספר הקוראים המוצג בדף מידע בכלי ניהול האיכות.",
+	"bs-readers-info-dialog": "קוראי הדף הזה"
 }
