@@ -2,7 +2,9 @@
 
 namespace BlueSpice\Readers\Data\PageReaders;
 
-class Store implements \BlueSpice\Data\IStore {
+use MWStake\MediaWiki\Component\DataStore\IStore;
+
+class Store implements IStore {
 	/**
 	 *
 	 * @var \IContextSource

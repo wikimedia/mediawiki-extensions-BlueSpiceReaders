@@ -3,16 +3,18 @@
 namespace BlueSpice\Readers\Data\RevisionReaders;
 
 use BlueSpice\Readers\Data\Record;
+use MWStake\MediaWiki\Component\DataStore\DatabaseWriter;
+use MWStake\MediaWiki\Component\DataStore\IReader;
 
-class Writer extends \BlueSpice\Data\DatabaseWriter {
+class Writer extends DatabaseWriter {
 
 	/**
 	 *
-	 * @param \BlueSpice\Data\IReader $reader
+	 * @param IReader $reader
 	 * @param \LoadBalancer $loadBalancer
 	 * @param \IContextSource|null $context
 	 */
-	public function __construct( \BlueSpice\Data\IReader $reader, $loadBalancer,
+	public function __construct( IReader $reader, $loadBalancer,
 		\IContextSource $context = null ) {
 		parent::__construct( $reader, $loadBalancer, $context, $context->getConfig() );
 	}

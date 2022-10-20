@@ -3,12 +3,15 @@
 namespace BlueSpice\Readers\Data\PageReaders;
 
 use BlueSpice\Readers\Data\Record;
+use MWStake\MediaWiki\Component\DataStore\IPrimaryDataProvider;
+use MWStake\MediaWiki\Component\DataStore\ReaderParams;
+use MWStake\MediaWiki\Component\DataStore\Record as DataStoreRecord;
 
-class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
+class PrimaryDataProvider implements IPrimaryDataProvider {
 
 	/**
 	 *
-	 * @var \BlueSpice\Data\Record[]
+	 * @var DataStoreRecord[]
 	 */
 	protected $data = [];
 
@@ -36,7 +39,7 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 
 	/**
 	 *
-	 * @param \BlueSpice\Data\ReaderParams $params
+	 * @param ReaderParams $params
 	 * @return array
 	 */
 	public function makeData( $params ) {
