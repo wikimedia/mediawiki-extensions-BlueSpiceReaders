@@ -2,9 +2,10 @@
 
 namespace BlueSpice\Readers\Data\PageReaders;
 
-use BlueSpice\Data\ReaderParams;
+use MWStake\MediaWiki\Component\DataStore\DatabaseReader;
+use MWStake\MediaWiki\Component\DataStore\ReaderParams;
 
-class Reader extends \BlueSpice\Data\DatabaseReader {
+class Reader extends DatabaseReader {
 
 	/**
 	 *
