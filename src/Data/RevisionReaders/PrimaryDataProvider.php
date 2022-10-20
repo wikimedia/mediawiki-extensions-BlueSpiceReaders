@@ -2,16 +2,19 @@
 
 namespace BlueSpice\Readers\Data\RevisionReaders;
 
-use BlueSpice\Data\Filter;
-use BlueSpice\Data\FilterFinder;
 use BlueSpice\Readers\Data\Record;
 use BlueSpice\Readers\Data\Schema;
+use MWStake\MediaWiki\Component\DataStore\Filter;
+use MWStake\MediaWiki\Component\DataStore\FilterFinder;
+use MWStake\MediaWiki\Component\DataStore\IPrimaryDataProvider;
+use MWStake\MediaWiki\Component\DataStore\ReaderParams;
+use MWStake\MediaWiki\Component\DataStore\Record as DataStoreRecord;
 
-class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
+class PrimaryDataProvider implements IPrimaryDataProvider {
 
 	/**
 	 *
-	 * @var \BlueSpice\Data\Record[]
+	 * @var DataStoreRecord[]
 	 */
 	protected $data = [];
 
@@ -39,7 +42,7 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 
 	/**
 	 *
-	 * @param \BlueSpice\Data\ReaderParams $params
+	 * @param ReaderParams $params
 	 * @return array
 	 */
 	public function makeData( $params ) {
@@ -77,7 +80,7 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 
 	/**
 	 *
-	 * @param \BlueSpice\Data\ReaderParams $params
+	 * @param ReaderParams $params
 	 * @return array
 	 */
 	protected function makePreFilterConds( $params ) {
@@ -106,7 +109,7 @@ class PrimaryDataProvider implements \BlueSpice\Data\IPrimaryDataProvider {
 
 	/**
 	 *
-	 * @param \BlueSpice\Data\ReaderParams $params
+	 * @param ReaderParams $params
 	 * @return array
 	 */
 	protected function makePreOptionConds( $params ) {
