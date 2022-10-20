@@ -2,12 +2,13 @@
 
 namespace BlueSpice\Readers\Data\RevisionReaders;
 
-use BlueSpice\Data\ReaderParams;
 use IContextSource;
 use MediaWiki\MediaWikiServices;
+use MWStake\MediaWiki\Component\DataStore\DatabaseReader;
+use MWStake\MediaWiki\Component\DataStore\ReaderParams;
 use RequestContext;
 
-class Reader extends \BlueSpice\Data\DatabaseReader {
+class Reader extends DatabaseReader {
 
 	/**
 	 *

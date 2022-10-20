@@ -2,7 +2,7 @@
 
 namespace BlueSpice\Readers\Data;
 
-class Record extends \BlueSpice\Data\Record {
+class Record extends \MWStake\MediaWiki\Component\DataStore\Record {
 	public const ID = 'readers_id';
 	public const USER_ID = 'readers_user_id';
 	public const USER_NAME = 'readers_user_name';

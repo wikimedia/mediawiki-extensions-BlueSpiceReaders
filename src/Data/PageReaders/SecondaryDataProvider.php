@@ -5,7 +5,7 @@ namespace BlueSpice\Readers\Data\PageReaders;
 use BlueSpice\Readers\Data\Record;
 use MediaWiki\MediaWikiServices;
 
-class SecondaryDataProvider extends \BlueSpice\Data\SecondaryDataProvider {
+class SecondaryDataProvider extends \MWStake\MediaWiki\Component\DataStore\SecondaryDataProvider {
 
 	/**
 	 *
