@@ -240,6 +240,9 @@
 	"HookHandlers": {
 		"standard-dialogs": {
 			"class": "\\BlueSpice\\Readers\\HookHandler\\StandardDialogs"
+		},
+		"addReaders": {
+			"class": "\\BlueSpice\\Readers\\HookHandler\\AddReaders"
 		}
 	},
 	"Hooks": {
@@ -252,7 +255,7 @@
 		"BeforePageDisplay": [
 			"\\BlueSpice\\Readers\\Hook\\BeforePageDisplay\\AddResources::callback"
 		],
-		"SkinTemplateNavigation::Universal": "\\BlueSpice\\Readers\\Hook\\SkinTemplateNavigationUniversal\\AddReaders::callback",
+		"SkinTemplateNavigation::Universal": "addReaders",
 		"UserMergeAccountFields": "\\BlueSpice\\Readers\\Hook\\UserMergeAccountFields\\MergeReadersDBFields::callback",
 		"StandardDialogsRegisterPageInfoPanelModules": "standard-dialogs"
 	},
