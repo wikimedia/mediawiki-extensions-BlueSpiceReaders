@@ -7,6 +7,7 @@
  * @group BlueSpice
  * @group BlueSpiceExtensions
  * @group BlueSpiceReaders
+ * @covers BSApiReadersUsersStore
  */
 class BSApiReadersUsersStoreTest extends \BlueSpice\Tests\BSApiExtJSStoreTestBase {
 	protected $iFixtureTotal = 3;
