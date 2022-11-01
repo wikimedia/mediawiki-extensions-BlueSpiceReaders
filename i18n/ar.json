@@ -33,5 +33,14 @@
 	"bs-readers-privacy-transparency-working-readers": "قراء بلو سبيس - {{GENDER:$3|أنت}} قرأت الصفحة $1 في $2",
 	"bs-readers-flyout-header-read-on": "القراءة في",
 	"bs-readers-info-dialog": "قراء هذه الصفحة",
-	"bs-readers-flyout-header-revision-date": "تاريخ المراجعة"
+	"bs-readers-flyout-header-revision-date": "تاريخ المراجعة",
+	"apihelp-bs-readers-revision-readers-store-summary": "يحصل على جميع قراء كل المراجعات للصفحة",
+	"apihelp-bs-readers-tasks-summary": "يوفر عمليات مشتركة للقراء",
+	"action-viewrevisionreaders": "عرض قراء المراجعات من صفحة واحدة",
+	"right-viewrevisionreaders": "عرض قراء المراجعات من صفحة واحدة",
+	"bs-readers-flyout-header-read-by": "قرأ من قبل",
+	"bs-readers-flyout-header-revision-id": "معرف المراجعة",
+	"bs-readers-revision-flyout-title": "القراء عن طريق المراجعة",
+	"revisionreaders": "القراء من خلال مراجعة \" $1 \"",
+	"bs-readers-pref-numofreaders-help": "عدد القراء الذي يتم عرضه على معلومات الصفحة في أدوات إدارة الجودة."
 }
