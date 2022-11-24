@@ -28,8 +28,8 @@
 	"bs-readers-flyout-header-read-on": "Letto il",
 	"bs-readers-info-dialog": "Lettori di questa pagina",
 	"bs-readers-flyout-title": "Lettori di questa pagina",
-	"action-viewreaders": "visualizza i lettori di pagine",
-	"bs-readers-revision-flyout-title": "Lettori per revisione",
-	"revisionreaders": "Lettori per revisione di \"$1\"",
+	"action-viewreaders": "visualizzare i lettori di pagine",
+	"bs-readers-revision-flyout-title": "Lettori per versione",
+	"revisionreaders": "Lettori per versione di \"$1\"",
 	"bs-readers-pref-numofreaders-help": "Numero di lettori visualizzati nelle informazioni della pagina negli strumenti di gestione della qualità."
 }
