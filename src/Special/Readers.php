@@ -4,7 +4,6 @@ namespace BlueSpice\Readers\Special;
 use Html;
 use PermissionsError;
 use Title;
-use User;
 use ViewTagError;
 use ViewTagErrorList;
 
@@ -110,7 +109,7 @@ class Readers extends \BlueSpice\SpecialPage {
 	 */
 	protected function readByUser( Title $requestedTitle ) {
 		$this->getOutput()->addModules( [ 'ext.bluespice.readers.specialreaderspath' ] );
-		$oUser = User::newFromName( $requestedTitle->getText() );
+		$oUser = $this->services->getUserFactory()->newFromName( $requestedTitle->getText() );
 		$this->getOutput()->setPageTitle( wfMessage( 'readers-user', $oUser->getName() )->text() );
 
 		$this->getOutput()->addJsConfigVars( "bsReadersUserID", $oUser->getId() );
