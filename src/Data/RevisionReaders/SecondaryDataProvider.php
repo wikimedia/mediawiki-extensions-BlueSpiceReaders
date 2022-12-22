@@ -7,7 +7,7 @@ use Language;
 use MediaWiki\Storage\RevisionLookup;
 use MediaWiki\Storage\RevisionRecord;
 
-class SecondaryDataProvider extends \BlueSpice\Data\SecondaryDataProvider {
+class SecondaryDataProvider extends \MWStake\MediaWiki\Component\DataStore\SecondaryDataProvider {
 
 	/**
 	 * @var Language $language
