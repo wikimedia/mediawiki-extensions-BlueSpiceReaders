@@ -20,5 +20,6 @@
 	"bs-readers-header-username": "Uporabniško ime",
 	"bs-readers-header-readerspath": "Bralec",
 	"bs-readers-header-ts": "Datum",
-	"bs-readers-header-page": "Stran"
+	"bs-readers-header-page": "Stran",
+	"right-viewrevisionreaders": "Ogled bralcev redakcij posamezne strani"
 }
