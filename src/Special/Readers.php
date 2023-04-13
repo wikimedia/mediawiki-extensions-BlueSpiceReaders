@@ -4,8 +4,6 @@ namespace BlueSpice\Readers\Special;
 use Html;
 use PermissionsError;
 use Title;
-use ViewTagError;
-use ViewTagErrorList;
 
 class Readers extends \BlueSpice\SpecialPage {
 
@@ -67,11 +65,7 @@ class Readers extends \BlueSpice\SpecialPage {
 	 */
 	protected function pageNotExistError() {
 		$this->getOutput()->setPageTitle( wfMessage( 'bs-readers-pagenotexists' ) );
-		$errorView = new ViewTagErrorList();
-		$errorView->addItem(
-			new ViewTagError( wfMessage( 'bs-readers-pagenotexists' )->plain() )
-		);
-		return $errorView->execute();
+		return $this->msg( 'bs-readers-pagenotexists' )->text();
 	}
 
 	/**
@@ -79,12 +73,7 @@ class Readers extends \BlueSpice\SpecialPage {
 	 */
 	protected function emptyInputError() {
 		$this->getOutput()->setPageTitle( wfMessage( 'bs-readers-emptyinput' ) );
-		$errorView = new ViewTagErrorList(
-			$this->services->getService( 'BSExtensionFactory' )
-				->getExtension( 'BlueSpiceReaders' )
-		);
-		$errorView->addItem( new ViewTagError( wfMessage( 'bs-readers-emptyinput' )->plain() ) );
-		return $errorView->execute();
+		return $this->msg( 'bs-readers-emptyinput' )->text();
 	}
 
 	/**
