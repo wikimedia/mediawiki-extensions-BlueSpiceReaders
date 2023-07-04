@@ -19,7 +19,6 @@
 	"bs-readers-header-readerspath": "Αναγνώστης",
 	"bs-readers-header-ts": "Ημερομηνία",
 	"bs-readers-header-page": "Σελίδα",
-	"apihelp-bs-readers-data-store-description": "Λάβετε πληροφορίες αναγνωστών για μια συγκεκριμένη σελίδα.",
 	"action-viewreaders": "προβολή των αναγνωστών των σελίδων",
 	"right-viewreaders": "Προβολή των αναγνωστών μιας σελίδας",
 	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|You}} διαβάστε την σελίδα $1 στη $2"

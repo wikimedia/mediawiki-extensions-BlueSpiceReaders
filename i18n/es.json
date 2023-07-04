@@ -24,7 +24,6 @@
 	"bs-readers-header-readerspath": "Lector",
 	"bs-readers-header-ts": "Fecha",
 	"bs-readers-header-page": "Página",
-	"apihelp-bs-readers-data-store-description": "Obtener información del lector de una página específica.",
 	"apihelp-bs-readers-data-store-summary": "Obtener información del lector de una página específica.",
 	"apihelp-bs-readers-tasks-summary": "Proporciona operaciones comunes para los lectores",
 	"action-viewreaders": "ver los lectores de páginas",
