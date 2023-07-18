@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Piano1forte2"
+		]
+	},
+	"readers": "Readers of '$1'",
+	"revisionreaders": "Readers by revision of '$1'"
+}
