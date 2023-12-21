@@ -25,7 +25,6 @@
 	"apihelp-bs-readers-tasks-summary": "Provides common operations for Readers",
 	"action-viewreaders": "view the readers of pages",
 	"action-viewrevisionreaders": "view the readers of single page revisions",
-	"bs-readers-flyout-title": "Readers of this page",
 	"right-viewreaders": "View readers of a page",
 	"right-viewrevisionreaders": "View readers of single page revisions",
 	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|You}} read the page $1 on $2",

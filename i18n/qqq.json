@@ -30,7 +30,6 @@
 	"apihelp-bs-readers-tasks-summary": "{{doc-apihelp-summary|bs-readers-tasks}}",
 	"action-viewreaders": "label for denied special page\n{{doc-action|viewreaders}}",
 	"action-viewrevisionreaders": "label for denied special page\n{{doc-action|viewrevisionreaders}}",
-	"bs-readers-flyout-title": "Title of the panel showing readers of a page",
 	"right-viewreaders": "{{doc-right|viewreaders}}",
 	"right-viewrevisionreaders": "{{doc-right|viewrevisionreaders}}",
 	"bs-readers-privacy-transparency-working-readers": "Message for item in BlueSpicePrivacy when exporting user reader data.\n* $1 - Page prefixed title\n* $2 - Read timestamp",

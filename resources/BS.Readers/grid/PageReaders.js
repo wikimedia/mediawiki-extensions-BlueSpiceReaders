@@ -1,8 +1,7 @@
 Ext.define( 'BS.Readers.grid.PageReaders', {
 	extend: 'Ext.grid.Panel',
 	requires: [ 'BS.store.BSApi' ],
-	title: mw.message( 'bs-readers-flyout-title' ).plain(),
-	cls: 'bs-readers-flyout',
+	cls: 'bs-readers-info-dialog',
 	maxWidth: 600,
 	articleId: mw.config.get( 'wgArticleId' ),
 	readersLimit: mw.config.get( 'bsgReadersNumOfReaders' ),
@@ -30,7 +29,7 @@ Ext.define( 'BS.Readers.grid.PageReaders', {
 			id: 'readers-aggregated',
 			sortable: false,
 			width: 400,
-			tpl: "<div class='bs-readers-flyout-grid-item'>" +
+			tpl: "<div class='bs-readers-info-dialog-item'>" +
 				"{user_image_html}" +
 				"<span>{readers_user_name}</span></div>",
 			flex: 1
