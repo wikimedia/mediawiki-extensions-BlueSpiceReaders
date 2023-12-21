@@ -2,7 +2,7 @@ Ext.define( 'BS.Readers.grid.RevisionReaders', {
 	extend: 'Ext.grid.Panel',
 	requires: [ 'BS.store.BSApi' ],
 	title: mw.message( 'bs-readers-revision-flyout-title' ).plain(),
-	cls: 'bs-readers-flyout',
+	cls: 'bs-readers-info-dialog',
 	maxWidth: 600,
 	plugins: 'gridfilters',
 	articleId: mw.config.get( 'wgArticleId' ),

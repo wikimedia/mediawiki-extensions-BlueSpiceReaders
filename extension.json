@@ -41,20 +41,6 @@
 				}
 			}
 		},
-		"BlueSpiceArticleInfo": {
-			"FlyoutModules": {
-				"pagereaders": {
-					"module": "ext.bluespice.pagereaders.flyout",
-					"make-items-callback": "bs.pagereaders.flyout.makeItems",
-					"skip-callback": "\\BlueSpice\\Readers\\Extension::pageReadersFlyoutCheckPermissions"
-				},
-				"revisionreaders": {
-					"module": "ext.bluespice.revisionreaders.flyout",
-					"make-items-callback": "bs.revisionreaders.flyout.makeItems",
-					"skip-callback": "\\BlueSpice\\Readers\\Extension::revisionReadersFlyoutCheckPermissions"
-				}
-			}
-		},
 		"BlueSpicePrivacy": {
 			"Handlers": [
 				"\\BlueSpice\\Readers\\Privacy\\Handler"
@@ -174,42 +160,6 @@
 				"bs-readers-header-page"
 			]
 		},
-		"ext.bluespice.pagereaders.flyout": {
-			"scripts": [
-				"bluespice.pagereaders.flyout.js"
-			],
-			"styles": [
-				"bluespice.readers.flyout.less"
-			],
-			"dependencies": [
-				"ext.bluespice.extjs"
-			],
-			"messages": [
-				"bs-readers-flyout-title",
-				"bs-readers-flyout-header-read-by",
-				"bs-readers-flyout-header-revision-id",
-				"bs-readers-flyout-header-revision-date",
-				"bs-readers-flyout-header-read-on"
-			]
-		},
-		"ext.bluespice.revisionreaders.flyout": {
-			"scripts": [
-				"bluespice.revisionreaders.flyout.js"
-			],
-			"styles": [
-				"bluespice.readers.flyout.less"
-			],
-			"dependencies": [
-				"ext.bluespice.extjs"
-			],
-			"messages": [
-				"bs-readers-revision-flyout-title",
-				"bs-readers-flyout-header-read-by",
-				"bs-readers-flyout-header-revision-id",
-				"bs-readers-flyout-header-revision-date",
-				"bs-readers-flyout-header-read-on"
-			]
-		},
 		"ext.bluespice.readers.insertTrace": {
 			"scripts": [
 				"bluespice.readers.insertTrace.js"
@@ -223,7 +173,7 @@
 				"bluespice.readers.ReadersInformationPage.js"
 			],
 			"styles": [
-				"bluespice.readers.flyout.less"
+				"bluespice.readers.infoDialog.less"
 			],
 			"messages": [
 				"bs-readers-info-dialog"
