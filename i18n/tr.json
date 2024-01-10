@@ -31,7 +31,6 @@
 	"apihelp-bs-readers-tasks-summary": "Okuyucular için ortak işlemler sağlar",
 	"action-viewreaders": "sayfaların okuyucularını görüntüle",
 	"action-viewrevisionreaders": "tek sayfalık revizyonların okuyucularını görüntüle",
-	"bs-readers-flyout-title": "Bu sayfanın okuyucuları",
 	"right-viewreaders": "Sayfanın okuyucularını görüntüle",
 	"right-viewrevisionreaders": "Tek sayfalık revizyonların okuyucularını görüntüle",
 	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|Siz}} $1 sayfasını $2 üzerinde okudunuz",

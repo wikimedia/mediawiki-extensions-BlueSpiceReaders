@@ -29,7 +29,6 @@
 	"apihelp-bs-readers-tasks-summary": "يوفر عمليات مشتركة للقراء",
 	"action-viewreaders": "عرض قراء الصفحات",
 	"action-viewrevisionreaders": "عرض قراء المراجعات من صفحة واحدة",
-	"bs-readers-flyout-title": "قراء هذه الصفحة",
 	"right-viewreaders": "عرض قراء صفحة",
 	"right-viewrevisionreaders": "عرض قراء المراجعات من صفحة واحدة",
 	"bs-readers-privacy-transparency-working-readers": "قراء بلو سبيس - {{GENDER:$3|أنت}} قرأت الصفحة $1 في $2",

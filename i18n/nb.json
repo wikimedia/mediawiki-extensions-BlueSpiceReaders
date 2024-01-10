@@ -28,7 +28,6 @@
 	"apihelp-bs-readers-tasks-summary": "Gir felles operasjoner for lesere",
 	"action-viewreaders": "vise leserne av sider",
 	"action-viewrevisionreaders": "vise leserne av sideversjoner enkeltvis",
-	"bs-readers-flyout-title": "Lesere av denne siden",
 	"right-viewreaders": "Se en sides lesere",
 	"right-viewrevisionreaders": "Vise leserne til sideversjoner enkeltvis",
 	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders – {{GENDER:$3|Du}} leste siden $1 $2",

@@ -27,7 +27,6 @@
 	"apihelp-bs-readers-tasks-summary": "מספק פעולות נפוצות ל־Readers",
 	"action-viewreaders": "לצפות בקוראים של דפים",
 	"action-viewrevisionreaders": "להציג את הקוראים של תיקונים בדף בודד",
-	"bs-readers-flyout-title": "קוראי דף זה",
 	"right-viewreaders": "הצגת הקוראים של דף",
 	"right-viewrevisionreaders": "הצגת קוראים של גרסה בודדת של דף",
 	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|קראת}} את הדף $1 ב־$2",

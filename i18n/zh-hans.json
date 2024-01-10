@@ -29,7 +29,6 @@
 	"apihelp-bs-readers-page-readers-store-summary": "获取所有页面的所有阅读者",
 	"apihelp-bs-readers-revision-readers-store-summary": "获取一个页面所有修订版本的全部读者",
 	"action-viewreaders": "查看页面的读者们",
-	"bs-readers-flyout-title": "此页面的阅读者",
 	"right-viewreaders": "查看页面的读者",
 	"right-viewrevisionreaders": "查看一个页面修订版本的读者",
 	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders读者 - {{GENDER:$3|您}}在$2阅读了页面$1",

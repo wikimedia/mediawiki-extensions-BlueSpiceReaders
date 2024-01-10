@@ -33,7 +33,6 @@
 	"apihelp-bs-readers-tasks-summary": "提供適用於讀者的通用操作",
 	"action-viewreaders": "檢視頁面讀者",
 	"action-viewrevisionreaders": "檢視單一頁面修訂的讀者",
-	"bs-readers-flyout-title": "此頁面讀者",
 	"right-viewreaders": "檢視頁面的讀者",
 	"right-viewrevisionreaders": "檢視單一頁面修訂的讀者",
 	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|您}}已閱讀頁面$1於$2",
