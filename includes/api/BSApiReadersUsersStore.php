@@ -46,8 +46,8 @@ class BSApiReadersUsersStore extends BSApiExtJSStoreBase {
 			return [];
 		}
 
-		$oDbr = wfGetDB( DB_REPLICA );
-		$res = $oDbr->select(
+		$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
+		$res = $dbr->select(
 			'bs_readers',
 			'*',
 			[
