@@ -17,6 +17,11 @@ class Schema extends \MWStake\MediaWiki\Component\DataStore\Schema {
 				self::SORTABLE => true,
 				self::TYPE => FieldType::INT
 			],
+			Record::USER_REAL_NAME => [
+				self::FILTERABLE => false,
+				self::SORTABLE => false,
+				self::TYPE => FieldType::STRING
+			],
 			Record::USER_NAME => [
 				self::FILTERABLE => true,
 				self::SORTABLE => true,

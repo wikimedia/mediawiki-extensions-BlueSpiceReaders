@@ -10,7 +10,7 @@ Ext.define( 'BS.Readers.grid.PageReaders', {
 
 		this.store =  new BS.store.BSApi({
 			apiAction: 'bs-readers-page-readers-store',
-			fields: [ 'user_image_html', 'readers_page_id', 'readers_user_name' ],
+			fields: [ 'user_image_html', 'readers_page_id', 'readers_user_name', 'readers_user_real_name' ],
 			proxy: {
 				extraParams: {
 					limit: this.readersLimit
@@ -31,7 +31,7 @@ Ext.define( 'BS.Readers.grid.PageReaders', {
 			width: 400,
 			tpl: "<div class='bs-readers-info-dialog-item'>" +
 				"{user_image_html}" +
-				"<span>{readers_user_name}</span></div>",
+				"<span>{readers_user_real_name}</span></div>",
 			flex: 1
 		} );
 

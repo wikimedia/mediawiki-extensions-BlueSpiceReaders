@@ -25,5 +25,7 @@ class SecondaryDataProvider extends \MWStake\MediaWiki\Component\DataStore\Secon
 			'height' => "48",
 		] ) );
 		$dataSet->set( Record::USER_IMAGE_HTML, $image->render() );
+		$userRealName = !empty( $user->getRealName() ) ? $user->getRealName() : $user->getName();
+		$dataSet->set( Record::USER_REAL_NAME, $userRealName );
 	}
 }
