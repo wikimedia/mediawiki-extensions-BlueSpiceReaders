@@ -199,9 +199,6 @@
 		"LoadExtensionSchemaUpdates": [
 			"\\BlueSpice\\Readers\\Hook\\LoadExtensionSchemaUpdates\\AddReadersTable::callback"
 		],
-		"ChameleonSkinTemplateOutputPageBeforeExec": [
-			"\\BlueSpice\\Readers\\Hook\\ChameleonSkinTemplateOutputPageBeforeExec\\AddContentActionToBlacklist::callback"
-		],
 		"BeforePageDisplay": [
 			"\\BlueSpice\\Readers\\Hook\\BeforePageDisplay\\AddResources::callback"
 		],
