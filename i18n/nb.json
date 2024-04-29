@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jon Harald Søby",
+			"Jon Harald S\u00f8by",
 			"Orf3us",
 			"Tarjeimo",
 			"Vukky"
@@ -10,8 +10,8 @@
 	"bs-readers-desc": "Oppretter en liste over personer som har lest en side",
 	"prefs-readers": "Lesere",
 	"bs-readers-title": "{{PLURAL:$1|{{GENDER:$2|Leser}}|Lesere}}",
-	"readers-user": "Sider {{GENDER:$1|lest}} av: $1",
-	"readers": "Lesere av «$1»",
+	"readers-user": "Sider {{GENDER:$1|lest}}\u00a0av: $1",
+	"readers": "Lesere av \u00ab$1\u00bb",
 	"bs-readers-contentactions-label": "Vis lesere",
 	"bs-readers-pagenotexists": "Siden finnes ikke.",
 	"bs-readers-pref-active": "Aktiver lesere",
@@ -33,13 +33,13 @@
 	"bs-readers-flyout-title": "Lesere av denne siden",
 	"right-viewreaders": "Se en sides lesere",
 	"right-viewrevisionreaders": "Vise leserne til sideversjoner enkeltvis",
-	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders – {{GENDER:$3|Du}} leste siden $1 $2",
+	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders \u2013 {{GENDER:$3|Du}}\u00a0leste siden $1 $2",
 	"bs-readers-flyout-header-read-by": "Lest av",
 	"bs-readers-flyout-header-revision-id": "Sideversjons-ID",
 	"bs-readers-flyout-header-revision-date": "Sideversjonsdato",
 	"bs-readers-flyout-header-read-on": "Lest",
 	"bs-readers-revision-flyout-title": "Lesere etter sideversjon",
-	"revisionreaders": "Lesere etter sideversjon av «$1»",
-	"bs-readers-pref-numofreaders-help": "Antall lesere som vises under sideinformasjon i kvalitetsbehandlingsverktøy.",
+	"revisionreaders": "Lesere etter sideversjon av \u00ab$1\u00bb",
+	"bs-readers-pref-numofreaders-help": "Antall lesere som vises under sideinformasjon i kvalitetsbehandlingsverkt\u00f8y.",
 	"bs-readers-info-dialog": "Lesere av denne siden"
 }

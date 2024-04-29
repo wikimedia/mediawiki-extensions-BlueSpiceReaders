@@ -5,12 +5,12 @@
 			"Kizule"
 		]
 	},
-	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders — {{GENDER:$3|Читате}} страницу $1 на $2",
-	"bs-readers-flyout-header-revision-date": "Датум измене",
-	"bs-readers-desc": "Прави списак људи који су прочитали страницу",
-	"prefs-readers": "Читаоци",
-	"bs-readers-header-username": "Корисничко име",
-	"bs-readers-header-ts": "Датум",
-	"bs-readers-header-page": "Страница",
-	"bs-readers-flyout-header-revision-id": "ID измене"
+	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders \u2014 {{GENDER:$3|\u0427\u0438\u0442\u0430\u0442\u0435}} \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0443 $1 \u043d\u0430 $2",
+	"bs-readers-flyout-header-revision-date": "\u0414\u0430\u0442\u0443\u043c \u0438\u0437\u043c\u0435\u043d\u0435",
+	"bs-readers-desc": "\u041f\u0440\u0430\u0432\u0438 \u0441\u043f\u0438\u0441\u0430\u043a \u0459\u0443\u0434\u0438 \u043a\u043e\u0458\u0438 \u0441\u0443 \u043f\u0440\u043e\u0447\u0438\u0442\u0430\u043b\u0438 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0443",
+	"prefs-readers": "\u0427\u0438\u0442\u0430\u043e\u0446\u0438",
+	"bs-readers-header-username": "\u041a\u043e\u0440\u0438\u0441\u043d\u0438\u0447\u043a\u043e \u0438\u043c\u0435",
+	"bs-readers-header-ts": "\u0414\u0430\u0442\u0443\u043c",
+	"bs-readers-header-page": "\u0421\u0442\u0440\u0430\u043d\u0438\u0446\u0430",
+	"bs-readers-flyout-header-revision-id": "ID \u0438\u0437\u043c\u0435\u043d\u0435"
 }

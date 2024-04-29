@@ -4,22 +4,22 @@
 			"Elisardojm"
 		]
 	},
-	"bs-readers-desc": "Crea unha lista das persoas que len unha páxina",
+	"bs-readers-desc": "Crea unha lista das persoas que len unha p\u00e1xina",
 	"prefs-readers": "Lectores",
 	"bs-readers-title": "{{PLURAL:$1|{{GENDER:$2|Lector|Lectora}}|Lectores}}",
-	"readers-user": "Páxinas {{GENDER:$1|lidas}} por: $1",
+	"readers-user": "P\u00e1xinas {{GENDER:$1|lidas}} por: $1",
 	"readers": "Lectores de \"$1\"",
 	"bs-readers-contentactions-label": "Amosar lectores",
-	"bs-readers-pagenotexists": "A páxina non existe.",
+	"bs-readers-pagenotexists": "A p\u00e1xina non existe.",
 	"bs-readers-pref-active": "Activar lectores",
-	"bs-readers-pref-numofreaders": "Número de lectores a amosarː",
-	"bs-readers-emptyinput": "Non se proporcionou ningunha páxina.",
+	"bs-readers-pref-numofreaders": "N\u00famero de lectores a amosar\u02d0",
+	"bs-readers-emptyinput": "Non se proporcionou ningunha p\u00e1xina.",
 	"bs-readers-header-username": "Nome de usuario",
 	"bs-readers-header-readerspath": "Lector",
 	"bs-readers-header-ts": "Data",
-	"bs-readers-header-page": "Páxina",
-	"apihelp-bs-readers-data-store-description": "Obter a información concernente ó lector da páxina especificada.",
-	"apihelp-bs-readers-data-store-summary": "Obter a información concernente ó lector da páxina especificada.",
-	"apihelp-bs-readers-users-store-description": "Obter as informacións de tódolos lectores da páxina especificada.",
-	"apihelp-bs-readers-users-store-summary": "Obter as informacións de tódolos lectores da páxina especificada."
+	"bs-readers-header-page": "P\u00e1xina",
+	"apihelp-bs-readers-data-store-description": "Obter a informaci\u00f3n concernente \u00f3 lector da p\u00e1xina especificada.",
+	"apihelp-bs-readers-data-store-summary": "Obter a informaci\u00f3n concernente \u00f3 lector da p\u00e1xina especificada.",
+	"apihelp-bs-readers-users-store-description": "Obter as informaci\u00f3ns de t\u00f3dolos lectores da p\u00e1xina especificada.",
+	"apihelp-bs-readers-users-store-summary": "Obter as informaci\u00f3ns de t\u00f3dolos lectores da p\u00e1xina especificada."
 }
