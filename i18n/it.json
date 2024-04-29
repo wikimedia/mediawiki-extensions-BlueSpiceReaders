@@ -15,7 +15,7 @@
 	"bs-readers-contentactions-label": "Mostra lettori",
 	"bs-readers-pagenotexists": "La pagina non esiste.",
 	"bs-readers-pref-active": "Attivare lettori",
-	"bs-readers-pref-numofreaders": "Numero di lettori da mostrareː",
+	"bs-readers-pref-numofreaders": "Numero di lettori da mostrare\u02d0",
 	"bs-readers-emptyinput": "Nessuna pagina fornita.",
 	"bs-readers-header-username": "Nome utente",
 	"bs-readers-header-readerspath": "Lettore",
@@ -30,6 +30,6 @@
 	"bs-readers-flyout-header-read-on": "Letto il",
 	"bs-readers-revision-flyout-title": "Lettori per versione",
 	"revisionreaders": "Lettori per versione di \"$1\"",
-	"bs-readers-pref-numofreaders-help": "Numero di lettori visualizzati nelle informazioni della pagina negli strumenti di gestione della qualità.",
+	"bs-readers-pref-numofreaders-help": "Numero di lettori visualizzati nelle informazioni della pagina negli strumenti di gestione della qualit\u00e0.",
 	"bs-readers-info-dialog": "Lettori di questa pagina"
 }
