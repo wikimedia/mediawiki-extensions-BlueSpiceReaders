@@ -4,10 +4,10 @@
 			"W"
 		]
 	},
-	"prefs-readers": "\u0427\u044b\u0442\u0430\u0447\u044b(-\u043a\u0456)",
-	"bs-readers-pagenotexists": "\u0421\u0442\u0430\u0440\u043e\u043d\u043a\u0430 \u043d\u0435 \u0456\u0441\u043d\u0443\u0435.",
-	"bs-readers-header-readerspath": "\u0427\u044b\u0442\u0430\u0447(-\u043a\u0430)",
-	"bs-readers-header-ts": "\u0414\u0430\u0442\u0430",
-	"bs-readers-header-page": "\u0421\u0442\u0430\u0440\u043e\u043d\u043a\u0430",
-	"bs-readers-flyout-title": "\u0427\u044b\u0442\u0430\u0447\u044b(-\u043a\u0456) \u0433\u044d\u0442\u0430\u0439 \u0441\u0442\u0430\u0440\u043e\u043d\u043a\u0456"
+	"prefs-readers": "Чытачы(-кі)",
+	"bs-readers-pagenotexists": "Старонка не існуе.",
+	"bs-readers-header-readerspath": "Чытач(-ка)",
+	"bs-readers-header-ts": "Дата",
+	"bs-readers-header-page": "Старонка",
+	"bs-readers-flyout-title": "Чытачы(-кі) гэтай старонкі"
 }

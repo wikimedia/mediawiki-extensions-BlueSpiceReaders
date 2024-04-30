@@ -4,15 +4,15 @@
 			"Saederup92"
 		]
 	},
-	"prefs-readers": "L\u00e6sere",
+	"prefs-readers": "Læsere",
 	"bs-readers-pagenotexists": "Siden findes ikke.",
-	"bs-readers-pref-active": "Aktive l\u00e6sere",
+	"bs-readers-pref-active": "Aktive læsere",
 	"bs-readers-header-username": "Brugernavn",
-	"bs-readers-header-readerspath": "L\u00e6ser",
+	"bs-readers-header-readerspath": "Læser",
 	"bs-readers-header-ts": "Dato",
 	"bs-readers-header-page": "Side",
-	"bs-readers-flyout-title": "L\u00e6sere af denne side",
-	"right-viewreaders": "Vis l\u00e6sere af en side",
-	"bs-readers-flyout-header-read-by": "L\u00e6st af",
-	"bs-readers-flyout-header-read-on": "L\u00e6st den"
+	"bs-readers-flyout-title": "Læsere af denne side",
+	"right-viewreaders": "Vis læsere af en side",
+	"bs-readers-flyout-header-read-by": "Læst af",
+	"bs-readers-flyout-header-read-on": "Læst den"
 }
