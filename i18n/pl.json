@@ -8,10 +8,10 @@
 		]
 	},
 	"bs-readers-pagenotexists": "Strona nie istnieje.",
-	"bs-readers-header-username": "Nazwa u\u017cytkownika",
+	"bs-readers-header-username": "Nazwa użytkownika",
 	"bs-readers-header-ts": "Data",
 	"bs-readers-header-page": "Strona",
-	"apihelp-bs-readers-page-readers-store-summary": "Pobiera wszystkich czytelnik\u00f3w ze wszystkich stron",
+	"apihelp-bs-readers-page-readers-store-summary": "Pobiera wszystkich czytelników ze wszystkich stron",
 	"bs-readers-flyout-title": "Czytelnicy tej strony",
-	"right-viewreaders": "Zobacz czytelnik\u00f3w strony"
+	"right-viewreaders": "Zobacz czytelników strony"
 }
