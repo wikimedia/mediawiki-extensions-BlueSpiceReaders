@@ -10,8 +10,11 @@
  * @covers BSApiReadersUsersStore
  */
 class BSApiReadersUsersStoreTest extends \BlueSpice\Tests\BSApiExtJSStoreTestBase {
+	/** @var int */
 	protected $iFixtureTotal = 3;
 	// ID = 2; ID = 1 has default "UTPage"; See BSPageFixturesProvider / pages.json
+
+	/** @var string */
 	protected $sQuery = "Test";
 
 	protected function getStoreSchema() {
@@ -43,7 +46,7 @@ class BSApiReadersUsersStoreTest extends \BlueSpice\Tests\BSApiExtJSStoreTestBas
 		];
 	}
 
-	protected $tablesUsed = [ 'bs_readers', 'page', 'user', 'user_groups', 'user_properties' ];
+	protected array $tablesUsed = [ 'bs_readers', 'page', 'user', 'user_groups', 'user_properties' ];
 
 	protected function setUp(): void {
 		parent::setUp();
