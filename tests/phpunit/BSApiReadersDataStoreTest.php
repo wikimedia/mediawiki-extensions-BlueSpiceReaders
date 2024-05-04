@@ -9,8 +9,11 @@
  * @group BlueSpiceReaders
  */
 class BSApiReadersDataStoreTest extends \BlueSpice\Tests\BSApiExtJSStoreTestBase {
+	/** @var int */
 	protected $iFixtureTotal = 4;
 	// Thats the ID of UTSysop
+
+	/** @var int */
 	protected $sQuery = 1;
 
 	protected function getStoreSchema() {
@@ -36,7 +39,7 @@ class BSApiReadersDataStoreTest extends \BlueSpice\Tests\BSApiExtJSStoreTestBase
 		];
 	}
 
-	protected $tablesUsed = [ 'bs_readers', 'page', 'user', 'user_groups', 'user_properties' ];
+	protected array $tablesUsed = [ 'bs_readers', 'page', 'user', 'user_groups', 'user_properties' ];
 
 	protected function setUp(): void {
 		parent::setUp();
