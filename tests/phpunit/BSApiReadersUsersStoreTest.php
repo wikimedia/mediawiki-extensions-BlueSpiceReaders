@@ -45,7 +45,8 @@ class BSApiReadersUsersStoreTest extends \BlueSpice\Tests\BSApiExtJSStoreTestBas
 		];
 	}
 
-	protected array $tablesUsed = [ 'bs_readers', 'page', 'user', 'user_groups', 'user_properties' ];
+	/** @inheritDoc */
+	protected $tablesUsed = [ 'bs_readers', 'page', 'user', 'user_groups', 'user_properties' ];
 
 	protected function setUp(): void {
 		parent::setUp();
