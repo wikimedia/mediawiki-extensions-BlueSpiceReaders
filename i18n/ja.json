@@ -19,5 +19,7 @@
 	"bs-readers-header-ts": "日時",
 	"bs-readers-header-page": "ページ",
 	"action-viewreaders": "ページの閲覧者一覧の閲覧",
-	"right-viewreaders": "ページの閲覧者一覧を閲覧"
+	"right-viewreaders": "ページの閲覧者一覧を閲覧",
+	"action-viewrevisionreaders": "ページの版の読者の閲覧",
+	"right-viewrevisionreaders": "ページの版の読者を閲覧"
 }
