@@ -176,7 +176,8 @@
 				"bluespice.readers.infoDialog.less"
 			],
 			"messages": [
-				"bs-readers-info-dialog"
+				"bs-readers-info-dialog",
+				"bs-readers-info-dialog-column-readers"
 			],
 			"dependencies": [
 				"ext.bluespice"
