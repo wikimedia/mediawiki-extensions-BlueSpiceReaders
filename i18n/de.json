@@ -39,5 +39,6 @@
 	"bs-readers-revision-flyout-title": "Leser je Version",
 	"revisionreaders": "Leser je Version für Artikel „$1“",
 	"bs-readers-pref-numofreaders-help": "Anzahl der Leser, die in den Seiteninformationen der Qualitätsmanagement-Werkzeuge angezeigt wird.",
-	"bs-readers-info-dialog": "Leser dieser Seite"
+	"bs-readers-info-dialog": "Leser dieser Seite",
+	"bs-readers-info-dialog-column-readers": "Leser"
 }

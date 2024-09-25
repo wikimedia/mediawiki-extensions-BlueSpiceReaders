@@ -40,5 +40,6 @@
 	"bs-readers-revision-flyout-title": "Title of the panel showing the readers of each revision",
 	"revisionreaders": "Special page title of RevisionReaders for reader by revision of \"$1\"\n*$1 the page name",
 	"bs-readers-pref-numofreaders-help": "Description for config variable \"ReadersNumOfReaders\"",
-	"bs-readers-info-dialog": "Label for page information dialog"
+	"bs-readers-info-dialog": "Label for page information dialog",
+	"bs-readers-info-dialog-column-readers": "Label for column which lists username of readers"
 }
