@@ -23,29 +23,23 @@
 	bs.readers.info.ReadersInformationPage.prototype.onInfoPanelSelect = function () {
 		var me = this;
 		if ( me.readerGrid === null ){
-			mw.loader.using( 'ext.bluespice.extjs' ).done( function () {
-				Ext.onReady( function( ) {
-					me.readerGrid = Ext.create( 'BS.Readers.grid.PageReaders', {
-						title: false,
-						renderTo: me.$element[0],
-						width: me.$element.width(),
-						height: me.$element.height()
-					});
-				}, me );
-			});
+			mw.loader.using( [ 'ext.oOJSPlus.data', 'oojs-ui.styles.icons-user' ] ).done( function () {
+				bs.api.store.getData( 'readers-page-readers' ).done( function ( data ) {
+					me.readerGrid = new OOJSPlus.ui.data.GridWidget( {
+						columns: {
+							readers_user_name: {
+								headerText: mw.message( 'bs-authors-info-dialog-grid-column-author' ).text(),
+								type: 'user',
+								showImage: true
+							}
+						},
+						data: data.results
+					} );
+					me.$element.append( me.readerGrid.$element );
+				} )
+			} );
 		}
 	}
-
-	bs.readers.info.ReadersInformationPage.prototype.getData = function () {
-
-		var dfd = new $.Deferred();
-		mw.loader.using( 'ext.bluespice.extjs' ).done( function () {
-			Ext.require( 'BS.Readers.grid.PageReaders', function() {
-				dfd.resolve();
-			});
-		});
-		return dfd.promise();
-	};
 
 	registryPageInformation.register( 'readers_infos', bs.readers.info.ReadersInformationPage );
 
