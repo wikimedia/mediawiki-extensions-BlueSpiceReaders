@@ -38,5 +38,6 @@
 	"bs-readers-revision-flyout-title": "Bralci po redakciji",
 	"revisionreaders": "Bralci po redakciji strani »$1«",
 	"bs-readers-pref-numofreaders-help": "Število bralcev, prikaazano na informacijah stran v orodjih za zagotavljanje kakovosti",
-	"bs-readers-info-dialog": "Bralci te strani"
+	"bs-readers-info-dialog": "Bralci te strani",
+	"bs-readers-info-dialog-column-readers": "Bralci"
 }

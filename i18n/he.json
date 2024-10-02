@@ -37,5 +37,6 @@
 	"bs-readers-revision-flyout-title": "קוראים לפי גרסה",
 	"revisionreaders": "קוראים לפי גרסה של \"$1\"",
 	"bs-readers-pref-numofreaders-help": "מספר הקוראים המוצג בדף מידע בכלי ניהול האיכות.",
-	"bs-readers-info-dialog": "קוראי הדף הזה"
+	"bs-readers-info-dialog": "קוראי הדף הזה",
+	"bs-readers-info-dialog-column-readers": "קוראים"
 }
