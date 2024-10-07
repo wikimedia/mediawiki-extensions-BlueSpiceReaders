@@ -43,5 +43,6 @@
 	"bs-readers-revision-flyout-title": "各修訂的讀者",
 	"revisionreaders": "「$1」修訂的讀者",
 	"bs-readers-pref-numofreaders-help": "讀者數目顯示在品質管理工具裡的頁面資訊上",
-	"bs-readers-info-dialog": "此頁面的讀者"
+	"bs-readers-info-dialog": "此頁面的讀者",
+	"bs-readers-info-dialog-column-readers": "讀者"
 }
