@@ -1,4 +1,4 @@
-(function( mw, $, bs ) {
+( ( mw, bs ) => {
 	bs.util.registerNamespace( 'bs.readers.info' );
 
 	bs.readers.info.ReadersInformationPage = function ReadersInformationPage( name, config ) {
@@ -6,7 +6,7 @@
 		bs.readers.info.ReadersInformationPage.super.call( this, name, config );
 	};
 
-	OO.inheritClass( bs.readers.info.ReadersInformationPage, StandardDialogs.ui.BasePage );
+	OO.inheritClass( bs.readers.info.ReadersInformationPage, StandardDialogs.ui.BasePage ); // eslint-disable-line no-undef
 
 	bs.readers.info.ReadersInformationPage.prototype.setupOutlineItem = function () {
 		bs.readers.info.ReadersInformationPage.super.prototype.setupOutlineItem.apply( this, arguments );
@@ -20,27 +20,47 @@
 		return;
 	};
 
-	bs.readers.info.ReadersInformationPage.prototype.onInfoPanelSelect = function () {
-		var me = this;
-		if ( me.readerGrid === null ){
-			mw.loader.using( [ 'ext.oOJSPlus.data', 'oojs-ui.styles.icons-user' ] ).done( function () {
-				bs.api.store.getData( 'readers-page-readers' ).done( function ( data ) {
-					me.readerGrid = new OOJSPlus.ui.data.GridWidget( {
-						columns: {
-							readers_user_name: {
-								headerText: mw.message( 'bs-authors-info-dialog-grid-column-author' ).text(),
-								type: 'user',
-								showImage: true
-							}
-						},
-						data: data.results
-					} );
-					me.$element.append( me.readerGrid.$element );
-				} )
+	bs.readers.info.ReadersInformationPage.prototype.onInfoPanelSelect = async function () {
+		if ( !this.readerGrid ) {
+			await mw.loader.using( [ 'ext.oOJSPlus.data', 'oojs-ui.styles.icons-user' ] );
+
+			let readersStore;
+
+			try {
+				const api = new mw.Api();
+				const response = await api.get( {
+					action: 'query',
+					titles: this.pageName,
+					prop: 'info'
+				} );
+
+				const pageId = Object.keys( response.query.pages )[ 0 ];
+
+				readersStore = new OOJSPlus.ui.data.store.RemoteStore( {
+					action: 'bs-readers-page-readers-store',
+					pageSize: 25
+				} );
+				readersStore.filter( new OOJSPlus.ui.data.filter.String( {
+					value: pageId,
+					operator: 'eq',
+					type: 'string'
+				} ), 'readers_page_id' );
+			} catch ( error ) {}
+
+			this.readerGrid = new OOJSPlus.ui.data.GridWidget( {
+				columns: {
+					readers_user_name: { // eslint-disable-line camelcase
+						headerText: mw.message( 'bs-readers-info-dialog-column-readers' ).text(),
+						type: 'user',
+						showImage: true
+					}
+				},
+				store: readersStore
 			} );
+			this.$element.append( this.readerGrid.$element );
 		}
-	}
+	};
 
-	registryPageInformation.register( 'readers_infos', bs.readers.info.ReadersInformationPage );
+	registryPageInformation.register( 'readers_infos', bs.readers.info.ReadersInformationPage ); // eslint-disable-line no-undef
 
-})( mediaWiki, jQuery, blueSpice );
+} )( mediaWiki, blueSpice );
