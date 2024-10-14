@@ -7,7 +7,8 @@
 			"Macofe",
 			"Thibaut120094",
 			"Verdy p",
-			"Wladek92"
+			"Wladek92",
+			"Terio legale"
 		]
 	},
 	"bs-readers-desc": "Crée une liste des lecteurs d’une page",
@@ -33,7 +34,6 @@
 	"apihelp-bs-readers-tasks-summary": "Fournit les opérations courantes pour les lecteurs",
 	"action-viewreaders": "afficher les lecteurs des pages",
 	"action-viewrevisionreaders": "afficher les lecteurs des versions d’une seule page",
-	"bs-readers-flyout-title": "Lecteurs de cette page",
 	"right-viewreaders": "Afficher les lecteurs d’une page",
 	"right-viewrevisionreaders": "Afficher les lecteurs des versions d’une seule page",
 	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders – {{GENDER:$3|}}Vous lisez la page $1 sur $2",
@@ -44,5 +44,6 @@
 	"bs-readers-revision-flyout-title": "Lecteurs par version",
 	"revisionreaders": "Lecteurs par révision de « $1 »",
 	"bs-readers-pref-numofreaders-help": "Nombre de lecteurs affiché parmi les informations de la page dans les outils de gestion de la qualité.",
-	"bs-readers-info-dialog": "Lecteurs de cette page"
+	"bs-readers-info-dialog": "Lecteurs de cette page",
+	"bs-readers-info-dialog-column-readers": "Lecteurs"
 }

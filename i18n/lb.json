@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Les Meloures",
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
 	"bs-readers-desc": "Stellt eng Lëscht op mat Leit déi eng Säit liesen.",
@@ -21,7 +22,6 @@
 	"bs-readers-header-page": "Säit",
 	"apihelp-bs-readers-users-store-description": "Informatioune vun alle Lieser vun enger spezifescher Säit kréien.",
 	"apihelp-bs-readers-page-readers-store-summary": "Kritt all Lieser vun alle Säiten",
-	"bs-readers-flyout-title": "Lieser vun dëser Säit",
 	"right-viewreaders": "Lieser vun enger Säit weisen",
 	"bs-readers-flyout-header-read-by": "Gelies vun",
 	"bs-readers-flyout-header-revision-id": "Versioun ID",
@@ -29,5 +29,6 @@
 	"bs-readers-flyout-header-read-on": "Gelies den",
 	"bs-readers-revision-flyout-title": "Lieser pro Versioun",
 	"revisionreaders": "Lieser pro Versioun vun \"$1\"",
-	"bs-readers-info-dialog": "Lieser vun dëser Säit"
+	"bs-readers-info-dialog": "Lieser vun dëser Säit",
+	"bs-readers-info-dialog-column-readers": "Lieser"
 }
