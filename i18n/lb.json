@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Les Meloures",
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
 	"bs-readers-desc": "Stellt eng Lëscht op mat Leit déi eng Säit liesen.",
@@ -29,5 +30,6 @@
 	"bs-readers-flyout-header-read-on": "Gelies den",
 	"bs-readers-revision-flyout-title": "Lieser pro Versioun",
 	"revisionreaders": "Lieser pro Versioun vun \"$1\"",
-	"bs-readers-info-dialog": "Lieser vun dëser Säit"
+	"bs-readers-info-dialog": "Lieser vun dëser Säit",
+	"bs-readers-info-dialog-column-readers": "Lieser"
 }

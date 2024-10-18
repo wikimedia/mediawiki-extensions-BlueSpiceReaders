@@ -5,6 +5,7 @@
 			"Facenapalm",
 			"Ice bulldog",
 			"Kaganer",
+			"Kareyac",
 			"Movses",
 			"Okras",
 			"Striking Blue",
@@ -36,5 +37,6 @@
 	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders — $2 {{GENDER:$3|вы}} прочитали страницу $1",
 	"bs-readers-flyout-header-read-by": "Прочитано",
 	"bs-readers-flyout-header-revision-id": "Идентификатор правки",
-	"bs-readers-flyout-header-read-on": "Прочитано"
+	"bs-readers-flyout-header-read-on": "Прочитано",
+	"bs-readers-info-dialog-column-readers": "Читатели"
 }
