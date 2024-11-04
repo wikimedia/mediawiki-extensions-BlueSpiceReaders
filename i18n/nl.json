@@ -33,7 +33,6 @@
 	"apihelp-bs-readers-tasks-summary": "Voorziet in algemene bewerkingen voor Readers",
 	"action-viewreaders": "bekijk de lezers van pagina's",
 	"action-viewrevisionreaders": "de lezers van afzonderlijke paginaversies te bekijken",
-	"bs-readers-flyout-title": "Lezers van deze pagina",
 	"right-viewreaders": "Toon lezers van een pagina",
 	"right-viewrevisionreaders": "De lezers van afzonderlijke paginaversies bekijken",
 	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|U}} leest de pagina $1 op $2",

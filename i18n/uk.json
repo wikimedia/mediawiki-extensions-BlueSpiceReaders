@@ -32,7 +32,6 @@
 	"apihelp-bs-readers-tasks-summary": "Забезпечує загальні дії для читачів",
 	"action-viewreaders": "перегляд читачів сторінок",
 	"action-viewrevisionreaders": "переглянути читачів односторінкових версій",
-	"bs-readers-flyout-title": "Читачі цієї сторінки",
 	"right-viewreaders": "Перегляд читачів сторінки",
 	"right-viewrevisionreaders": "Перегляньте читачів односторінкових версій",
 	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders — {{GENDER:$3|Ви}} читали сторінку $1 станом на $2",
