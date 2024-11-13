@@ -41,5 +41,6 @@
 	"bs-readers-revision-flyout-title": "Lezers per revisie",
 	"revisionreaders": "Lezers per revisie van \"$1\"",
 	"bs-readers-pref-numofreaders-help": "Aantal lezers dat wordt weergegeven op de pagina-informatie in de tools voor kwaliteitsbeheer.",
-	"bs-readers-info-dialog": "Lezers van deze pagina"
+	"bs-readers-info-dialog": "Lezers van deze pagina",
+	"bs-readers-info-dialog-column-readers": "Lezers"
 }
