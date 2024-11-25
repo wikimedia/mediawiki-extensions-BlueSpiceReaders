@@ -41,5 +41,6 @@
 	"bs-readers-revision-flyout-title": "القراء عن طريق المراجعة",
 	"revisionreaders": "القراء من خلال مراجعة \" $1 \"",
 	"bs-readers-pref-numofreaders-help": "عدد القراء الذي يتم عرضه على معلومات الصفحة في أدوات إدارة الجودة.",
-	"bs-readers-info-dialog": "قراء هذه الصفحة"
+	"bs-readers-info-dialog": "قراء هذه الصفحة",
+	"bs-readers-info-dialog-column-readers": "القراء"
 }
