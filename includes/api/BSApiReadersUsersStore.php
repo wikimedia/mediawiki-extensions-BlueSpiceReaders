@@ -25,9 +25,6 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  */
 
-use BlueSpice\DynamicFileDispatcher\Params;
-use BlueSpice\DynamicFileDispatcher\UserProfileImage;
-
 /**
  * GroupManager Api class
  * @package BlueSpice_Extensions
@@ -68,15 +65,19 @@ class BSApiReadersUsersStore extends BSApiExtJSStoreBase {
 			foreach ( $res as $row ) {
 				$oUser = $userFactory->newFromId( (int)$row->readers_user_id );
 				$oTitle = Title::makeTitle( NS_USER, $oUser->getName() );
-				$params = [
-					Params::MODULE => UserProfileImage::MODULE_NAME,
-					UserProfileImage::USERNAME => $oUser->getName(),
-					UserProfileImage::WIDTH => 50,
-					UserProfileImage::HEIGHT => 50,
-				];
 
-				$dfdUrlBuilder = $this->services->getService( 'BSDynamicFileDispatcherUrlBuilder' );
-				$sImage = $dfdUrlBuilder->build( new Params( $params ) );
+				$dfdUrlBuilder = $this->services->getService(
+					'MWStake.DynamicFileDispatcher.Factory'
+				);
+
+				$sImage = $dfdUrlBuilder->getUrl(
+					'userprofileimage',
+					[
+						'username' => $oUser->getName(),
+						'width' => 50,
+						'height' => 50,
+					]
+				);
 
 				$oSpecialReaders = SpecialPage::getTitleFor( 'Readers', $oTitle->getPrefixedText() );
 
