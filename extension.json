@@ -24,9 +24,6 @@
 					"extPath": "/BlueSpiceReaders"
 				}
 			},
-			"ConfigDefinitionRegistry": {
-				"ReadersNumOfReaders": "\\BlueSpice\\Readers\\ConfigDefinition\\ReadersNumOfReaders::getInstance"
-			},
 			"PermissionRegistry": {
 				"viewreaders": {
 					"type": "global",
@@ -37,7 +34,10 @@
 				},
 				"viewrevisionreaders": {
 					"type": "global",
-					"roles": []
+					"roles": [
+						"admin",
+						"maintenanceadmin"
+					]
 				}
 			}
 		},
@@ -58,7 +58,7 @@
 		},
 		"sysop": {
 			"viewreaders": true,
-			"viewrevisionreaders": false
+			"viewrevisionreaders": true
 		}
 	},
 	"AvailableRights": [
@@ -66,7 +66,10 @@
 		"viewrevisionreaders"
 	],
 	"SpecialPages": {
-		"Readers": "\\BlueSpice\\Readers\\Special\\Readers",
+		"Readers": {
+			"class": "\\BlueSpice\\Readers\\Special\\Readers",
+			"services": [ "UserFactory" ]
+		},
 		"RevisionReaders": "\\BlueSpice\\Readers\\Special\\RevisionReaders"
 	},
 	"JobClasses": {
@@ -89,11 +92,6 @@
 	},
 	"config_prefix": "bsg",
 	"config": {
-		"ReadersNumOfReaders": {
-			"value": 10,
-			"descriptionmsg": "bs-readers-pref-numofreaders",
-			"public": true
-		},
 		"ReadersNamespaceBlacklist": {
 			"description": "Defaults to NS_FILE, NS_FILE_TALK, NS_MEDIAWIKI, NS_MEDIAWIKI_TALK, NS_CATEGORY, NS_CATEGORY_TALK",
 			"value": [ 6, 7, 8, 9, 14, 15 ],
@@ -119,12 +117,14 @@
 		"BSReadersFixtures": "tests/phpunit/BSReadersFixtures.php"
 	},
 	"ResourceModules": {
-		"ext.bluespice.readers.specialreaders": {
+		"ext.bluespice.readers.specialReadersPage": {
 			"scripts": [
-				"bluespice.readers.js"
+				"ext.bluespice.readers.specialReadersPage.js",
+				"ui/panel/SpecialReadersPage.js"
 			],
 			"dependencies": [
-				"ext.bluespice.extjs"
+				"oojs-ui",
+				"ext.oOJSPlus.data"
 			],
 			"messages": [
 				"bs-readers-header-username",
@@ -132,32 +132,35 @@
 				"bs-readers-header-ts"
 			]
 		},
-		"ext.bluespice.readers.specialrevisionreaders": {
+		"ext.bluespice.readers.specialReadersUser": {
 			"scripts": [
-				"bluespice.revisionreaders.js"
+				"ext.bluespice.readers.specialReadersUser.js",
+				"ui/panel/SpecialReadersUser.js"
 			],
 			"dependencies": [
-				"ext.bluespice.extjs"
-			],
-			"messages": [
-				"bs-readers-revision-flyout-title",
-				"bs-readers-flyout-header-read-by",
-				"bs-readers-flyout-header-revision-id",
-				"bs-readers-flyout-header-revision-date",
-				"bs-readers-flyout-header-read-on"
-			]
-		},
-		"ext.bluespice.readers.specialreaderspath": {
-			"scripts": [
-				"bluespice.readerspath.js"
-			],
-			"dependencies": [
-				"ext.bluespice.extjs"
+				"oojs-ui",
+				"ext.oOJSPlus.data"
 			],
 			"messages": [
 				"bs-readers-header-readerspath",
 				"bs-readers-header-ts",
 				"bs-readers-header-page"
+			]
+		},
+		"ext.bluespice.readers.specialRevisionReaders": {
+			"scripts": [
+				"ext.bluespice.readers.specialRevisionReaders.js",
+				"ui/panel/SpecialRevisionReaders.js"
+			],
+			"dependencies": [
+				"oojs-ui",
+				"ext.oOJSPlus.data"
+			],
+			"messages": [
+				"bs-readers-header-read-by",
+				"bs-readers-header-revision-id",
+				"bs-readers-header-revision-date",
+				"bs-readers-header-read-on"
 			]
 		},
 		"ext.bluespice.readers.insertTrace": {
@@ -172,15 +175,14 @@
 			"scripts": [
 				"bluespice.readers.ReadersInformationPage.js"
 			],
-			"styles": [
-				"bluespice.readers.infoDialog.less"
-			],
 			"messages": [
 				"bs-readers-info-dialog",
-				"bs-readers-info-dialog-column-readers"
+				"bs-readers-info-dialog-column-readers",
+				"bs-readers-permission-error"
 			],
 			"dependencies": [
-				"ext.bluespice"
+				"ext.bluespice",
+				"oojs-ui-core"
 			]
 		}
 	},

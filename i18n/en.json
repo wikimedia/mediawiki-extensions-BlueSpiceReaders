@@ -12,7 +12,6 @@
 	"bs-readers-contentactions-label": "Display readers",
 	"bs-readers-pagenotexists": "Page does not exist.",
 	"bs-readers-pref-active": "Activate readers",
-	"bs-readers-pref-numofreaders": "Number of readers to display:",
 	"bs-readers-emptyinput": "No page has been provided.",
 	"bs-readers-header-username": "Username",
 	"bs-readers-header-readerspath": "Reader",
@@ -28,13 +27,12 @@
 	"right-viewreaders": "View readers of a page",
 	"right-viewrevisionreaders": "View readers of single page revisions",
 	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|You}} read the page $1 on $2",
-	"bs-readers-flyout-header-read-by": "Read by",
-	"bs-readers-flyout-header-revision-id": "Revision ID",
-	"bs-readers-flyout-header-revision-date": "Revision date",
-	"bs-readers-flyout-header-read-on": "Read on",
-	"bs-readers-revision-flyout-title": "Readers by revision",
+	"bs-readers-header-read-by": "Read by",
+	"bs-readers-header-revision-id": "Revision ID",
+	"bs-readers-header-revision-date": "Revision date",
+	"bs-readers-header-read-on": "Read on",
 	"revisionreaders": "Readers by revision of \"$1\"",
-	"bs-readers-pref-numofreaders-help": "Number of readers that is displayed on the page information in the quality management tools.",
 	"bs-readers-info-dialog": "Readers of this page",
-	"bs-readers-info-dialog-column-readers": "Readers"
+	"bs-readers-info-dialog-column-readers": "Readers",
+	"bs-readers-permission-error": "Permission error"
 }

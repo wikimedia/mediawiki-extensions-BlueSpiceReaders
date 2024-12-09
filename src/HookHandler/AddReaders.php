@@ -4,8 +4,8 @@ namespace BlueSpice\Readers\HookHandler;
 
 use MediaWiki\Hook\SkinTemplateNavigation__UniversalHook;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\SpecialPage\SpecialPage;
 use SkinTemplate;
-use SpecialPage;
 
 class AddReaders implements SkinTemplateNavigation__UniversalHook {
 
@@ -43,16 +43,13 @@ class AddReaders implements SkinTemplateNavigation__UniversalHook {
 			return;
 		}
 
-		$special = SpecialPage::getTitleFor(
-			'Readers',
-			$sktemplate->getTitle()->getPrefixedText()
-		);
+		$special = SpecialPage::getTitleFor( 'Readers' );
 
 		// Add menu entry
 		$links['actions']['readers'] = [
 			'class' => false,
 			'text' => $sktemplate->msg( 'bs-readers-contentactions-label' ),
-			'href' => $special->getLocalURL(),
+			'href' => $special->getLocalURL( "page={$sktemplate->getTitle()->getPrefixedText()}" ),
 			'id' => 'ca-readers',
 			'bs-group' => 'hidden'
 		];

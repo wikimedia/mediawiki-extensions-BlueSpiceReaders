@@ -1,110 +1,85 @@
 <?php
+
 namespace BlueSpice\Readers\Special;
 
-use Html;
-use PermissionsError;
-use Title;
+use MediaWiki\Html\Html;
+use MediaWiki\Output\OutputPage;
+use MediaWiki\SpecialPage\SpecialPage;
+use MediaWiki\Title\Title;
+use MediaWiki\User\UserFactory;
 
-class Readers extends \BlueSpice\SpecialPage {
+class Readers extends SpecialPage {
+
+	/** @var UserFactory */
+	protected $userFactory;
 
 	/**
-	 * @param string $name
-	 * @param string $restrictions
+	 * @param UserFactory $userFactory
 	 */
-	public function __construct( $name = 'Readers', $restrictions = 'viewreaders' ) {
-		parent::__construct( $name, $restrictions, false );
+	public function __construct( UserFactory $userFactory ) {
+		parent::__construct( 'Readers', 'viewreaders' );
+		$this->userFactory = $userFactory;
 	}
 
 	/**
-	 * @param string $parameters
-	 * @throws PermissionsError
+	 * @inheritDoc
 	 */
-	public function execute( $parameters ) {
-		$this->checkPermissions();
-		$requestedTitle = null;
+	public function execute( $subPage ) {
+		parent::execute( $subPage );
+
 		$out = $this->getOutput();
+		$requestParams = $this->getRequest()->getQueryValues();
 
-		if ( !empty( $parameters ) ) {
-			$requestedTitle = Title::newFromText( $parameters );
-
-			if (
-				$requestedTitle->exists() &&
-				(
-					$requestedTitle->getNamespace() !== NS_USER ||
-					strpos( $requestedTitle->getText(), '/' ) !== false
-				)
-			) {
-				$stringOut = $this->pageReaders( $requestedTitle );
-				if ( !$stringOut ) {
-					$this->pageNotExistError();
-				}
-			} elseif (
-				$requestedTitle->getNamespace() === NS_USER &&
-				strpos( $requestedTitle->getText(), '/' ) === false
-			) {
-				$stringOut = $this->readByUser( $requestedTitle );
-				if ( !$stringOut ) {
-					$stringOut = $this->pageNotExistError();
-				}
-			} else {
-				$stringOut = $this->pageNotExistError();
-			}
+		if ( isset( $requestParams['user'] ) ) {
+			$this->readersByUser( $out, $requestParams['user'] );
+		} elseif ( isset( $requestParams['page'] ) ) {
+			$this->readersOfPage( $out, $requestParams['page'] );
 		} else {
-			$stringOut = $this->emptyInputError();
+			$out->setPageTitle( $this->msg( 'bs-readers-emptyinput' ) );
+			$out->addHTML( $this->msg( 'bs-readers-emptyinput' )->text() );
+		}
+	}
+
+	/**
+	 * @param OutputPage $out
+	 * @param string $username
+	 */
+	private function readersByUser( OutputPage $out, string $username ) {
+		$user = $this->userFactory->newFromName( $username );
+		if ( !$user ) {
+			$this->pageNotExistError( $out );
+			return;
 		}
 
-		if ( $requestedTitle === null ) {
-			$out->setPageTitle( $out->getPageTitle() );
+		$out->addJsConfigVars( 'bsReadersUserID', $user->getId() );
+		$out->setPageTitle(	$this->msg( 'readers-user', $username ) );
+		$out->addModules( [ 'ext.bluespice.readers.specialReadersUser' ] );
+		$out->addHTML( Html::element( 'div', [ 'id' => 'bs-readers-special-readers-user-container' ] ) );
+	}
+
+	/**
+	 * @param OutputPage $out
+	 * @param string $page
+	 */
+	private function readersOfPage( OutputPage $out, string $page ) {
+		$title = Title::newFromText( $page );
+		if ( !$title->exists() ) {
+			$this->pageNotExistError( $out );
+			return;
 		}
 
-		$out->addHTML( $stringOut );
+		$out->addJsConfigVars( 'bsReadersTitle', $page );
+		$out->setPageTitle(	$this->msg( 'readers', $page ) );
+		$out->addModules( [ 'ext.bluespice.readers.specialReadersPage' ] );
+		$out->addHTML( Html::element( 'div', [ 'id' => 'bs-readers-special-readers-page-container' ] ) );
 	}
 
 	/**
+	 * @param OutputPage $out
 	 * @return string
 	 */
-	protected function pageNotExistError() {
-		$this->getOutput()->setPageTitle( wfMessage( 'bs-readers-pagenotexists' ) );
-		return $this->msg( 'bs-readers-pagenotexists' )->text();
-	}
-
-	/**
-	 * @return string
-	 */
-	protected function emptyInputError() {
-		$this->getOutput()->setPageTitle( wfMessage( 'bs-readers-emptyinput' ) );
-		return $this->msg( 'bs-readers-emptyinput' )->text();
-	}
-
-	/**
-	 * @param Title $requestedTitle
-	 * @return string
-	 */
-	protected function pageReaders( Title $requestedTitle ) {
-		$this->getOutput()->addModules( [ 'ext.bluespice.readers.specialreaders' ] );
-		$this->getOutput()->setPageTitle(
-			wfMessage( 'readers', $requestedTitle->getFullText() )->text()
-		);
-		$this->getOutput()->addJsConfigVars( "bsReadersTitle", $requestedTitle->getPrefixedText() );
-
-		return Html::element( 'div', [
-			'id' => 'bs-readers-grid'
-		] );
-	}
-
-	/**
-	 * @param Title $requestedTitle
-	 * @return string
-	 */
-	protected function readByUser( Title $requestedTitle ) {
-		$this->getOutput()->addModules( [ 'ext.bluespice.readers.specialreaderspath' ] );
-		$oUser = $this->services->getUserFactory()->newFromName( $requestedTitle->getText() );
-		$this->getOutput()->setPageTitle( wfMessage( 'readers-user', $oUser->getName() )->text() );
-
-		$this->getOutput()->addJsConfigVars( "bsReadersUserID", $oUser->getId() );
-
-		return Html::element( 'div', [
-			'id' => 'bs-readerspath-grid'
-		] );
+	private function pageNotExistError( OutputPage $out ) {
+		$out->setPageTitle( $this->msg( 'bs-readers-pagenotexists' ) );
+		$out->addHTML( $this->msg( 'bs-readers-pagenotexists' )->text() );
 	}
 }

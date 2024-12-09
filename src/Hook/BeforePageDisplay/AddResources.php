@@ -31,12 +31,7 @@ class AddResources extends \BlueSpice\Hook\BeforePageDisplay {
 	}
 
 	protected function doProcess() {
-		$this->out->addJsConfigVars(
-			'bsgReadersNumOfReaders',
-			$this->getConfig()->get( 'ReadersNumOfReaders' )
-		);
 		$this->out->addModules( [ 'ext.bluespice.readers.insertTrace' ] );
 		return true;
 	}
-
 }
