@@ -16,7 +16,6 @@
 	"bs-readers-contentactions-label": "عرض القراء",
 	"bs-readers-pagenotexists": "الصفحة غير موجودة.",
 	"bs-readers-pref-active": "تنشيط القراء",
-	"bs-readers-pref-numofreaders": "عدد القراء الذين سيتم عرضهم:",
 	"bs-readers-emptyinput": "لم يتم تقديم أية صفحة.",
 	"bs-readers-header-username": "اسم المستخدم",
 	"bs-readers-header-readerspath": "قارئ",
@@ -32,13 +31,12 @@
 	"right-viewreaders": "عرض قراء صفحة",
 	"right-viewrevisionreaders": "عرض قراء المراجعات من صفحة واحدة",
 	"bs-readers-privacy-transparency-working-readers": "قراء بلو سبيس - {{GENDER:$3|أنت}} قرأت الصفحة $1 في $2",
-	"bs-readers-flyout-header-read-by": "قرأ من قبل",
-	"bs-readers-flyout-header-revision-id": "معرف المراجعة",
-	"bs-readers-flyout-header-revision-date": "تاريخ المراجعة",
-	"bs-readers-flyout-header-read-on": "القراءة في",
-	"bs-readers-revision-flyout-title": "القراء عن طريق المراجعة",
+	"bs-readers-header-read-by": "قرأ من قبل",
+	"bs-readers-header-revision-id": "معرف المراجعة",
+	"bs-readers-header-revision-date": "تاريخ المراجعة",
+	"bs-readers-header-read-on": "القراءة في",
 	"revisionreaders": "القراء من خلال مراجعة \" $1 \"",
-	"bs-readers-pref-numofreaders-help": "عدد القراء الذي يتم عرضه على معلومات الصفحة في أدوات إدارة الجودة.",
 	"bs-readers-info-dialog": "قراء هذه الصفحة",
-	"bs-readers-info-dialog-column-readers": "القراء"
+	"bs-readers-info-dialog-column-readers": "القراء",
+	"bs-readers-permission-error": "خطأ في الإذن"
 }

@@ -14,7 +14,6 @@
 	"bs-readers-contentactions-label": "הצגת הקוראים",
 	"bs-readers-pagenotexists": "הדף אינו קיים.",
 	"bs-readers-pref-active": "הפעלת קוראים",
-	"bs-readers-pref-numofreaders": "מספר הקוראים להצגה:",
 	"bs-readers-emptyinput": "לא סופק דף.",
 	"bs-readers-header-username": "שם משתמש",
 	"bs-readers-header-readerspath": "קורא",
@@ -30,13 +29,12 @@
 	"right-viewreaders": "הצגת הקוראים של דף",
 	"right-viewrevisionreaders": "הצגת קוראים של גרסה בודדת של דף",
 	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|קראת}} את הדף $1 ב־$2",
-	"bs-readers-flyout-header-read-by": "נקראה על־ידי",
-	"bs-readers-flyout-header-revision-id": "מזהה גרסה",
-	"bs-readers-flyout-header-revision-date": "תאריך גרסה",
-	"bs-readers-flyout-header-read-on": "נקראה ב־",
-	"bs-readers-revision-flyout-title": "קוראים לפי גרסה",
+	"bs-readers-header-read-by": "נקראה על־ידי",
+	"bs-readers-header-revision-id": "מזהה גרסה",
+	"bs-readers-header-revision-date": "תאריך גרסה",
+	"bs-readers-header-read-on": "נקראה ב־",
 	"revisionreaders": "קוראים לפי גרסה של \"$1\"",
-	"bs-readers-pref-numofreaders-help": "מספר הקוראים המוצג בדף מידע בכלי ניהול האיכות.",
 	"bs-readers-info-dialog": "קוראי הדף הזה",
-	"bs-readers-info-dialog-column-readers": "קוראים"
+	"bs-readers-info-dialog-column-readers": "קוראים",
+	"bs-readers-permission-error": "שגיאת הרשאה"
 }
