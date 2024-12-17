@@ -6,7 +6,7 @@
 		]
 	},
 	"action-viewreaders": "পাতাগুলির পাঠকদের দেখার",
-	"bs-readers-flyout-header-read-by": "যারা পড়েছেন",
-	"bs-readers-flyout-header-revision-id": "সংশোধন আইডি",
+	"bs-readers-header-read-by": "যারা পড়েছেন",
+	"bs-readers-header-revision-id": "সংশোধন আইডি",
 	"bs-readers-info-dialog-column-readers": "পাঠক"
 }

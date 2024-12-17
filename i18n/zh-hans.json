@@ -18,7 +18,6 @@
 	"bs-readers-contentactions-label": "显示读者",
 	"bs-readers-pagenotexists": "页面不存在。",
 	"bs-readers-pref-active": "活跃读者",
-	"bs-readers-pref-numofreaders": "显示的读者数：",
 	"bs-readers-emptyinput": "未提供页面。",
 	"bs-readers-header-username": "用户名",
 	"bs-readers-header-readerspath": "读者",
@@ -32,10 +31,9 @@
 	"right-viewreaders": "查看页面的读者",
 	"right-viewrevisionreaders": "查看一个页面修订版本的读者",
 	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders读者 - {{GENDER:$3|您}}在$2阅读了页面$1",
-	"bs-readers-flyout-header-read-by": "阅读者",
-	"bs-readers-flyout-header-revision-id": "修订版本ID",
-	"bs-readers-flyout-header-revision-date": "修订版本日期",
-	"bs-readers-revision-flyout-title": "各个修订版本的读者",
+	"bs-readers-header-read-by": "阅读者",
+	"bs-readers-header-revision-id": "修订版本ID",
+	"bs-readers-header-revision-date": "修订版本日期",
 	"revisionreaders": "“$1”各个版本的读者",
 	"bs-readers-info-dialog": "此页面的阅读者"
 }

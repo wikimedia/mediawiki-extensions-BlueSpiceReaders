@@ -13,7 +13,6 @@
 	"readers": "Αναγνώστες του \"$1\"",
 	"bs-readers-contentactions-label": "Εμφάνιση αναγνωστών",
 	"bs-readers-pagenotexists": "Η σελίδα δεν υπάρχει.",
-	"bs-readers-pref-numofreaders": "Αριθμός αναγνωστών για εμφάνιση:",
 	"bs-readers-emptyinput": "Δεν παρέχεται κάποια σελίδα.",
 	"bs-readers-header-username": "Όνομα χρήστη",
 	"bs-readers-header-readerspath": "Αναγνώστης",

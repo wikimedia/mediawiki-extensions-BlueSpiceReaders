@@ -20,7 +20,6 @@
 	"bs-readers-contentactions-label": "Отобразить читателей",
 	"bs-readers-pagenotexists": "Страница не существует.",
 	"bs-readers-pref-active": "Активные читатели",
-	"bs-readers-pref-numofreaders": "Количество читателей для отображения:",
 	"bs-readers-emptyinput": "Страница не была предоставлена.",
 	"bs-readers-header-username": "Имя участника",
 	"bs-readers-header-readerspath": "Читатель",
@@ -32,8 +31,8 @@
 	"action-viewreaders": "Просмотреть читателей страницы",
 	"right-viewreaders": "просмотр читателей страницы",
 	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders — $2 {{GENDER:$3|вы}} прочитали страницу $1",
-	"bs-readers-flyout-header-read-by": "Прочитано",
-	"bs-readers-flyout-header-revision-id": "Идентификатор правки",
-	"bs-readers-flyout-header-read-on": "Прочитано",
+	"bs-readers-header-read-by": "Прочитано",
+	"bs-readers-header-revision-id": "Идентификатор правки",
+	"bs-readers-header-read-on": "Прочитано",
 	"bs-readers-info-dialog-column-readers": "Читатели"
 }

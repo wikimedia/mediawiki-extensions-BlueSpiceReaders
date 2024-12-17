@@ -18,7 +18,6 @@
 	"bs-readers-contentactions-label": "Lezers weergeven",
 	"bs-readers-pagenotexists": "De pagina bestaat niet.",
 	"bs-readers-pref-active": "Lezers activeren",
-	"bs-readers-pref-numofreaders": "Aantal weer te geven lezers:",
 	"bs-readers-emptyinput": "Er is geen pagina opgegeven.",
 	"bs-readers-header-username": "Gebruikersnaam",
 	"bs-readers-header-readerspath": "Lezer",
@@ -34,13 +33,12 @@
 	"right-viewreaders": "Toon lezers van een pagina",
 	"right-viewrevisionreaders": "De lezers van afzonderlijke paginaversies bekijken",
 	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|U}} leest de pagina $1 op $2",
-	"bs-readers-flyout-header-read-by": "Gelezen door",
-	"bs-readers-flyout-header-revision-id": "Versienummer",
-	"bs-readers-flyout-header-revision-date": "Revisiedatum",
-	"bs-readers-flyout-header-read-on": "Gelezen op",
-	"bs-readers-revision-flyout-title": "Lezers per revisie",
+	"bs-readers-header-read-by": "Gelezen door",
+	"bs-readers-header-revision-id": "Versienummer",
+	"bs-readers-header-revision-date": "Revisiedatum",
+	"bs-readers-header-read-on": "Gelezen op",
 	"revisionreaders": "Lezers per revisie van \"$1\"",
-	"bs-readers-pref-numofreaders-help": "Aantal lezers dat wordt weergegeven op de pagina-informatie in de tools voor kwaliteitsbeheer.",
 	"bs-readers-info-dialog": "Lezers van deze pagina",
-	"bs-readers-info-dialog-column-readers": "Lezers"
+	"bs-readers-info-dialog-column-readers": "Lezers",
+	"bs-readers-permission-error": "Toestemmingsfout"
 }

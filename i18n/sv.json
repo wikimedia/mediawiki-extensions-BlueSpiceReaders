@@ -15,7 +15,6 @@
 	"bs-readers-contentactions-label": "Visa läsare",
 	"bs-readers-pagenotexists": "Sidan finns inte.",
 	"bs-readers-pref-active": "Aktivera läsare",
-	"bs-readers-pref-numofreaders": "Antal läsare att visa:",
 	"bs-readers-emptyinput": "Ingen sida har angivits.",
 	"bs-readers-header-username": "Användarnamn",
 	"bs-readers-header-readerspath": "Läsare",
@@ -26,9 +25,9 @@
 	"apihelp-bs-readers-page-readers-store-summary": "Hämtar alla läsare för alla sidor",
 	"action-viewreaders": "visa sidans läsare",
 	"right-viewreaders": "Visa en sidas läsare",
-	"bs-readers-flyout-header-read-by": "Läst av",
-	"bs-readers-flyout-header-revision-id": "Sidversions-ID",
-	"bs-readers-flyout-header-revision-date": "Sidversionsdatum",
-	"bs-readers-flyout-header-read-on": "Läs på",
+	"bs-readers-header-read-by": "Läst av",
+	"bs-readers-header-revision-id": "Sidversions-ID",
+	"bs-readers-header-revision-date": "Sidversionsdatum",
+	"bs-readers-header-read-on": "Läs på",
 	"revisionreaders": "Läsare efter sidversion av \"$1\""
 }

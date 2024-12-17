@@ -18,7 +18,6 @@
 	"bs-readers-contentactions-label": "Görünen okuyucular",
 	"bs-readers-pagenotexists": "Sayfa mevcut değil.",
 	"bs-readers-pref-active": "Etkin okuyucular",
-	"bs-readers-pref-numofreaders": "Görünen okuyucu sayısı:",
 	"bs-readers-emptyinput": "Sayfa getirilemedi",
 	"bs-readers-header-username": "Kullanıcı adı",
 	"bs-readers-header-readerspath": "Okuyucu",
@@ -34,11 +33,10 @@
 	"right-viewreaders": "Sayfanın okuyucularını görüntüle",
 	"right-viewrevisionreaders": "Tek sayfalık revizyonların okuyucularını görüntüle",
 	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders - {{GENDER:$3|Siz}} $1 sayfasını $2 üzerinde okudunuz",
-	"bs-readers-flyout-header-read-by": "Okuyan",
-	"bs-readers-flyout-header-revision-id": "Revizyon kimliği",
-	"bs-readers-flyout-header-revision-date": "Revizyon tarihi",
-	"bs-readers-flyout-header-read-on": "Şunu üzerine oku",
-	"bs-readers-revision-flyout-title": "Revizyona göre okuyucular",
+	"bs-readers-header-read-by": "Okuyan",
+	"bs-readers-header-revision-id": "Revizyon kimliği",
+	"bs-readers-header-revision-date": "Revizyon tarihi",
+	"bs-readers-header-read-on": "Şunu üzerine oku",
 	"revisionreaders": "\"$1\" revizyonuna göre okuyucular",
 	"bs-readers-info-dialog": "Bu sayfayı okuyanlar"
 }
