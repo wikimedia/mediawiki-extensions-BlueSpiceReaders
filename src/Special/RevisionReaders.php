@@ -10,7 +10,7 @@ use MediaWiki\Title\Title;
 class RevisionReaders extends SpecialPage {
 
 	public function __construct() {
-		parent::__construct( 'RevisionReaders', 'viewrevisionreaders' );
+		parent::__construct( 'RevisionReaders', 'viewrevisionreaders', false );
 	}
 
 	/**
