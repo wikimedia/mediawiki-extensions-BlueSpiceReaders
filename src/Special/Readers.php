@@ -17,7 +17,7 @@ class Readers extends SpecialPage {
 	 * @param UserFactory $userFactory
 	 */
 	public function __construct( UserFactory $userFactory ) {
-		parent::__construct( 'Readers', 'viewreaders' );
+		parent::__construct( 'Readers', 'viewreaders', false );
 		$this->userFactory = $userFactory;
 	}
 
