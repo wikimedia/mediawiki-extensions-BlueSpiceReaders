@@ -41,5 +41,10 @@
 	"revisionreaders": "קוראים לפי גרסה של \"$1\"",
 	"bs-readers-pref-numofreaders-help": "מספר הקוראים המוצג בדף מידע בכלי ניהול האיכות.",
 	"bs-readers-info-dialog": "קוראי הדף הזה",
-	"bs-readers-info-dialog-column-readers": "קוראים"
+	"bs-readers-info-dialog-column-readers": "קוראים",
+	"bs-readers-header-read-by": "נקראה על־ידי",
+	"bs-readers-header-revision-id": "מזהה גרסה",
+	"bs-readers-header-revision-date": "תאריך גרסה",
+	"bs-readers-header-read-on": "נקראה ב־",
+	"bs-readers-permission-error": "שגיאת הרשאה"
 }

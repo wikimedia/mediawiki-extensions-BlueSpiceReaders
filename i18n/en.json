@@ -38,5 +38,10 @@
 	"revisionreaders": "Readers by revision of \"$1\"",
 	"bs-readers-pref-numofreaders-help": "Number of readers that is displayed on the page information in the quality management tools.",
 	"bs-readers-info-dialog": "Readers of this page",
-	"bs-readers-info-dialog-column-readers": "Readers"
+	"bs-readers-info-dialog-column-readers": "Readers",
+	"bs-readers-header-read-by": "Read by",
+	"bs-readers-header-revision-id": "Revision ID",
+	"bs-readers-header-revision-date": "Revision date",
+	"bs-readers-header-read-on": "Read on",
+	"bs-readers-permission-error": "Permission error"
 }

@@ -38,5 +38,9 @@
 	"bs-readers-revision-flyout-title": "Letture pe versione",
 	"revisionreaders": "Letture pe versione de \"$1\"",
 	"bs-readers-pref-numofreaders-help": "Numere de letture ca avène visualizzate sus a le 'mbormaziune d'a pàgene jndr'à le struminde de gestione d'a qualitate.",
-	"bs-readers-info-dialog": "Letture de sta pàgene"
+	"bs-readers-info-dialog": "Letture de sta pàgene",
+	"bs-readers-header-read-by": "Lette da",
+	"bs-readers-header-revision-id": "ID d'a revisione",
+	"bs-readers-header-revision-date": "Date d'a revisione",
+	"bs-readers-header-read-on": "Lette 'u"
 }

@@ -43,5 +43,10 @@
 	"revisionreaders": "Special page title of RevisionReaders for reader by revision of \"$1\"\n*$1 the page name",
 	"bs-readers-pref-numofreaders-help": "Description for config variable \"ReadersNumOfReaders\"",
 	"bs-readers-info-dialog": "Label for page information dialog",
-	"bs-readers-info-dialog-column-readers": "Label for column which lists username of readers"
+	"bs-readers-info-dialog-column-readers": "Label for column which lists username of readers",
+	"bs-readers-header-read-by": "Headline for 'Read by' column",
+	"bs-readers-header-revision-id": "Headline for 'Revision ID' column",
+	"bs-readers-header-revision-date": "Headline for 'Revision date' column",
+	"bs-readers-header-read-on": "Headline for 'Read on' column",
+	"bs-readers-permission-error": "Used as title of error message.\n{{Identical|Permission error}}"
 }

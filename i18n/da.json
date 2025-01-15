@@ -14,5 +14,7 @@
 	"bs-readers-flyout-title": "Læsere af denne side",
 	"right-viewreaders": "Vis læsere af en side",
 	"bs-readers-flyout-header-read-by": "Læst af",
-	"bs-readers-flyout-header-read-on": "Læst den"
+	"bs-readers-flyout-header-read-on": "Læst den",
+	"bs-readers-header-read-by": "Læst af",
+	"bs-readers-header-read-on": "Læst den"
 }

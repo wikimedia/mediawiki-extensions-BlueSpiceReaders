@@ -31,5 +31,9 @@
 	"bs-readers-flyout-header-revision-id": "Sidversions-ID",
 	"bs-readers-flyout-header-revision-date": "Sidversionsdatum",
 	"bs-readers-flyout-header-read-on": "Läs på",
-	"revisionreaders": "Läsare efter sidversion av \"$1\""
+	"revisionreaders": "Läsare efter sidversion av \"$1\"",
+	"bs-readers-header-read-by": "Läst av",
+	"bs-readers-header-revision-id": "Sidversions-ID",
+	"bs-readers-header-revision-date": "Sidversionsdatum",
+	"bs-readers-header-read-on": "Läs på"
 }

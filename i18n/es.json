@@ -39,5 +39,9 @@
 	"bs-readers-revision-flyout-title": "Lectores por revisión",
 	"revisionreaders": "Lectores por revisión $1",
 	"bs-readers-pref-numofreaders-help": "Número de lectores que aparece en la información de la página en las herramientas de gestión de la calidad.",
-	"bs-readers-info-dialog": "Lectores de esta página"
+	"bs-readers-info-dialog": "Lectores de esta página",
+	"bs-readers-header-read-by": "Leído por",
+	"bs-readers-header-revision-id": "Identificación de la revisión",
+	"bs-readers-header-revision-date": "Fecha de revisión",
+	"bs-readers-header-read-on": "Leída el"
 }

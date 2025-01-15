@@ -47,5 +47,9 @@
 	"revisionreaders": "「$1」修訂的讀者",
 	"bs-readers-pref-numofreaders-help": "讀者數目顯示在品質管理工具裡的頁面資訊上",
 	"bs-readers-info-dialog": "此頁面的讀者",
-	"bs-readers-info-dialog-column-readers": "讀者"
+	"bs-readers-info-dialog-column-readers": "讀者",
+	"bs-readers-header-read-by": "閱讀由",
+	"bs-readers-header-revision-id": "修訂 ID",
+	"bs-readers-header-revision-date": "修訂日期",
+	"bs-readers-header-read-on": "閱讀於"
 }

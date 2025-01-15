@@ -43,5 +43,9 @@
 	"bs-readers-revision-flyout-title": "Читачі шляхом перегляду",
 	"revisionreaders": "Читачі шляхом перегляду \"$1\"",
 	"bs-readers-pref-numofreaders-help": "Кількість читачів, які відображаються на сторінці інформації в засобах управління якістю.",
-	"bs-readers-info-dialog": "Читачі цієї сторінки"
+	"bs-readers-info-dialog": "Читачі цієї сторінки",
+	"bs-readers-header-read-by": "Читав",
+	"bs-readers-header-revision-id": "ID версії",
+	"bs-readers-header-revision-date": "Дата перегляду",
+	"bs-readers-header-read-on": "Читайте далі"
 }

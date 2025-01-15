@@ -21,5 +21,8 @@
 	"right-viewreaders": "문서의 열람자를 봅니다",
 	"bs-readers-flyout-header-revision-id": "판 ID",
 	"bs-readers-flyout-header-revision-date": "판 날짜",
-	"bs-readers-info-dialog-column-readers": "독자"
+	"bs-readers-info-dialog-column-readers": "독자",
+	"bs-readers-header-revision-id": "판 ID",
+	"bs-readers-header-revision-date": "판 날짜",
+	"bs-readers-permission-error": "권한 오류"
 }

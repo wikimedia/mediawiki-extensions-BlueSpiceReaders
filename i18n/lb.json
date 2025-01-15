@@ -31,5 +31,9 @@
 	"bs-readers-revision-flyout-title": "Lieser pro Versioun",
 	"revisionreaders": "Lieser pro Versioun vun \"$1\"",
 	"bs-readers-info-dialog": "Lieser vun dëser Säit",
-	"bs-readers-info-dialog-column-readers": "Lieser"
+	"bs-readers-info-dialog-column-readers": "Lieser",
+	"bs-readers-header-read-by": "Gelies vun",
+	"bs-readers-header-revision-id": "Versioun ID",
+	"bs-readers-header-revision-date": "Versiounsdatum",
+	"bs-readers-header-read-on": "Gelies den"
 }
