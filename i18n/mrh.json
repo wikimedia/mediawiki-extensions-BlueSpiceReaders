@@ -5,5 +5,7 @@
 		]
 	},
 	"bs-readers-flyout-header-read-by": "Reihtuhpa",
-	"bs-readers-flyout-header-revision-date": "Patheihpahlâhna târi"
+	"bs-readers-flyout-header-revision-date": "Patheihpahlâhna târi",
+	"bs-readers-header-read-by": "Reihtuhpa",
+	"bs-readers-header-revision-date": "Patheihpahlâhna târi"
 }

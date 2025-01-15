@@ -3,5 +3,6 @@
 		"authors": [
 			"Cabal"
 		]
-	}
+	},
+	"bs-readers-permission-error": "ਇਜਾਜ਼ਤ ਦੀ ਗਲਤੀ"
 }

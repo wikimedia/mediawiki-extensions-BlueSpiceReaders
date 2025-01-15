@@ -13,5 +13,8 @@
 	"bs-readers-header-page": "Страница",
 	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders — {{GENDER:$3|Читате}} страницу $1 на $2",
 	"bs-readers-flyout-header-revision-id": "ID измене",
-	"bs-readers-flyout-header-revision-date": "Датум измене"
+	"bs-readers-flyout-header-revision-date": "Датум измене",
+	"bs-readers-header-revision-id": "ID измене",
+	"bs-readers-header-revision-date": "Датум измене",
+	"bs-readers-permission-error": "Грешка у дозволама"
 }

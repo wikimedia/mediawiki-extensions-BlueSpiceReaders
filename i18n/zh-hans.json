@@ -39,5 +39,8 @@
 	"bs-readers-flyout-header-revision-date": "修订版本日期",
 	"bs-readers-revision-flyout-title": "各个修订版本的读者",
 	"revisionreaders": "“$1”各个版本的读者",
-	"bs-readers-info-dialog": "此页面的阅读者"
+	"bs-readers-info-dialog": "此页面的阅读者",
+	"bs-readers-header-read-by": "阅读者",
+	"bs-readers-header-revision-id": "修订版本ID",
+	"bs-readers-header-revision-date": "修订版本日期"
 }

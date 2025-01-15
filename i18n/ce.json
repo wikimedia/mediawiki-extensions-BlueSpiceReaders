@@ -18,5 +18,7 @@
 	"bs-readers-header-ts": "Терахь",
 	"bs-readers-header-page": "АгӀо",
 	"bs-readers-flyout-header-revision-id": "Нисдаран ID",
-	"bs-readers-flyout-header-read-on": "Йешна"
+	"bs-readers-flyout-header-read-on": "Йешна",
+	"bs-readers-header-revision-id": "Нисдаран ID",
+	"bs-readers-header-read-on": "Йешна"
 }

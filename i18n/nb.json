@@ -40,5 +40,9 @@
 	"bs-readers-revision-flyout-title": "Lesere etter sideversjon",
 	"revisionreaders": "Lesere etter sideversjon av «$1»",
 	"bs-readers-pref-numofreaders-help": "Antall lesere som vises under sideinformasjon i kvalitetsbehandlingsverktøy.",
-	"bs-readers-info-dialog": "Lesere av denne siden"
+	"bs-readers-info-dialog": "Lesere av denne siden",
+	"bs-readers-header-read-by": "Lest av",
+	"bs-readers-header-revision-id": "Sideversjons-ID",
+	"bs-readers-header-revision-date": "Sideversjonsdato",
+	"bs-readers-header-read-on": "Lest"
 }

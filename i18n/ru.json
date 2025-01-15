@@ -37,5 +37,8 @@
 	"bs-readers-flyout-header-read-by": "Прочитано",
 	"bs-readers-flyout-header-revision-id": "Идентификатор правки",
 	"bs-readers-flyout-header-read-on": "Прочитано",
-	"bs-readers-info-dialog-column-readers": "Читатели"
+	"bs-readers-info-dialog-column-readers": "Читатели",
+	"bs-readers-header-read-by": "Прочитано",
+	"bs-readers-header-revision-id": "Идентификатор правки",
+	"bs-readers-header-read-on": "Прочитано"
 }

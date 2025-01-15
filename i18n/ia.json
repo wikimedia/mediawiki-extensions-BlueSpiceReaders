@@ -38,5 +38,9 @@
 	"revisionreaders": "Lectores per version de \"$1\"",
 	"bs-readers-pref-numofreaders-help": "Numero de lectores que se monstra in le informationes de pagina in le instrumentos de gestion de qualitate.",
 	"bs-readers-info-dialog": "Lectores de iste pagina",
-	"bs-readers-info-dialog-column-readers": "Lectores"
+	"bs-readers-info-dialog-column-readers": "Lectores",
+	"bs-readers-header-read-by": "Legite per",
+	"bs-readers-header-revision-id": "ID del version",
+	"bs-readers-header-revision-date": "Data del version",
+	"bs-readers-header-read-on": "Legite le"
 }

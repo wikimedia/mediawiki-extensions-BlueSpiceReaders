@@ -42,5 +42,9 @@
 	"bs-readers-flyout-header-read-on": "Şunu üzerine oku",
 	"bs-readers-revision-flyout-title": "Revizyona göre okuyucular",
 	"revisionreaders": "\"$1\" revizyonuna göre okuyucular",
-	"bs-readers-info-dialog": "Bu sayfayı okuyanlar"
+	"bs-readers-info-dialog": "Bu sayfayı okuyanlar",
+	"bs-readers-header-read-by": "Okuyan",
+	"bs-readers-header-revision-id": "Revizyon kimliği",
+	"bs-readers-header-revision-date": "Revizyon tarihi",
+	"bs-readers-header-read-on": "Şunu üzerine oku"
 }
