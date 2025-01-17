@@ -7,8 +7,8 @@ use BlueSpice\Readers\Data\PageReaders\Store;
 use BlueSpice\Readers\Data\Record;
 use Job;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 use MWStake\MediaWiki\Component\DataStore\RecordSet;
-use Title;
 
 class InsertTrace extends Job {
 
