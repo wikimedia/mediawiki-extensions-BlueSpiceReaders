@@ -31,7 +31,6 @@
 	"apihelp-bs-readers-tasks-summary": "Ermöglicht häufig vorkommende Arbeitsvorgänge für Leser",
 	"action-viewreaders": "die Leser von Seiten anzusehen",
 	"action-viewrevisionreaders": "Sieh die Leser von Überarbeitungen einzelner Seiten",
-	"bs-readers-flyout-title": "Leser dieser Seite",
 	"right-viewreaders": "Die Leser einer Seite ansehen",
 	"right-viewrevisionreaders": "Sieh die Leser von Überarbeitungen einzelner Seiten",
 	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders – {{GENDER:$3|Du}} hast die Seite $1 am $2 gelesen",

@@ -30,7 +30,6 @@
 	"apihelp-bs-readers-tasks-summary": "Zagotavlja običajne operacije za bralce",
 	"action-viewreaders": "pregledovanje bralcev strani",
 	"action-viewrevisionreaders": "pregledovanje bralcev posameznih redakcij strani",
-	"bs-readers-flyout-title": "Bralci te strani",
 	"right-viewreaders": "Pregledovanje bralcev strani",
 	"right-viewrevisionreaders": "Ogled bralcev redakcij posamezne strani",
 	"bs-readers-privacy-transparency-working-readers": "BlueSpiceReaders – $2 {{GENDER:$3|ste}} prebrali stran $1",
