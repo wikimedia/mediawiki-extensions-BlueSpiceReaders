@@ -4,6 +4,7 @@ namespace BlueSpice\Readers\Data\PageReaders;
 
 use BlueSpice\Readers\Data\Record;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\User\User;
 
 class SecondaryDataProvider extends \MWStake\MediaWiki\Component\DataStore\SecondaryDataProvider {
 
@@ -15,7 +16,7 @@ class SecondaryDataProvider extends \MWStake\MediaWiki\Component\DataStore\Secon
 		$services = MediaWikiServices::getInstance();
 		$factory = $services->getService( 'BSRendererFactory' );
 		$user = $services->getUserFactory()->newFromId( $dataSet->get( Record::USER_ID ) );
-		if ( $user instanceof \User == false ) {
+		if ( $user instanceof User == false ) {
 			return;
 		}
 
