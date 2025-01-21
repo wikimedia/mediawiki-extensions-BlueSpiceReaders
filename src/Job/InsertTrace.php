@@ -6,6 +6,7 @@ use BlueSpice\Context;
 use BlueSpice\Readers\Data\PageReaders\Store;
 use BlueSpice\Readers\Data\Record;
 use Job;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 use MWStake\MediaWiki\Component\DataStore\RecordSet;
@@ -68,7 +69,7 @@ class InsertTrace extends Job {
 	 */
 	protected function getContext() {
 		return new Context(
-			\RequestContext::getMain(),
+			RequestContext::getMain(),
 			$this->services->getConfigFactory()->makeConfig( 'bsg' )
 		);
 	}

@@ -3,10 +3,10 @@
 namespace BlueSpice\Readers\Data\RevisionReaders;
 
 use IContextSource;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 use MWStake\MediaWiki\Component\DataStore\DatabaseReader;
 use MWStake\MediaWiki\Component\DataStore\ReaderParams;
-use RequestContext;
 
 class Reader extends DatabaseReader {
 
