@@ -3,6 +3,7 @@
 namespace BlueSpice\Readers\Data\PageReaders;
 
 use BlueSpice\Readers\Data\Record;
+use MediaWiki\Context\IContextSource;
 use MWStake\MediaWiki\Component\DataStore\IPrimaryDataProvider;
 use MWStake\MediaWiki\Component\DataStore\ReaderParams;
 use MWStake\MediaWiki\Component\DataStore\Record as DataStoreRecord;
@@ -23,14 +24,14 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 
 	/**
 	 *
-	 * @var \IContextSource
+	 * @var IContextSource
 	 */
 	protected $context = null;
 
 	/**
 	 *
 	 * @param \Wikimedia\Rdbms\IDatabase $db
-	 * @param \IContextSource $context
+	 * @param IContextSource $context
 	 */
 	public function __construct( $db, $context ) {
 		$this->db = $db;
