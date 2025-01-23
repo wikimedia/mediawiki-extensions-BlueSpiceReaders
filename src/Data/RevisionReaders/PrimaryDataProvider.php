@@ -4,6 +4,7 @@ namespace BlueSpice\Readers\Data\RevisionReaders;
 
 use BlueSpice\Readers\Data\Record;
 use BlueSpice\Readers\Data\Schema;
+use MediaWiki\Context\IContextSource;
 use MWStake\MediaWiki\Component\DataStore\Filter;
 use MWStake\MediaWiki\Component\DataStore\FilterFinder;
 use MWStake\MediaWiki\Component\DataStore\IPrimaryDataProvider;
@@ -26,14 +27,14 @@ class PrimaryDataProvider implements IPrimaryDataProvider {
 
 	/**
 	 *
-	 * @var \IContextSource
+	 * @var IContextSource
 	 */
 	protected $context = null;
 
 	/**
 	 *
 	 * @param \Wikimedia\Rdbms\IDatabase $db
-	 * @param \IContextSource $context
+	 * @param IContextSource $context
 	 */
 	public function __construct( $db, $context ) {
 		$this->db = $db;
