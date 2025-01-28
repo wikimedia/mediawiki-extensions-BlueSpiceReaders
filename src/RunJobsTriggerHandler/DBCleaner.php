@@ -3,8 +3,8 @@
 namespace BlueSpice\Readers\RunJobsTriggerHandler;
 
 use BlueSpice\RunJobsTriggerHandler;
+use MediaWiki\Status\Status;
 use MWTimestamp;
-use Status;
 
 class DBCleaner extends RunJobsTriggerHandler {
 
