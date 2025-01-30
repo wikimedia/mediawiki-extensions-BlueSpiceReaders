@@ -71,6 +71,8 @@
 		}
 	};
 
-	registryPageInformation.register( 'readers_infos', bs.readers.info.ReadersInformationPage ); // eslint-disable-line no-undef
+	if ( mw.config.get( 'bsViewReadersRight') ) {
+		registryPageInformation.register( 'readers_infos', bs.readers.info.ReadersInformationPage ); // eslint-disable-line no-undef
+	}
 
 } )( mediaWiki, blueSpice );
