@@ -32,6 +32,16 @@ class AddResources extends \BlueSpice\Hook\BeforePageDisplay {
 
 	protected function doProcess() {
 		$this->out->addModules( [ 'ext.bluespice.readers.insertTrace' ] );
+
+		$isAllowed = false;
+		$user = $this->skin->getUser();
+		$permissionManager = $this->getServices()->getPermissionManager();
+		if ( $permissionManager->userHasRight( $user, 'viewreaders' ) ) {
+			$isAllowed = true;
+		}
+
+		$this->out->addJsConfigVars( 'bsViewReadersRight', $isAllowed );
+
 		return true;
 	}
 }
