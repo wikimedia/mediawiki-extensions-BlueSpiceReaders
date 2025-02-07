@@ -3,7 +3,7 @@
 namespace BlueSpice\Readers\Data\RevisionReaders;
 
 use BlueSpice\Readers\Data\Record;
-use Language;
+use MediaWiki\Language\Language;
 use MediaWiki\Revision\RevisionLookup;
 use MediaWiki\Revision\RevisionRecord;
 
