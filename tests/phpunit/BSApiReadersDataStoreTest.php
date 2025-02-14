@@ -40,16 +40,9 @@ class BSApiReadersDataStoreTest extends \BlueSpice\Tests\BSApiExtJSStoreTestBase
 		];
 	}
 
-	/** @inheritDoc */
-	protected $tablesUsed = [ 'bs_readers', 'page', 'user', 'user_groups', 'user_properties' ];
-
 	protected function setUp(): void {
 		parent::setUp();
 
-		/**
-		 * This need to be done here and for each and every test, because
-		 * tables defined in $tablesUsed are being reset after a test.
-		 */
 		$oPageFixtures = new \BlueSpice\Tests\BSPageFixturesProvider();
 		$aFixtures = $oPageFixtures->getFixtureData();
 		foreach ( $aFixtures as $aFixture ) {
