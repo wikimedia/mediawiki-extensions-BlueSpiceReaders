@@ -33,5 +33,6 @@
 	"bs-readers-header-read-on": "Legite le",
 	"revisionreaders": "Lectores per version de \"$1\"",
 	"bs-readers-info-dialog": "Lectores de iste pagina",
-	"bs-readers-info-dialog-column-readers": "Lectores"
+	"bs-readers-info-dialog-column-readers": "Lectores",
+	"bs-readers-permission-error": "Error de permission"
 }
