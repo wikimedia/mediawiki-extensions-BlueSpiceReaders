@@ -43,5 +43,6 @@
 	"bs-readers-header-read-by": "Legite per",
 	"bs-readers-header-revision-id": "ID del version",
 	"bs-readers-header-revision-date": "Data del version",
-	"bs-readers-header-read-on": "Legite le"
+	"bs-readers-header-read-on": "Legite le",
+	"bs-readers-permission-error": "Error de permission"
 }
