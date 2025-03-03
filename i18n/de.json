@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Elliot",
+			"Justman10000",
 			"Metalhead64",
 			"Mglaser",
 			"Stephan Muggli <muggli@hallowelt.biz>",
@@ -37,5 +38,6 @@
 	"bs-readers-header-read-on": "Gelesen am",
 	"revisionreaders": "Leser je Version für Artikel „$1“",
 	"bs-readers-info-dialog": "Leser dieser Seite",
-	"bs-readers-info-dialog-column-readers": "Leser"
+	"bs-readers-info-dialog-column-readers": "Leser",
+	"bs-readers-permission-error": "Berechtigungsfehler"
 }
