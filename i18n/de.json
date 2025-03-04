@@ -5,7 +5,8 @@
 			"Metalhead64",
 			"Mglaser",
 			"Stephan Muggli <muggli@hallowelt.biz>",
-			"Umherirrender"
+			"Umherirrender",
+			"Justman10000"
 		]
 	},
 	"bs-readers-desc": "Erstellt eine Liste mit Personen, die eine Seite lesen",
@@ -37,5 +38,6 @@
 	"bs-readers-header-read-on": "Gelesen am",
 	"revisionreaders": "Leser je Version für Artikel „$1“",
 	"bs-readers-info-dialog": "Leser dieser Seite",
-	"bs-readers-info-dialog-column-readers": "Leser"
+	"bs-readers-info-dialog-column-readers": "Leser",
+	"bs-readers-permission-error": "Berechtigungsfehler"
 }
