@@ -38,7 +38,8 @@ class DBCleaner extends RunJobsTriggerHandler {
 		$entriesCount = $dbr->select(
 			'bs_readers',
 			[ 'readers_id' ],
-			[ 'readers_ts < ' . $currentTS ]
+			[ 'readers_ts < ' . $currentTS ],
+			__METHOD__
 		)->numRows();
 
 		if ( $entriesCount < 1 ) {

@@ -74,7 +74,8 @@ class Handler implements IPrivacyHandler {
 		$res = $this->db->select(
 			'bs_readers',
 			'*',
-			[ 'readers_user_id' => $user->getId() ]
+			[ 'readers_user_id' => $user->getId() ],
+			__METHOD__
 		);
 
 		$data = [];
