@@ -50,7 +50,8 @@ class DBCleaner extends RunJobsTriggerHandler {
 			->getConnection( DB_PRIMARY )
 			->delete(
 				'bs_readers',
-				[ 'readers_ts < ' . $currentTS ]
+				[ 'readers_ts < ' . $currentTS ],
+				__METHOD__
 			);
 
 		wfDebugLog(
