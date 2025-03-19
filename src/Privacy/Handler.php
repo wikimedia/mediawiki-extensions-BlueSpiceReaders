@@ -36,7 +36,8 @@ class Handler implements IPrivacyHandler {
 		$this->db->update(
 			'bs_readers',
 			[ 'readers_user_name' => $newUsername ],
-			[ 'readers_user_name' => $oldUsername ]
+			[ 'readers_user_name' => $oldUsername ],
+			__METHOD__
 		);
 
 		return Status::newGood();
@@ -53,7 +54,8 @@ class Handler implements IPrivacyHandler {
 		$this->db->update(
 			'bs_readers',
 			[ 'readers_user_id' => $deletedUser->getId() ],
-			[ 'readers_user_id' => $userToDelete->getId() ]
+			[ 'readers_user_id' => $userToDelete->getId() ],
+			__METHOD__
 		);
 
 		return Status::newGood();
