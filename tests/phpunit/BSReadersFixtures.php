@@ -19,14 +19,18 @@ class BSReadersFixtures {
 		foreach ( $oFixtures->rows as $row ) {
 			$title = Title::newFromText( $row[0] );
 			$user = $userFactory->newFromName( $row[1] );
-			$db->insert( 'bs_readers', [
-				'readers_user_id'   => $user->getId(),
-				'readers_user_name' => $user->getName(),
-				'readers_page_id'   => $title->getArticleID(),
-				// This is not used by the extension
-				'readers_rev_id'    => 0,
-				'readers_ts'        => $row[2],
-			] );
+			$db->insert(
+				'bs_readers',
+				[
+					'readers_user_id'   => $user->getId(),
+					'readers_user_name' => $user->getName(),
+					'readers_page_id'   => $title->getArticleID(),
+					// This is not used by the extension
+					'readers_rev_id'    => 0,
+					'readers_ts'        => $row[2],
+				],
+				__METHOD__
+			);
 		}
 	}
 }
