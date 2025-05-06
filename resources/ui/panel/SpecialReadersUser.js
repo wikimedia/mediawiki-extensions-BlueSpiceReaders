@@ -31,24 +31,20 @@ ext.bluespice.readers.ui.panel.SpecialReadersUser.prototype.setupGridConfig = fu
 				type: 'text',
 				sortable: true,
 				filter: { type: 'text' },
-				valueParser: ( value ) => {
-					return new OO.ui.HtmlSnippet( mw.html.element(
-						'a',
-						{
-							href: mw.util.getUrl( value )
-						},
-						value
-					) );
-				}
+				valueParser: ( value ) => new OO.ui.HtmlSnippet( mw.html.element(
+					'a',
+					{
+						href: mw.util.getUrl( value )
+					},
+					value
+				) )
 			},
 			pv_ts: { // eslint-disable-line camelcase
 				headerText: mw.message( 'bs-readers-header-ts' ).plain(),
 				type: 'text',
 				sortable: true,
 				filter: { type: 'text' },
-				valueParser: ( value ) => {
-					return bs.util.convertMWTimestampToISO( value );
-				}
+				valueParser: ( value ) => bs.util.convertMWTimestampToISO( value )
 			}
 		},
 		store: this.store,
@@ -80,7 +76,7 @@ ext.bluespice.readers.ui.panel.SpecialReadersUser.prototype.setupGridConfig = fu
 
 					$table.append( $thead, $tbody );
 
-					deferred.resolve( `<table>${$table.html()}</table>` );
+					deferred.resolve( `<table>${ $table.html() }</table>` );
 				} catch ( error ) {
 					deferred.reject( 'Failed to load data' );
 				}

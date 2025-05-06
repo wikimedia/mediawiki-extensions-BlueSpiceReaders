@@ -23,7 +23,7 @@
 	bs.readers.info.ReadersInformationPage.prototype.onInfoPanelSelect = async function () {
 		if ( !this.readerGrid ) {
 			const rights = await mw.user.getRights();
-			if ( !rights.includes( 'viewreaders' ) ) { // eslint-disable-line no-restricted-syntax
+			if ( !rights.includes( 'viewreaders' ) ) {
 				const message = mw.message( 'bs-readers-permission-error' ).text();
 				this.readerGrid = new OO.ui.LabelWidget( {
 					label: message
@@ -71,7 +71,7 @@
 		}
 	};
 
-	if ( mw.config.get( 'bsViewReadersRight') ) {
+	if ( mw.config.get( 'bsViewReadersRight' ) ) {
 		registryPageInformation.register( 'readers_infos', bs.readers.info.ReadersInformationPage ); // eslint-disable-line no-undef
 	}
 
