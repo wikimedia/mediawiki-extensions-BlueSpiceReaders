@@ -38,9 +38,7 @@ ext.bluespice.readers.ui.panel.SpecialReadersPage.prototype.setupGridConfig = fu
 				type: 'text',
 				sortable: true,
 				filter: { type: 'date' },
-				valueParser: ( value ) => {
-					return bs.util.convertMWTimestampToISO( value );
-				}
+				valueParser: ( value ) => bs.util.convertMWTimestampToISO( value )
 			}
 		},
 		store: this.store,
@@ -72,7 +70,7 @@ ext.bluespice.readers.ui.panel.SpecialReadersPage.prototype.setupGridConfig = fu
 
 					$table.append( $thead, $tbody );
 
-					deferred.resolve( `<table>${$table.html()}</table>` );
+					deferred.resolve( `<table>${ $table.html() }</table>` );
 				} catch ( error ) {
 					deferred.reject( 'Failed to load data' );
 				}

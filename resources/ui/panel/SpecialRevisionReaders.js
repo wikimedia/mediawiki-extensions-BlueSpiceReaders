@@ -60,9 +60,7 @@ ext.bluespice.readers.ui.panel.SpecialRevisionReaders.prototype.setupGridConfig 
 				type: 'date',
 				sortable: true,
 				filter: { type: 'date' },
-				valueParser: ( value ) => {
-					return bs.util.convertMWTimestampToISO( value );
-				}
+				valueParser: ( value ) => bs.util.convertMWTimestampToISO( value )
 			}
 		},
 		store: this.store,
@@ -98,7 +96,7 @@ ext.bluespice.readers.ui.panel.SpecialRevisionReaders.prototype.setupGridConfig 
 
 					$table.append( $thead, $tbody );
 
-					deferred.resolve( `<table>${$table.html()}</table>` );
+					deferred.resolve( `<table>${ $table.html() }</table>` );
 				} catch ( error ) {
 					deferred.reject( 'Failed to load data' );
 				}
