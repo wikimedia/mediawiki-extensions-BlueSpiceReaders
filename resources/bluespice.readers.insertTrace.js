@@ -1,5 +1,5 @@
-( function( mw, $, bs, undefined ) {
-	var data = {
+( function ( mw, bs ) {
+	const data = {
 		revisionId: mw.config.get( 'wgRevisionId' )
 	};
 	mw.hook( 'readers.check.revision.before.insertTrace' ).fire( data );
@@ -8,4 +8,4 @@
 		'insertTrace',
 		{ revId: data.revisionId }
 	);
-} )( mediaWiki, jQuery, blueSpice );
+}( mediaWiki, blueSpice ) );
