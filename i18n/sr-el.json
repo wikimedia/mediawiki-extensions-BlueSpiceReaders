@@ -11,5 +11,6 @@
 	"bs-readers-flyout-header-revision-id": "ID izmene",
 	"bs-readers-flyout-header-revision-date": "Datum izmene",
 	"bs-readers-header-revision-id": "ID izmene",
-	"bs-readers-header-revision-date": "Datum izmene"
+	"bs-readers-header-revision-date": "Datum izmene",
+	"bs-readers-permission-error": "Greška u dozvolama"
 }
