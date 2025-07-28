@@ -46,5 +46,6 @@
 	"bs-readers-header-read-by": "Prebral_a",
 	"bs-readers-header-revision-id": "ID redakcije",
 	"bs-readers-header-revision-date": "Datum redakcije",
-	"bs-readers-header-read-on": "Prebrano"
+	"bs-readers-header-read-on": "Prebrano",
+	"bs-readers-permission-error": "Napaka dovoljenja"
 }
