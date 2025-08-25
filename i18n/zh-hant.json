@@ -50,5 +50,6 @@
 	"bs-readers-header-read-by": "閱讀由",
 	"bs-readers-header-revision-id": "修訂 ID",
 	"bs-readers-header-revision-date": "修訂日期",
-	"bs-readers-header-read-on": "閱讀於"
+	"bs-readers-header-read-on": "閱讀於",
+	"bs-readers-permission-error": "權限錯誤"
 }
