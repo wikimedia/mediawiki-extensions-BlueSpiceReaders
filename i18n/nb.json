@@ -45,5 +45,7 @@
 	"bs-readers-header-read-by": "Lest av",
 	"bs-readers-header-revision-id": "Sideversjons-ID",
 	"bs-readers-header-revision-date": "Sideversjonsdato",
-	"bs-readers-header-read-on": "Lest"
+	"bs-readers-header-read-on": "Lest",
+	"bs-readers-info-dialog-column-readers": "Lesere",
+	"bs-readers-permission-error": "Tillatelsesfeil"
 }
