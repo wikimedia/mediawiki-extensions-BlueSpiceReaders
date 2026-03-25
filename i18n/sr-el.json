@@ -9,5 +9,8 @@
 	"bs-readers-header-username": "Korisničko ime",
 	"bs-readers-header-ts": "Datum",
 	"bs-readers-header-page": "Stranica",
-	"bs-readers-flyout-header-revision-id": "ID izmene"
+	"bs-readers-flyout-header-revision-id": "ID izmene",
+	"bs-readers-header-revision-id": "ID izmene",
+	"bs-readers-header-revision-date": "Datum izmene",
+	"bs-readers-permission-error": "Greška u dozvolama"
 }
