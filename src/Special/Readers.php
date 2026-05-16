@@ -4,11 +4,11 @@ namespace BlueSpice\Readers\Special;
 
 use MediaWiki\Html\Html;
 use MediaWiki\Output\OutputPage;
-use MediaWiki\SpecialPage\SpecialPage;
+use MediaWiki\SpecialPage\UnlistedSpecialPage;
 use MediaWiki\Title\Title;
 use MediaWiki\User\UserFactory;
 
-class Readers extends SpecialPage {
+class Readers extends UnlistedSpecialPage {
 
 	/** @var UserFactory */
 	protected $userFactory;
@@ -17,8 +17,13 @@ class Readers extends SpecialPage {
 	 * @param UserFactory $userFactory
 	 */
 	public function __construct( UserFactory $userFactory ) {
-		parent::__construct( 'Readers', 'viewreaders', false );
+		parent::__construct( 'Readers' );
 		$this->userFactory = $userFactory;
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return 'viewreaders';
 	}
 
 	/**

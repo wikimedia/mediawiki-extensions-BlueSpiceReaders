@@ -4,13 +4,18 @@ namespace BlueSpice\Readers\Special;
 
 use MediaWiki\Html\Html;
 use MediaWiki\Output\OutputPage;
-use MediaWiki\SpecialPage\SpecialPage;
+use MediaWiki\SpecialPage\UnlistedSpecialPage;
 use MediaWiki\Title\Title;
 
-class RevisionReaders extends SpecialPage {
+class RevisionReaders extends UnlistedSpecialPage {
 
 	public function __construct() {
-		parent::__construct( 'RevisionReaders', 'viewrevisionreaders', false );
+		parent::__construct( 'RevisionReaders' );
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return 'viewrevisionreaders';
 	}
 
 	/**
