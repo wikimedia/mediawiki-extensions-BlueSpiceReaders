@@ -7,7 +7,6 @@ use MediaWiki\Title\Title;
 class BSReadersFixtures {
 
 	/**
-	 *
 	 * @param \Wikimedia\Rdbms\IDatabase $db
 	 */
 	public function __construct( $db ) {
