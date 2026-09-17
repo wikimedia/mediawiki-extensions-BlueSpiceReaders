@@ -40,7 +40,7 @@ class Readers extends UnlistedSpecialPage {
 		} elseif ( isset( $requestParams['page'] ) ) {
 			$this->readersOfPage( $out, $requestParams['page'] );
 		} else {
-			$out->setPageTitle( $this->msg( 'bs-readers-emptyinput' ) );
+			$out->setPageTitleMsg( $this->msg( 'bs-readers-emptyinput' ) );
 			$out->addHTML( $this->msg( 'bs-readers-emptyinput' )->text() );
 		}
 	}
@@ -57,7 +57,7 @@ class Readers extends UnlistedSpecialPage {
 		}
 
 		$out->addJsConfigVars( 'bsReadersUserID', $user->getId() );
-		$out->setPageTitle(	$this->msg( 'readers-user', $username ) );
+		$out->setPageTitleMsg( $this->msg( 'readers-user', $username ) );
 		$out->addModules( [ 'ext.bluespice.readers.specialReadersUser' ] );
 		$out->addHTML( Html::element( 'div', [ 'id' => 'bs-readers-special-readers-user-container' ] ) );
 	}
@@ -74,7 +74,7 @@ class Readers extends UnlistedSpecialPage {
 		}
 
 		$out->addJsConfigVars( 'bsReadersTitle', $page );
-		$out->setPageTitle(	$this->msg( 'readers', $page ) );
+		$out->setPageTitleMsg( $this->msg( 'readers', $page ) );
 		$out->addModules( [ 'ext.bluespice.readers.specialReadersPage' ] );
 		$out->addHTML( Html::element( 'div', [ 'id' => 'bs-readers-special-readers-page-container' ] ) );
 	}
@@ -84,7 +84,7 @@ class Readers extends UnlistedSpecialPage {
 	 * @return string
 	 */
 	private function pageNotExistError( OutputPage $out ) {
-		$out->setPageTitle( $this->msg( 'bs-readers-pagenotexists' ) );
+		$out->setPageTitleMsg( $this->msg( 'bs-readers-pagenotexists' ) );
 		$out->addHTML( $this->msg( 'bs-readers-pagenotexists' )->text() );
 	}
 }
