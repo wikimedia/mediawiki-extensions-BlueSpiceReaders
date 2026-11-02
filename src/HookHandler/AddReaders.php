@@ -4,8 +4,8 @@ namespace BlueSpice\Readers\HookHandler;
 
 use MediaWiki\Hook\SkinTemplateNavigation__UniversalHook;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Skin\SkinTemplate;
 use MediaWiki\SpecialPage\SpecialPage;
-use SkinTemplate;
 
 class AddReaders implements SkinTemplateNavigation__UniversalHook {
 
